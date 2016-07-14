@@ -1,0 +1,19 @@
+{
+  "name": "skill-sample-nodejs-fact",
+  "version": "1.0.0",
+  "description": "A simple fact skill.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "alexa",
+    "skill",
+    "fact"
+  ],
+  "author": "Amazon.com",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "alexa-sdk": "^1.0.0"
+  }
+}
