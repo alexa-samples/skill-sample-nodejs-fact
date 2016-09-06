@@ -1,6 +1,6 @@
 'use strict';
 var Alexa = require('alexa-sdk');
-var APP_ID = undefined;  //OPTIONAL: replace with 'amzn1.echo-sdk-ams.app.[your-unique-value-here]';
+var APP_ID = undefined;  // OPTIONAL: replace with your app ID;
 
 var languageStrings = {
     "en-GB": {
@@ -56,7 +56,7 @@ var languageStrings = {
 exports.handler = function(event, context, callback) {
     var alexa = Alexa.handler(event, context);
     alexa.APP_ID = APP_ID;
-    //add resource to enable i18n, otherwise i18n module functions will not be loaded
+    // To enable string internationalization (i18n) features, set a resources object.
     alexa.resources = languageStrings;
     alexa.registerHandlers(handlers);
     alexa.execute();
@@ -71,7 +71,7 @@ var handlers = {
     },
     'GetFact': function () {
         // Get a random space fact from the space facts list
-        // Use this.localize()/this.i18n.t() to get corresponding language data
+        // Use this.t() to get corresponding language data
         var factArr = this.t('FACTS');
         var factIndex = Math.floor(Math.random() * factArr.length);
         var randomFact = factArr[factIndex];
