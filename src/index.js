@@ -8,7 +8,7 @@ var languageStrings = {
             "FACTS": [
                 "A year on Mercury is just 88 days long.",
                 "Despite being farther from the Sun, Venus experiences higher temperatures than Mercury.",
-                "Venus rotates counter-clockwise, possibly because of a collision in the past with an asteroid.",
+                "Venus rotates anti-clockwise, possibly because of a collision in the past with an asteroid.",
                 "On Mars, the Sun appears about half the size as it does on Earth.",
                 "Earth is the only planet not named after a god.",
                 "Jupiter has the shortest day of all the planets.",
