@@ -68,7 +68,7 @@ Skills are managed through the Amazon Developer Portal. You’ll link the Lambda
 
     Given the flexibility and variation of spoken language in the real world, there will often be many different ways to express the same request. Providing these different phrases in your sample utterances will help improve voice recognition for the abilities you add to Alexa. It is important to include as wide a range of representative samples as you can -– all the phrases that you can think of that are possible in use (though do not include samples that users will never speak). Alexa also attempts to generalize based on the samples you provide to interpret spoken phrases that differ in minor ways from the samples specified.
 
-    Now its time to add the Utterances. Select and Copy/paste the sample utterances from [GitHub](https://github.com/alexa/skill-sample-nodejs-fact/blob/master/speechAssets/SampleUtterances_en_US.txt) with your initial language. For example, if your select English (US) as initial language above, then you will need to Copy/paste SampleUtterances_en_US.txt in previous link. An example of utterances is listed below. Once they are copied, the screen should look similar to the following image:
+    Now its time to add the Utterances. Select and Copy/paste the sample utterances from [GitHub](https://github.com/alexa/skill-sample-nodejs-fact/blob/master/speechAssets) with your initial language. For example, if your select English (US) as initial language above, then you will need to Copy/paste SampleUtterances_en_US.txt in previous link. An example of utterances is listed below. Once they are copied, the screen should look similar to the following image:
 
   ```
   GetNewFactIntent a fact
@@ -370,3 +370,4 @@ Congratulations! You have successfully sumbitted your skill for publication. You
 * [Voice Design 101 - On Demand Webinar](https://goto.webcasts.com/starthere.jsp?ei=1087594)
 * [Developer Office Hours](https://attendee.gotowebinar.com/rt/8389200425172113931)
 * [Developing Skills in Multiple Languages](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/developing-skills-in-multiple-languages)
+
