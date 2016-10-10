@@ -5,12 +5,20 @@ var Translations = require('./translations');
 var APP_ID = 'amzn1.ask.skill.<enter here>';
 
 exports.handler = function(event, context, callback) {
-    var alexa = Alexa.handler(event, context);
-    alexa.appId = APP_ID;
-    alexa.dynamoDBTableName = 'alexaFactTranslation';
-    alexa.resources = Translations.getResources();
-    alexa.registerHandlers(handlers);
-    alexa.execute();
+    Translations.getResources()
+    .then(function(data) {
+        var resources = JSON.parse(data.Body.toString());
+
+        var alexa = Alexa.handler(event, context);
+        alexa.appId = APP_ID;
+        alexa.dynamoDBTableName = 'alexaFactTranslation';
+        alexa.resources = resources;
+        alexa.registerHandlers(handlers);
+        alexa.execute();
+    })
+    .catch(function(err) {
+        console.log('Error getting resources: ' + err.message);
+    });
 };
 
 var handlers = {
