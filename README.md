@@ -17,7 +17,7 @@ Using the Alexa Skills Kit, you can build an application that can receive and re
 
 ## Step 1. Setting up Your Alexa Skill in the Developer Portal
 
-Skills are managed through the Amazon Developer Portal. You’ll link the Lambda function you created above to a Skill defined in the Developer Portal.
+Skills are managed through the Amazon Developer Portal. You’ll link the Lambda function you created to a Skill defined in the Developer Portal.
 
  1. Navigate to the Amazon Developer Portal. Sign in or create a free account (upper right). You might see a different image if you have registered already or our page may have changed. If you see a similar menu and the ability to create an account or sign in, you are in the right place.
 
@@ -294,7 +294,7 @@ For more on developing skills in multiple languges, go [here](https://developer.
 1. To add an additional language, simply select Add New Language tab and choose your second language. Choose and fill all necessary information like we did for initial language of your skill. You will need to define Name and Invocation Name for current language (e.g. German name for German Skill). Then clike Save to continue.
 ![](https://s3.amazonaws.com/lantern-code-samples-images/fact/german_fact_info.png)
 
-2. In the interaction model section, basically, skill in multiple languages will share the same intent schema and use different Sample Utterances and Custom Stot Type values in different language. Copy intent schema from the intent schema in the [GitHub repository here](https://github.com/alexa/skill-sample-nodejs-fact/blob/master/speechAssets/IntentSchema.json) and change Sample Utterances into your second language.  We will not be using custom slots in this template, but slot type values should be put in new language if your skill has them.
+2. In the interaction model section, skill in multiple languages will share the same intent schema and use different Sample Utterances and Custom Stot Type values in different language. Copy intent schema from the intent schema in the [GitHub repository here](https://github.com/alexa/skill-sample-nodejs-fact/blob/master/speechAssets/IntentSchema.json) and change Sample Utterances into your second language.  We will not be using custom slots in this template, but slot type values should be put in new language if your skill has them.
 
 ![](https://s3.amazonaws.com/lantern-code-samples-images/fact/german_intent.png)
 3. Open the source file for your Lambda function, index.js. In the languageString variable, lookup the locale for your current language, edit the facts strings and other message like you did for your initial language. Strings are supposed to be defined using your second language.
