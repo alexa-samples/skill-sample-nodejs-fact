@@ -1,0 +1,20 @@
+{
+    "session": {
+        "sessionId": "SessionId.Session1",
+        "application": {
+            "applicationId": "amzn1.ask.skill.<enter here>"
+        },
+        "attributes": {},
+        "user": {
+            "userId": "amzn1.ask.account.testaccount1"
+        },
+        "new": true
+    },
+    "request": {
+        "type": "LaunchRequest",
+        "requestId": "EdwRequestId.4835dfcb-a608-4d3c-bf21-08c02a7ee1b8",
+        "locale": "en-US", 
+        "timestamp": "2016-10-06T14:25:30Z"
+    },
+    "version": "1.0"
+}
