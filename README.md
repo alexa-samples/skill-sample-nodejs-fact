@@ -237,7 +237,7 @@ AWS Lambda lets you run code without provisioning or managing servers. You pay o
 
    Everything else can stay as-is for now in the Developer Portal
 
- 2. Open the source file for your Lambda function, index.js, in an editor of your choice. This is in the src directory of the repository you downloaded earlier. Lookup locale for your skill and you will see on line 10 the definition of the facts used in the SpaceGeek example. These are the strings you will want to edit to customize this fact for your use.
+ 2. Open the source file for your Lambda function, index.js, in an editor of your choice. This is in the src directory of the repository you downloaded earlier. Look for corresponding locale strings in languageStrings object. "Ctrl-F" **en-US** for English(U.S.), **en-GB** for English(U.K.) and **de-DE** for German. You will see on line 10 the definition of the facts used in the SpaceGeek example. These are the strings you will want to edit to customize this fact for your use.
 
   ![](https://s3.amazonaws.com/lantern-code-samples-images/fact/index.png)
 
@@ -248,7 +248,7 @@ AWS Lambda lets you run code without provisioning or managing servers. You pay o
  ```
 
  4.  Edit the strings to contain whatever facts or information you would like to make randomly available when a user invokes your skill. A few suggestions:
- * Only change the text between the double quotes. These are your facts.
+ * Only change the "FACT" array values between the double quotes. These are your facts.
  * Ensure you don’t accidentally delete any quotes or commas. You can always go back to GitHub and copy it again if you make a mistake.
  * The skill uses a mathematical randomization on your list of facts. It is a good idea to have at least 20 facts in the skill to ensure that the facts do not repeat too quickly. Also remember that because it is random, it is possible that the same fact can be repeated twice.
  * For extra credit and completely optional- If you would like to ensure that the facts don’t repeat (for a “Daily Fact Skill” for example), you can use a datastore like DynamoDB to store an id that you can check when the user accesses the skill and iterate through the facts. For more information on using DynamoDB with Lambda, [go here](https://docs.aws.amazon.com/lambda/latest/dg/with-ddb.html).
@@ -260,12 +260,12 @@ AWS Lambda lets you run code without provisioning or managing servers. You pay o
     ```JSON
     "HELP_MESSAGE" : "You can say tell me a space fact, or, you can say exit... What can I help you with?",
     ```
- 6.  In order to control who accesses your web service, we should validate the Application ID in requests made to your web service. Let’s go back to your Alexa skill in your Developer Portal for a moment. Copy in your Application ID from the ‘Skill Information’ section in your developer portal
+ 6.  In order to control who accesses your web service, we should validate the Application Id in requests made to your web service. Let’s go back to your Alexa skill in your Developer Portal for a moment. Copy in your Application Id from the ‘Skill Information’ section in your developer portal
 
  ![](https://s3.amazonaws.com/lantern-code-samples-images/fact/changeAppId.png)
 
 
- 7. Copy the application id into the value of the APP_ID variable in index.js. Make sure to place the app id in quotation marks.
+ 7. Copy the Application Id into the value of the APP_ID variable in index.js. Make sure to place the app id in quotation marks.
  ```JSON
  var APP_ID = undefined;  // TODO replace with your app ID (OPTIONAL).
  ```
@@ -325,7 +325,7 @@ Now we need to go back to our Developer Portal to test and edit our skill and we
 
   Because we are randomizing our facts, this could take a while. Instead, you can use the Voice Simulator in the Test section to simulate Alexa’s responses. In the Voice Simulator, type in each fact that you are using to test how Alexa will say it. Use additional punctuation or possibly SSML if you need to better control how Alexa responds. You can find out more about [SSML here](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/speech-synthesis-markup-language-ssml-reference).
 
-  * Have you added in YOUR ApplicationID as per the previous instruction?
+  * Have you added in YOUR Application Id as per the previous instruction?
 
  3. Select the Publishing Information area of your skill next:
 
