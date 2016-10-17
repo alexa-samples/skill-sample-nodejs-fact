@@ -68,7 +68,7 @@ Skills are managed through the Amazon Developer Portal. You’ll link the Lambda
 
     Given the flexibility and variation of spoken language in the real world, there will often be many different ways to express the same request. Providing these different phrases in your sample utterances will help improve voice recognition for the abilities you add to Alexa. It is important to include as wide a range of representative samples as you can -– all the phrases that you can think of that are possible in use (though do not include samples that users will never speak). Alexa also attempts to generalize based on the samples you provide to interpret spoken phrases that differ in minor ways from the samples specified.
 
-    Now it's time to add the utterances. Select and Copy/paste the sample utterances from [GitHub](https://github.com/alexa/skill-sample-nodejs-fact/blob/master/speechAssets) with your initial language. For example, if your select English (US) as initial language above, then you will need to Copy/paste SampleUtterances_en_US.txt in previous link. An example of utterances is listed below. Once they are copied, the screen should look similar to the following image:
+    Now it's time to add the utterances. Select and copy/paste the sample utterances from [GitHub](https://github.com/alexa/skill-sample-nodejs-fact/blob/master/speechAssets) with your initial language. For example, if your select English (US) as initial language above, then you will need to copy/paste SampleUtterances_en_US.txt in previous link. An example of utterances is listed below. Once they are copied, the screen should look similar to the following image:
 
   ```
   GetNewFactIntent a fact
@@ -97,12 +97,12 @@ Next we will configure the AWS Lambda function that will host the logic for our 
 
 ### Installing and Working with the Alexa Skills Kit SDK for Node.js (alexa-sdk)
 
-To make the development of skills easier, we have created the ASK SDK for Node.js. We will be using this module to deploy the sample. The The Alexa SDK is available on [GitHub](https://github.com/alexa/alexa-skills-kit-sdk-for-nodejs) and can be deployed as a Node package from within your Node.js environment.
+To make the development of skills easier, we have created the ASK SDK for Node.js. We will be using this module to deploy the sample. The Alexa SDK is available on [GitHub](https://github.com/alexa/alexa-skills-kit-sdk-for-nodejs) and can be deployed as a Node package from within your Node.js environment.
 
  1. First, you will need to download the sample repository
     * On GitHub, navigate to the [Fact skill repository](https://github.com/alexa/skill-sample-nodejs-fact) Click download (the green button) to download the repository to your local machine.
 
- 2. To leverage the SDK for ASK you will need to install Node.js and update npm. To set this up on your machine, [follow these steps](https://docs.npmjs.com/getting-started/installing-node)
+ 2. To leverage the SDK for ASK you will need to install Node.js and update npm. To set this up on your machine, [follow these steps](https://docs.npmjs.com/getting-started/installing-node).
 
  3. Once you have the source downloaded, Node installed and npm updated, you are ready to install the Alexa SDK. Install this in the same directory as your src/index.js file for your skill. Change the directory to the src directory of your skill, and then in the command line, type:
 
@@ -147,9 +147,9 @@ AWS Lambda lets you run code without provisioning or managing servers. You pay o
 
  3. Select **“Create a Lambda Function”** to begin the process of defining your Lambda function.
 
- 4. At the bottom of the **‘Select Blueprint’** page, select **“Skip”**
+ 4. In the **‘Select Blueprint’** page, select **“Blank Function”**
 
- ![](https://s3.amazonaws.com/lantern-code-samples-images/fact/aws_skip.png)
+ ![](https://s3.amazonaws.com/lantern-code-samples-images/fact/blank_function.PNG)
 
  5. Now, you need to configure the event that will trigger your function to be called. As we are building skills with the Alexa Skills Kit, click on the gray dash-lined box and select Alexa Skills Kit from the dropdown menu.
 
