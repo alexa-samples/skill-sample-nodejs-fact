@@ -99,7 +99,7 @@ Next we will configure the AWS Lambda function that will host the logic for our 
 
 ### Installing and Working with the Alexa Skills Kit SDK for Node.js (alexa-sdk)
 
-To make the development of skills easier, we have created the ASK SDK for Node.js.We will be using this module to deploy the sample. The alexa-sdk is immediately available on [github here](https://github.com/alexa/alexa-skills-kit-sdk-for-nodejs) and can be deployed as a node package from within your Node.js environment.
+To make the development of skills easier, we have created the ASK SDK for Node.js. We will be using this module to deploy the sample. The alexa-sdk is immediately available on [github here](https://github.com/alexa/alexa-skills-kit-sdk-for-nodejs) and can be deployed as a node package from within your Node.js environment.
 
  1. First, you will need to download the sample repository
     * On GitHub, navigate to the [Fact Skill repository](https://github.com/alexa/skill-sample-nodejs-fact). Click download (the green button) to download the repository to your local machine.
