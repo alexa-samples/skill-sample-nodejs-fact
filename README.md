@@ -99,22 +99,6 @@ Next we will configure the AWS Lambda function that will host the logic for our 
 
 To make the development of skills easier, we have created the ASK SDK for Node.js. We will be using this module to deploy the sample. The Alexa SDK is available on [GitHub](https://github.com/alexa/alexa-skills-kit-sdk-for-nodejs) and can be deployed as a Node package from within your Node.js environment.
 
- 1. First, you will need to download the sample repository
-    * On GitHub, navigate to the [Fact skill repository](https://github.com/alexa/skill-sample-nodejs-fact) Click download (the green button) to download the repository to your local machine.
-
- 2. To leverage the SDK for ASK you will need to install Node.js and update npm. To set this up on your machine, [follow these steps](https://docs.npmjs.com/getting-started/installing-node).
-
- 3. Once you have the source downloaded, Node installed and npm updated, you are ready to install the Alexa SDK. Install this in the same directory as your src/index.js file for your skill. Change the directory to the src directory of your skill, and then in the command line, type:
-
-    ```
-    npm install --save alexa-sdk
-    ```
-    Once this is installed you will need to include the **node_modules** directory with the source code for your skill when you compress the src for uploading to AWS Lambda. Let's do this with the example.
-
- 4. Navigate to where you downloaded the sample repository and installed the Alexa SDK in step 3. Select the **src** directory.
-
- 5. Compress the files inside the src directory into a zip file. **Remember**, do not compress the src directory itself, just the files within the directory, the index.js file and the node_modules folder. Your compressed file should show up in the src directory. You will use this file in a later step.
-
 ### Create an AWS Account
 
  ![](https://s3.amazonaws.com/lantern-code-samples-images/fact/aws_home.png)
@@ -147,9 +131,7 @@ AWS Lambda lets you run code without provisioning or managing servers. You pay o
 
  3. Select **“Create a Lambda Function”** to begin the process of defining your Lambda function.
 
- 4. In the **‘Select Blueprint’** page, select **“Blank Function”**
-
- ![](https://s3.amazonaws.com/lantern-code-samples-images/fact/blank_function.PNG)
+ 4. In the **‘Select Blueprint’** page, filter on **'Alexa'**, select **“alexa-skill-kit-sdk-howtoskill”**
 
  5. Now, you need to configure the event that will trigger your function to be called. As we are building skills with the Alexa Skills Kit, click on the gray dash-lined box and select Alexa Skills Kit from the dropdown menu.
 
@@ -235,52 +217,54 @@ AWS Lambda lets you run code without provisioning or managing servers. You pay o
 
    Everything else can stay as-is for now in the Developer Portal
 
- 2. Open the source file for your Lambda function, index.js, in an editor of your choice. This is in the src directory of the repository you downloaded earlier. Look for corresponding locale strings in languageStrings object. "Ctrl-F" **en-US** for English(U.S.), **en-GB** for English(U.K.) and **de-DE** for German. You will see on line 10 the definition of the facts used in the SpaceGeek example. These are the strings you will want to edit to customize this fact for your use.
+ 2. [OPTIONAL] If you want to use your own editor, download your code from your Lambda function on aws.amazon.com. From the **'Actions'** dropdown choose **'Download Code'**. If you're using a mac, you may need to add a '.zip' extension to the downloaded file. Uncompress this file. You'll want to edit index.js from the src folder.
+
+ 3. On the code tab of your Lambda function in aws.amazon.com (or in your editor), you can edit your code. Look for corresponding locale strings in languageStrings object. "Ctrl-F" **en-US** for English(U.S.), **en-GB** for English(U.K.) and **de-DE** for German. You will see on line 10 the definition of the facts used in the SpaceGeek example. These are the strings you will want to edit to customize this fact for your use.
 
   ![](https://s3.amazonaws.com/lantern-code-samples-images/fact/index.png)
 
- 3. Change the SKILL_NAME variable to the name of your skill.
+ 4. Change the SKILL_NAME variable to the name of your skill.
 
  ```JSON
  "SKILL_NAME": "Space Geek"
  ```
 
- 4.  Edit the strings to contain whatever facts or information you would like to make randomly available when a user invokes your skill. A few suggestions:
+ 5.  Edit the strings to contain whatever facts or information you would like to make randomly available when a user invokes your skill. A few suggestions:
  * Only change the "FACT" array values between the double quotes. These are your facts.
  * Ensure you don’t accidentally delete any quotes or commas. You can always go back to GitHub and copy it again if you make a mistake.
  * The skill uses a mathematical randomization on your list of facts. It is a good idea to have at least 20 facts in the skill to ensure that the facts do not repeat too quickly. Also remember that because it is random, it is possible that the same fact can be repeated twice.
  * For extra credit and completely optional- If you would like to ensure that the facts don’t repeat (for a “Daily Fact Skill” for example), you can use a datastore like DynamoDB to store an id that you can check when the user accesses the skill and iterate through the facts. For more information on using DynamoDB with Lambda, [go here](https://docs.aws.amazon.com/lambda/latest/dg/with-ddb.html).
 
 
- 5. You will also want to make sure to change the “Space Geek” references to the name of your skill. You don’t have to edit them all, but the following reference changes are required for certification.
+ 6. You will also want to make sure to change the “Space Geek” references to the name of your skill. You don’t have to edit them all, but the following reference changes are required for certification.
     * Find this code in the HELP_MESSAGE, and change "space fact" to your custom words:
 
     ```JSON
     "HELP_MESSAGE" : "You can say tell me a space fact, or, you can say exit... What can I help you with?",
     ```
- 6.  In order to control who accesses your web service, we should validate the Application Id in requests made to your web service. Let’s go back to your Alexa skill in your Developer Portal for a moment. Copy in your Application Id from the ‘Skill Information’ section in your developer portal
+ 7.  In order to control who accesses your web service, we should validate the Application Id in requests made to your web service. Let’s go back to your Alexa skill in your Developer Portal for a moment. Copy in your Application Id from the ‘Skill Information’ section in your developer portal
 
  ![](https://s3.amazonaws.com/lantern-code-samples-images/fact/changeAppId.png)
 
 
- 7. Copy the Application Id into the value of the APP_ID variable in index.js. Make sure to place the app id in quotation marks.
+ 8. Copy the Application Id into the value of the APP_ID variable in index.js. Make sure to place the app id in quotation marks.
  ```JSON
  var APP_ID = undefined;  // TODO replace with your app ID (OPTIONAL).
  ```
 
- 8. A minimum of 20 facts is needed to get started, but about 100 is a good number to keep users engaged. The more the better.
+ 9. A minimum of 20 facts is needed to get started, but about 100 is a good number to keep users engaged. The more the better.
 
- 9. Be sure to select **SAVE** when you are all done. Note: we test initially in the Developer Portal, not in our Lambda function (AWS).
+ 10. Be sure to select **SAVE** when you are all done. Note: we test initially in the Developer Portal, not in our Lambda function (AWS).
 
- 10. Log back into your AWS console and upload the changes you have just made. First you will need to zip up the files into a new archive. You can do this by selecting the files that you need in the src directory (the node_modules directory and your updated index.js) into a new archive. Be sure that you compress the files in the folder, not the folder itself.
+ 11. If you've downloaded your code to use your own editor, log back into your AWS console and upload the changes you have just made. First you will need to zip up the files into a new archive. You can do this by selecting the files that you need in the src directory (the node_modules directory and your updated index.js) into a new archive. Be sure that you compress the files in the folder, **not the folder itself.**
 
- 11. Select your Lambda function and on the Code tab, select “Upload” to add the archive you just created.
+ 12. Select your Lambda function and on the Code tab, select “Upload” to add the archive you just created.
 
  ![](https://s3.amazonaws.com/lantern-code-samples-images/fact/uploadupdate.png)
 
- 12. Once you have successfully added the file you will see it on the screen, then select “Save”.
+ 13. Once you have successfully added the file you will see it on the screen, then select “Save”.
 
- 13. Repeat the tests you performed earlier to ensure your changes are functioning properly. See step 4 for a review of how to performs functional tests.
+ 14. Repeat the tests you performed earlier to ensure your changes are functioning properly. See step 4 for a review of how to performs functional tests.
 
 ## Step 6: Add Additional Languages (Optional)
 You can use the Alexa Skills Kit to create skills in multiple languages. A skill can support a single language, or any combination of the available languages:
