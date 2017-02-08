@@ -149,30 +149,26 @@ AWS Lambda lets you run code without provisioning or managing servers. You pay o
 
  ![](https://s3.amazonaws.com/lantern-code-samples-images/fact/aws_config_function.png)
 
- 8. Select the **‘Code Entry Type’** as **‘Upload Zip File’** and upload the zip file containing the example you created in Step 1. **Note:** This zip file should contain the contents of the src directory, including the node_modules subfolder.
-
- ![](https://s3.amazonaws.com/lantern-code-samples-images/fact/aws_upload_zip.png)
-
- 9. Set your handler and role as follows:
+ 8. Set your handler and role as follows:
 
     * Keep Handler as ‘index.handler’
     * Drop down the “Role” menu and select **“Create a new custom role”**. (Note: if you have already used Lambda you may already have a ‘lambda_basic_execution’ role created that you can use.) This will launch a new tab in the IAM Management Console.
 
  ![](https://s3.amazonaws.com/lantern-code-samples-images/fact/aws_role.png)
 
- 10. You will be asked to set up your Identity and Access Management or “IAM” role if you have not done so. AWS Identity and Access Management (IAM) enables you to securely control access to AWS services and resources for your users. Using IAM, you can create and manage AWS users and groups, and use permissions to allow and deny their access to AWS resources. We need to create a role that allows our skill to invoke this Lambda function. In the Role Summary section, select "Create a new IAM Role" from the IAM Role dropdown menu. The Role Name and policy document will automatically populate.
+ 9. You will be asked to set up your Identity and Access Management or “IAM” role if you have not done so. AWS Identity and Access Management (IAM) enables you to securely control access to AWS services and resources for your users. Using IAM, you can create and manage AWS users and groups, and use permissions to allow and deny their access to AWS resources. We need to create a role that allows our skill to invoke this Lambda function. In the Role Summary section, select "Create a new IAM Role" from the IAM Role dropdown menu. The Role Name and policy document will automatically populate.
 
  ![](https://s3.amazonaws.com/lantern-code-samples-images/fact/iam_role.png)
 
- 11. Select **“Allow”** in the lower right corner and you will be returned to your Lambda function.
+ 10. Select **“Allow”** in the lower right corner and you will be returned to your Lambda function.
 
  ![](https://s3.amazonaws.com/lantern-code-samples-images/fact/allowrole.png)
 
- 12. Keep the Advanced settings as default. Select **‘Next’** and review. You should see something like below. Then select **‘Create Function’**:
+ 11. Keep the Advanced settings as default. Select **‘Next’** and review. You should see something like below. Then select **‘Create Function’**:
 
  ![](https://s3.amazonaws.com/lantern-code-samples-images/fact/CreateFunctionbuitton.png)
 
- 13. Congratulations, you have created your AWS Lambda function. **Copy** the ARN for use in the Configuration section of the Amazon Developer Portal.
+ 12. Congratulations, you have created your AWS Lambda function. **Copy** the ARN for use in the Configuration section of the Amazon Developer Portal.
 
 ![](https://s3.amazonaws.com/lantern-code-samples-images/fact/ARN.png)
 
@@ -216,12 +212,17 @@ AWS Lambda lets you run code without provisioning or managing servers. You pay o
  1. In the Skill Information section in the Developer Console, edit the Skill Information Tab to reflect your new Fact Skill:
 
    * Provide a skill name that represents the new skill you are creating.
-   * Come up with a cool Invocation Name that users will use to invoke your skill
+   * Come up with a cool Invocation Name that users will use to invoke your skill.  Ensure that the invocation name you choose stays clear of pitfalls listed in the table below. Column on the right provides examples of invocation names that will definitely fail certification.
+     | Invocation Name Requirement | Examples of incorrect invocation names |
+     |-----|-----|
+     | The skill invocation name must not infringe upon the intellectual property rights of an entity or person. | korean air; septa check |
    * Create a fun icon. Be sure you have the rights to whatever icons you are uploading – you will need to provide both 108x108px and 512x512px images. Need help finding an image? See PixelBay as a possible source for royalty-free images. Use an image editor (such as Paint on Windows or Preview on Mac) to change the size of the image.
 
    Everything else can stay as-is for now in the Developer Portal
 
- 2. [OPTIONAL] If you want to use your own editor, download your code from your Lambda function on aws.amazon.com. From the **'Actions'** dropdown choose **'Download Code'**. If you're using a mac, you may need to add a '.zip' extension to the downloaded file. Uncompress this file. You'll want to edit index.js from the src folder.
+ 2. [OPTIONAL] If you want to use your own code editor for these next steps, download the code from your Lambda function. From the **'Actions'** dropdown choose **'Export Function'**. Inside the .zip file you download, you will find the index.js file inside the "src" folder.
+
+ ![](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/fact/export_your_function._TTH_.png)
 
  3. On the code tab of your Lambda function in aws.amazon.com (or in your editor), you can edit your code. Look for corresponding locale strings in languageStrings object. "Ctrl-F" **en-US** for English(U.S.), **en-GB** for English(U.K.) and **de-DE** for German. You will see on line 10 the definition of the facts used in the SpaceGeek example. These are the strings you will want to edit to customize this fact for your use.
 
@@ -260,15 +261,11 @@ AWS Lambda lets you run code without provisioning or managing servers. You pay o
 
  10. Be sure to select **SAVE** when you are all done. Note: we test initially in the Developer Portal, not in our Lambda function (AWS).
 
- 11. If you've downloaded your code to use your own editor, log back into your AWS console and upload the changes you have just made. First you will need to zip up the files into a new archive. You can do this by selecting the files that you need in the src directory (the node_modules directory and your updated index.js) into a new archive. Be sure that you compress the files in the folder, **not the folder itself.**
+ 11. If you've downloaded your code to use your own editor, log back into your AWS console and copy-and-paste the contents of your index.js file to the Code tab of your Lambda function.
 
- 12. Select your Lambda function and on the Code tab, select “Upload” to add the archive you just created.
+  ![](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/fact/code_tab._TTH_.png)
 
- ![](https://s3.amazonaws.com/lantern-code-samples-images/fact/uploadupdate.png)
-
- 13. Once you have successfully added the file you will see it on the screen, then select “Save”.
-
- 14. Repeat the tests you performed earlier to ensure your changes are functioning properly. See step 4 for a review of how to performs functional tests.
+ 12. Repeat the tests you performed earlier to ensure your changes are functioning properly. See step 4 for a review of how to performs functional tests.
 
 ## Step 6: Add Additional Languages (Optional)
 You can use the Alexa Skills Kit to create skills in multiple languages. A skill can support a single language, or any combination of the available languages:
@@ -341,6 +338,8 @@ For other publishing information:
 
 6. Select **“Save”**. If your skill supports multiple languages, then you will need to complete Privacy and Compliance for each language before submission.
     ![](https://s3.amazonaws.com/lantern-code-samples-images/fact/privacy.png)
+
+7. 
 
 7. Select “Submit for Certification”
     ![](https://s3.amazonaws.com/lantern-code-samples-images/fact/privacy_check.png)
