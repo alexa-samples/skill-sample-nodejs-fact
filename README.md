@@ -131,7 +131,7 @@ AWS Lambda lets you run code without provisioning or managing servers. You pay o
 
  3. Select **“Create a Lambda Function”** to begin the process of defining your Lambda function.
 
- ![](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/fact/create_a_labmda_function._TTH_.png)
+ ![](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/fact/create_a_lambda_function._TTH_.png)
 
  4. In the **‘Select Blueprint’** page, filter on **'Alexa'**, select **“alexa-skill-kit-sdk-factskill”**.  This blueprint is a shortcut to getting the Fact Skill set up for you, and will install the sample code (and dependencies) that are needed for this project.
 
