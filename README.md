@@ -88,7 +88,7 @@ Skills are managed through the Amazon Developer Portal. You’ll link the Lambda
   ```
 
  8. Select **Save**. You should see the interaction model being built (this might a take a minute or two). If you select next, your changes will be saved and you will go directly to the Configuration screen. After selecting Save, it should now look like this:
- 
+
     ![](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/fact/interaction_model._TTH_.png)
 
 Next we will configure the AWS Lambda function that will host the logic for our skill.
@@ -131,7 +131,11 @@ AWS Lambda lets you run code without provisioning or managing servers. You pay o
 
  3. Select **“Create a Lambda Function”** to begin the process of defining your Lambda function.
 
+ ![](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/fact/create_a_labmda_function._TTH_.png)
+
  4. In the **‘Select Blueprint’** page, filter on **'Alexa'**, select **“alexa-skill-kit-sdk-factskill”**
+
+ ![](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/fact/select_blueprint._TTH_.png)
 
  5. Now, you need to configure the event that will trigger your function to be called. As we are building skills with the Alexa Skills Kit, click on the gray dash-lined box and select Alexa Skills Kit from the dropdown menu.
 
