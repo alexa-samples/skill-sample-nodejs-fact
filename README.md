@@ -88,12 +88,8 @@ Skills are managed through the Amazon Developer Portal. You’ll link the Lambda
   ```
 
  8. Select **Save**. You should see the interaction model being built (this might a take a minute or two). If you select next, your changes will be saved and you will go directly to the Configuration screen. After selecting Save, it should now look like this:
-
-<<<<<<< HEAD
+ 
     ![](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/fact/interaction_model._TTH_.png)
-=======
-    ![](https://s3.amazonaws.com/lantern-code-samples-images/fact/interaction_model_overview.png)
->>>>>>> origin/master
 
 Next we will configure the AWS Lambda function that will host the logic for our skill.
 
