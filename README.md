@@ -325,12 +325,12 @@ Now we need to go back to our Developer Portal to test and edit our skill and we
    * In your example phrases, be sure that the examples you use match the utterances that you created in the Interaction Model section. Remember, there are built-in intents such as help and cancel. You can learn more about [built-in intents here](https://developer.amazon.com/appsandservices/solutions/alexa/alexa-skills-kit/docs/implementing-the-built-in-intents#Available%20Built-in%20Intents). You can also review the list of [supported phrases](https://developer.amazon.com/appsandservices/solutions/alexa/alexa-skills-kit/docs/supported-phrases-to-begin-a-conversation) to begin a conversation.
      
      An incorrect example phrase is the most likely reason why your skill submission may fail. Here are the four most important failure points for example phrases.
-     1. Example phrases do not adhere to supported phrases.
-        Ex – Alexa start over (You cannot use wake word without the invocation name. Further, start over can be a response from the user when the stream is open, in which case, wake word and invocation name do not make sense.) 
-        Ex - Alexa, Social Headline (A supported format would be Alexa, launch Social Headline)
+     1. Example phrases do not adhere to supported phrases.</br>
+        *Example: Alexa start over (You cannot use wake word without the invocation name. Further, start over can be a response from the user when the stream is open, in which case, wake word and invocation name do not make sense.)</br>*
+        *Example: Alexa, Social Headline (A supported format would be Alexa, launch Social Headline)*
      2. Example phrases are not modeled on sample utterances specified in skill’s intent schema
-     3. First example phrase does not contain wake word and invocation name
-        Ex – Incorrect example phrase - Alexa, where can I eat (Missing invocation name)
+     3. First example phrase does not contain wake word and invocation name</br>
+        *Example: Incorrect example phrase - Alexa, where can I eat (Missing invocation name)*
      4. Example phrases do not provide a contextual response. These are the invariably the phrases users are most likely to try the first time they interact with the skill. Therefore, make sure that they work well and provide a good user experience.
 
     
