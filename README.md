@@ -224,9 +224,10 @@ AWS Lambda lets you run code without provisioning or managing servers. You pay o
 
  ![](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/fact/export_your_function._TTH_.png)
 
- 3. On the code tab of your Lambda function in aws.amazon.com (or in your editor), you can edit your code. Look for corresponding locale strings in languageStrings object. "Ctrl-F" **en-US** for English(U.S.), **en-GB** for English(U.K.) and **de-DE** for German. You will see on line 10 the definition of the facts used in the SpaceGeek example. These are the strings you will want to edit to customize this fact for your use.
+ 3. On the code tab of your Lambda function in aws.amazon.com (or in your editor), you can edit your code. Look for corresponding locale strings in languageStrings object. "Ctrl-F" **en** for English and **de** for German. If there are different expressions between U.S. and U.K, we encourage you to specify them using **en-US** and **en-GB**. You can learn more about how language resources are looked up by visiting [i18next's documentation](http://i18next.com/translate/). These are the strings you will want to edit to customize this fact for your use.
 
-  ![](https://s3.amazonaws.com/lantern-code-samples-images/fact/index.png)
+  ![](https://s3.amazonaws.com/lantern-code-samples-images/fact/source_code1.png)
+  ![](https://s3.amazonaws.com/lantern-code-samples-images/fact/source_code2.png)
 
  4. Change the SKILL_NAME variable to the name of your skill.
 
@@ -283,7 +284,7 @@ For more on developing skills in multiple languages, go [here](https://developer
 ![](https://s3.amazonaws.com/lantern-code-samples-images/fact/german_intent.png)
 
 3. Open the source file for your Lambda function, index.js. In the languageString variable, look up the locale for your current language, edit the facts strings and other message like you did for your initial language. Strings are supposed to be defined using your second language.
-![](https://s3.amazonaws.com/lantern-code-samples-images/fact/german_strings.PNG)
+![](https://s3.amazonaws.com/lantern-code-samples-images/fact/de_german_strings.png)
 
 4. For better latency, deploying your code to different endpoints is recommended. Follow the Create Lambda Function instructions in Step 2 and be sure to select an appropriate Lambda region. Select **US East (N. Virginia)** for US skills and **EU (Ireland)** for UK/DE skills. Copy the ARN for use in the Configuration section of the Amazon Developer Portal.
 
