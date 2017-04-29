@@ -214,7 +214,14 @@ AWS Lambda lets you run code without provisioning or managing servers. You pay o
    * Provide a skill name that represents the new skill you are creating.
    * Come up with a cool Invocation Name that users will use to invoke your skill.  Ensure that the invocation name you choose stays clear of pitfalls listed in the table below. Column on the right provides examples of invocation names that will definitely fail certification.
 
-   ![](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/invocation_name_requirements._TTH_.png)
+   Invocation name requirements | Examples of incorrect invocation names
+   ---------------------------- | --------------------------------------
+   The skill invocation name must not infringe upon the intellectual property rights of an entity or person. | korean air; septa check
+   Invocation names should be more than one word (unless it is a brand or intellectual property), and must not be names or places. | Horoscope; trivia; guide; New York
+   Two word invocation names are not allowed when one of the words is a definite article, indefinite article or a preposition. | any poet; the bookie; the fool
+   The invocation name must not contain any of the Alexa skill launch phrases and connecting words. Launch phrase examples include "launch", "ask", "tell", "load", and "begin". Connecting word examples include "to", "from", "by", "if", "and", "whether". | trivia game for star wars; better with bacon
+   The invocation name must not contain the wake words "Alexa", "Amazon", "Echo", or the words "skill" or "app". | hackster initial skill; word skills
+   The invocation name must be written in each language you choose to support. For example, the German version of your skill must have an invocation name written in German, while the English (US) version must have an invocation name written in English. | kitchen stories (German skill);
      
    * Create a fun icon. Be sure you have the rights to whatever icons you are uploading – you will need to provide both 108x108px and 512x512px images. Need help finding an image? See PixelBay as a possible source for royalty-free images. Use an image editor (such as Paint on Windows or Preview on Mac) to change the size of the image.
 
@@ -350,7 +357,7 @@ Now we need to go back to our Developer Portal to test and edit our skill and we
  6. Privacy and Compliance. On the Privacy and Compliance section, select ‘No’ for spending real money and collecting personal information. Privacy and Terms URL’s are optional. Choose to certify that your skill can be imported to and exported from the US.
 
  7. Select **“Save”**. If your skill supports multiple languages, then you will need to complete Privacy and Compliance for each language before submission.
-    ![](https://s3.amazonaws.com/lantern-code-samples-images/fact/privacy.png) 
+    ![](https://s3.amazonaws.com/lantern-code-samples-images/fact/privacy.png)
 
  8. Select “Submit for Certification”
     ![](https://s3.amazonaws.com/lantern-code-samples-images/fact/privacy_check.png)
