@@ -30,7 +30,7 @@ Alexa will respond to all of these requests with responses like these:
 
 *  "Here's your superhero fact: Iron Man's armor used to include roller skates."
 *  "Here's your baseball fact: Ralph Kiner is the only player ever to lead the league in homers for seven years in a row — his first seven years as a major league player."
-*  "Here's your Titanic fact: The ship burned around 600 tons of coal a day – hand shovelled into its furnaces by a team of 176 men. Almost 100 tons of ash were ejected into the sea each day."
+*  "Here's your Titanic fact: The ship burned around 600 tons of coal a day – hand shoveled into its furnaces by a team of 176 men. Almost 100 tons of ash were ejected into the sea each day."
 
 If you would like to see an example of this skill in action, you can enable the [Gloucester Facts](https://www.amazon.com/Robert-McCauley-Gloucester-Facts/dp/B01I5MOIA2/) from the [Alexa Skill Store](http://amazon.com/skills).  
 
