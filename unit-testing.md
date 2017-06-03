@@ -1,4 +1,4 @@
-#Unit Testing Your Alexa Skills
+# Unit Testing Your Alexa Skills
 
 There are many ways to test your Alexa skill code, and I'm sure others will have similar or superior solutions, but this just works.  And it works well!
 
@@ -6,7 +6,7 @@ To start, we are going to use three things to make all of this work.  The first 
 
 The second step involves another AWS product, API Gateway.  It will become the HTTP front end to your Lambda function.  It will catch the POST messages that we want to pass to our function, and funnels the JSON response back, so that we can validate our request against our specific testing criteria.  Let's look at setting this up.
 
-##Configuring API Gateway
+## Configuring API Gateway
 1. To start, go to [AWS API Gateway](https://aws.amazon.com/api-gateway/) and sign in to the console.
 
 2. From there, you are going to click on the "Create API" button near the top of the page.
@@ -33,7 +33,9 @@ The second step involves another AWS product, API Gateway.  It will become the H
 
 13. Copy the Invoke URL from the blue box at the top of the screen, remembering that the Resource name you used was "alexa-resource."  Your API is set up and ready to roll.
 
-##Using Postman to Test Your Lambda
+
+
+# Using Postman to Test Your Lambda
 1. If you don't already have this tool, make sure to download [Postman](https://www.getpostman.com/).
 
 2. Create a profile, and log in to the Postman software.
