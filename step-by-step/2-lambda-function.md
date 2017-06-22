@@ -57,7 +57,3 @@ In the [first step of this guide](https://github.com/alexa/skill-sample-nodejs-f
 <a href="https://github.com/alexa/skill-sample-nodejs-fact/blob/master/step-by-step/3-connect-vui-to-code.md"><img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/buttons/button_next_connect_vui_to_code._TTH_.png"/></a>
 
 <img height="1" width="1" src="https://www.facebook.com/tr?id=1847448698846169&ev=PageView&noscript=1"/>
-    
-
-
-
