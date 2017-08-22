@@ -53,17 +53,24 @@ var handlers = {
         var factIndex = Math.floor(Math.random() * factArr.length);
         var randomFact = factArr[factIndex];
         var speechOutput = GET_FACT_MESSAGE + randomFact;
-        this.emit(':tellWithCard', speechOutput, SKILL_NAME, randomFact)
+
+        this.response.cardRenderer(SKILL_NAME, randomFact);
+        this.response.speak(speechOutput);
+        this.emit(':responseReady');
     },
     'AMAZON.HelpIntent': function () {
         var speechOutput = HELP_MESSAGE;
         var reprompt = HELP_REPROMPT;
-        this.emit(':ask', speechOutput, reprompt);
+
+        this.response.speak(speechOutput).listen(reprompt);
+        this.emit(':responseReady');
     },
     'AMAZON.CancelIntent': function () {
-        this.emit(':tell', STOP_MESSAGE);
+        this.response.speak(STOP_MESSAGE);
+        this.emit(':responseReady');
     },
     'AMAZON.StopIntent': function () {
-        this.emit(':tell', STOP_MESSAGE);
+        this.response.speak(STOP_MESSAGE);
+        this.emit(':responseReady');
     }
 };
