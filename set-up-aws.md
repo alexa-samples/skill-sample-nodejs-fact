@@ -2,7 +2,7 @@
  
   **Note: If you already have an AWS account, you can skip this section.  Just sign in to your [console](http://aws.amazon.com).**
 
-1.  Open [aws.amazon.com](aws.amazon.com) and then choose **‘Create an AWS Account’**
+1.  Open [aws.amazon.com](https://aws.amazon.com) and then choose **‘Create an AWS Account’**
 
     <img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/buttons/create-an-aws-account-button._TTH_.png" />
 

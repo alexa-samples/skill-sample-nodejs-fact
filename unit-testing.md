@@ -1,4 +1,4 @@
-#Unit Testing Your Alexa Skills
+# Unit Testing Your Alexa Skills
 
 There are many ways to test your Alexa skill code, and I'm sure others will have similar or superior solutions, but this just works.  And it works well!
 
@@ -6,7 +6,7 @@ To start, we are going to use three things to make all of this work.  The first 
 
 The second step involves another AWS product, API Gateway.  It will become the HTTP front end to your Lambda function.  It will catch the POST messages that we want to pass to our function, and funnels the JSON response back, so that we can validate our request against our specific testing criteria.  Let's look at setting this up.
 
-##Configuring API Gateway
+## Configuring API Gateway
 1. To start, go to [AWS API Gateway](https://aws.amazon.com/api-gateway/) and sign in to the console.
 
 2. From there, you are going to click on the "Create API" button near the top of the page.
@@ -33,7 +33,7 @@ The second step involves another AWS product, API Gateway.  It will become the H
 
 13. Copy the Invoke URL from the blue box at the top of the screen, remembering that the Resource name you used was "alexa-resource."  Your API is set up and ready to roll.
 
-##Using Postman to Test Your Lambda
+## Using Postman to Test Your Lambda
 1. If you don't already have this tool, make sure to download [Postman](https://www.getpostman.com/).
 
 2. Create a profile, and log in to the Postman software.
@@ -52,9 +52,9 @@ The second step involves another AWS product, API Gateway.  It will become the H
 
 9. Back up at the top of the screen (but below the request URL textbox), there is another tab called "Tests."  In this tab, you can create as many tests as you would like for this request event.  For example, you want to verify that when you pass the value "K" to your Lambda function, that it returns the value "Potassium," (assuming you're building a skill related to the Periodic Table of Elements.)  To do this, you can use one of the convenient links on the right, or just use this text:
 
-   '''JAVASCRIPT
+   ```JAVASCRIPT
    tests["Submitted 'K' as first name, expect 'Potassium' in response."] = responseBody === "Potassium";
-   '''
+   ```
 
 10. Click the Send button again should show the Tests tab in the lower half with results similar to (1/1) or (0/1).  Clicking on this Tests tab at the bottom should show a list of all of your tests for this response, as well as their status. (Pass/Fail).
 
