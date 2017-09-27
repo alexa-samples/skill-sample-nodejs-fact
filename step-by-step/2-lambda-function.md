@@ -21,7 +21,7 @@ In the [first step of this guide](https://github.com/alexa/skill-sample-nodejs-f
 
     <img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/2-4-create-a-lambda-function._TTH_.png" />
 
-5.  **Choose the blueprint named "alexa-nodejs-template".** We have created a blueprint as a shortcut to getting everything set up for your skill.  It adds the alexa-sdk to your Lambda function so that you don't have to upload it yourself.
+5.  **Choose the blueprint named "alexa-skill-kit-sdk-factskill".** We have created a blueprint as a shortcut to getting everything set up for your skill.  It adds the alexa-sdk to your Lambda function so that you don't have to upload it yourself.
 
     <img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/fact/2-5-blueprint._TTH_.png" />  <!--TODO: THIS IMAGE NEEDS TO BE CUSTOMIZED FOR YOUR SKILL TEMPLATE. -->
 
