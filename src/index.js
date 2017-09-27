@@ -48,6 +48,13 @@ const data = [
 //Editing anything below this line might break your skill.
 //=========================================================================================================================================
 
+exports.handler = function(event, context, callback) {
+    var alexa = Alexa.handler(event, context);
+    alexa.appId = APP_ID;
+    alexa.registerHandlers(handlers);
+    alexa.execute();
+};
+
 const handlers = {
     'LaunchRequest': function () {
         this.emit('GetNewFactIntent');
@@ -77,11 +84,4 @@ const handlers = {
         this.response.speak(STOP_MESSAGE);
         this.emit(':responseReady');
     },
-};
-
-exports.handler = function (event, context, callback) {
-    const alexa = Alexa.handler(event, context, callback);
-    alexa.APP_ID = APP_ID;
-    alexa.registerHandlers(handlers);
-    alexa.execute();
 };
