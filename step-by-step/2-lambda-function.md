@@ -48,7 +48,7 @@ In the [first step of this guide](../step-by-step/1-voice-user-interface.md), we
 
     Once you have selected Alexa Skills Kit, click the **Configuration** Tab to go back to your code.
 
-10.  **Copy and paste the [provided code](https://github.com/voicehacks/setup-local-recommendations/blob/master/src/index.js) into the Lambda function code box.**  We have provided the code for this skill on [GitHub](../src/index.js).  Delete the contents of the code box, and paste the contents of the new code.
+10.  **Copy and paste the [provided code](https://github.com/alexa/skill-sample-nodejs-fact/blob/master/src/index.js) into the Lambda function code box.**  We have provided the code for this skill on [GitHub](../src/index.js).  Delete the contents of the code box, and paste the contents of the new code.
 
 11. **The ARN value should be in the top right corner. Copy this value for use in the next section of the guide.**
 
