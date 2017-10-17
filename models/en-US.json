@@ -1,8 +1,8 @@
 {
   "intents": [
     {
-      "name": "AMAZON.CancelIntent",  
-      "samples": []  
+      "name": "AMAZON.CancelIntent",
+      "samples": []
     },
     {
       "name": "AMAZON.HelpIntent",
