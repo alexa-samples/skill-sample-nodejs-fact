@@ -1,131 +1,85 @@
-# Build An Alexa Fact Skill
-[![Voice User Interface](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/navigation/1-on._TTH_.png)](https://github.com/alexa/skill-sample-nodejs-fact/blob/master/instructions/1-voice-user-interface.md)[![Lambda Function](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/navigation/2-off._TTH_.png)](https://github.com/alexa/skill-sample-nodejs-fact/blob/master/instructions/2-lambda-function.md)[![Connect VUI to Code](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/navigation/3-off._TTH_.png)](https://github.com/alexa/skill-sample-nodejs-fact/blob/master/instructions/3-connect-vui-to-code.md)[![Testing](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/navigation/4-off._TTH_.png)](https://github.com/alexa/skill-sample-nodejs-fact/blob/master/instructions/4-testing.md)[![Customization](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/navigation/5-off._TTH_.png)](https://github.com/alexa/skill-sample-nodejs-fact/blob/master/instructions/5-customization.md)[![Publication](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/navigation/6-off._TTH_.png)](https://github.com/alexa/skill-sample-nodejs-fact/blob/master/instructions/6-publication.md)
+# Alexa 豆知識スキルの作成
+[![音声ユーザーインターフェース](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/jp/tutorials/navigation/1-on.png)](1-voice-user-interface.md)
+[![Lambda 関数](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/jp/tutorials/navigation/2-off.png)](2-lambda-function.md)
+[![VUIとコードを接続する](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/jp/tutorials/navigation/3-off.png)](3-connect-vui-to-code.md)
+[![テスト](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/jp/tutorials/navigation/4-off.png)](4-testing.md)
+[![カスタマイズ](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/jp/tutorials/navigation/5-off.png)](5-customization.md)
+[![スキルの公開](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/jp/tutorials/navigation/6-off.png)](6-publication.md)
 
-## Setting up Your Alexa Skill in the Developer Portal
 
-There are two parts to an Alexa skill.  The first part is the [Voice User Interface (VUI)](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/defining-the-voice-interface).  This is where we define how we will handle a user's voice input, and which code should be executed when specific commands are uttered.  The second part is the actual code logic for our skill, and we will handle that on [page #2](https://github.com/alexa/skill-sample-nodejs-fact/blob/master/instructions/2-lambda-function.md) of this instructions guide.
+## 開発者ポータルで Alexa スキルの設定を行う
 
-1.  **Go to the [Amazon Developer Portal](http://developer.amazon.com).  In the top-right corner of the screen, click the "Sign In" button.** </br>(If you don't already have an account, you will be able to create a new one for free.)
+Alexa スキルは２つの部分からできています。１つは[音声ユーザーインターフェース (VUI)](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/defining-the-voice-interface)です。ここで、エンドユーザからの音声入力をどのように処理し、特定の指示が発話された時にどのコードが実行されるか定義します。もう１つはスキルの実際のコードロジックです。これについては、このステップバイステップガイドの[2ページ](2-lambda-function.md)で説明します。
 
-    <a href="http://developer.amazon.com" target="_new"><img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/1-1-developer-portal._TTH_.png" /></a>
+1.  まず [Amazon開発者ポータル](http://developer.amazon.com) を開き、右上にある **サインイン** ボタンをクリックします。もし、まだアカンントを持っていない場合でも、無料で新規アカウントを作成することができます。
 
-2.  **Once you have signed in, click the Alexa button at the top of the screen.**
+    ![](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/jp/tutorials/fact/1-1-developer-portal.png)
 
-    <a href="https://developer.amazon.com/edw/home.html#/" target="_new"><img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/1-2-alexa-button._TTH_.png" /></a>
+2.  サインイン後、画面の上にある **ALEXA** タブをクリックします。
 
-3.  **On the Alexa page, choose the "Get Started" button for the Alexa Skills Kit.**
+    ![](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/jp/tutorials/fact/1-2-alexa-button.png)
 
-    <a href="https://developer.amazon.com/edw/home.html#/skills/list" target="_new"><img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/1-3-alexa-skills-kit._TTH_.png" /></a>
+3.  **ALEXA** のページが開いたら、**Alexa Skills Kit** の **始める** ボタンをクリックします。
 
-4.  **Select "Add A New Skill."** This will get you to the first page of your new Alexa skill.
+    ![](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/jp/tutorials/fact/1-3-alexa-skills-kit.png)
 
-    <a href="https://developer.amazon.com/edw/home.html#/skill/create/" target="_new"><img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/1-4-add-a-new-skill._TTH_.png" /></a>
+4.  **新しいスキルを追加する** ボタンをクリックします。 
 
-5.  **Fill out the Skill Information screen.**  Make sure to review the tips we provide below the screenshot.
+	新しい Alexa スキルの設定画面の最初のページが開きます。
 
-    <img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/1-5-skill-information._TTH_.png" />
+    ![](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/jp/tutorials/fact/1-4-add-a-new-skill.png)
 
-    ### Skill Information Tips
-    1.  **Skill Type** For this skill, we are creating a skill using the Custom Interaction Model.  This is the default choice.
+5.  **スキル情報** ページに必要な情報を入力してください。 
 
-    2.  **Language** Choose the first language you want to support.  You can add additional languages in the future, but we need to start with one.  (This guide is using U.S. English to start.)
+	入力の際、下記のヒントを参考にしてください。
 
-    3.  **Name** This is the name that will be shown in the Alexa Skills Store, and the name your users will refer to.
+    ![](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/jp/tutorials/fact/1-5-skill-information.png)
+    
+    ### スキル情報の入力
+    1.  **スキルの種類** 	今回のスキルでは「カスタム対話モデル」を利用します。
 
-    4.  **Invocation Name** This is the name that your users will need to say to start your skill.  We have provided some common issues developers encounter in the list below, but you should also review the entire [Invocation Name Requirements](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/choosing-the-invocation-name-for-an-alexa-skill).
+    2.  **言語** 	サポートしたい言語を選択します。後から他の言語を追加することもできます。(このガイドでは「Japanese」を利用します。)
 
-        | Invocation Name Requirements | Examples of incorrect invocation names |
-        | ---------------------------- | -------------------------------------- |
-        | The skill invocation name must not infringe upon the intellectual property rights of an entity or person. | korean air; septa check |
-        | Invocation names should be more than one word (unless it is a brand or intellectual property), and must not be a name or place | horoscope; trivia; guide; new york |
-        | Two word invocation names are not allowed when one of the words is a definite article, indefinite article, or a preposition | any poet; the bookie; the fool |
-        | The invocation name must not contain any of the Alexa skill launch phrases and connecting words.  Launch phrase examples include "launch," "ask," "tell," "load," and "begin."  Connecting word examples include "to," "from," "by," "if," "and," "whether." | trivia game for star wars; better with bacon |
-        | The invocation name must not contain the wake words "Alexa," "Amazon," "Echo," or the words "skill" or "app." | hackster initial skill; word skills |
-        | The invocation name must be written in each language you choose to support.  For example, the German version of your skill must have an invocation name written in German, while the English (US) version must have an invocation name written in English. | kitchen stories (German skill) |
+    3.  **スキル名**　Alexa スキルストアでユーザーに表示される名前です。ここでは「豆知識」と入力することにします。
 
-    5.  **Audio Player** For this Fact skill, we won't be using any audio files, so you can select No for this option.  If you would like to learn more about adding audio to your skills, please check out our [Audio Player Guide](https://github.com/alexa/skill-sample-nodejs-audio-player).
+    4.  **呼び出し名**　ユーザーがスキルを呼び出す際に使う名前です。以下に呼び出し名の条件を記載します。条件についての詳細は[カスタムスキルの呼び出し名を決定する](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/choosing-the-invocation-name-for-an-alexa-skill)を参照してください。ここではスキル名と同じ「豆知識」を呼び出し名にします。
+    
+    5.  **AudioPlayer** 今回の豆知識スキルではオーディオファイルは使用しないので「いいえ」を選択してください。スキルにオーディオを追加する方法について知りたい場合は、[Audio Player ガイド](https://github.com/alexa/skill-sample-nodejs-audio-player)を参照してください。
 
-6.  **Click the Next button to move to the Interaction Model.**
+6.  **次へ** ボタンをクリックし **対話モデル** のページに移動します。
 
-    <img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/1-6-next-button._TTH_.png" />
+    ![](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/jp/tutorials/fact/1-6-next-button.png)
 
-7.  Click on the **Launch Skill Builder** (Beta) button . This will launch the new Skill Builder Dashboard.
+7.  **スキルビルダーを起動する** ボタンをクリックします。スキルビルダーのダッシュボードが開きます。
+    
+    ![](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/jp/tutorials/fact/1-7-skill-builder-launch.png)
 
-    ![Launch Skill Builder](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/1-7-skill-builder-launch._TTH_.png)
+8.  ダッシュボードの左上にある **Intents** の右にある **Add an Intent +** をクリックします。
+    
+    ![](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/jp/tutorials/fact/1-8-intents-button.png)
 
-8.  Click on the "Add+" button near **Intents** on the top left corner of the dashboard.
+9.  現れたテキストボックスの中にインテント名: **GetNewFactIntent** を入力し **Create Intent** ボタンをクリックします。
+   
+    ![](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/jp/tutorials/fact/1-9-add-custom-intent.png)
 
-    ![Add Intent Button](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/1-8-intents-button._TTH_.png)
+10. テキストボックスにサンプル発話 (Sample Utterances) を10〜15個程度追加してください。これらはユーザーがこのインテントを呼び出したい時に発する言葉です。以下に例を記載します。
+    
+    ![](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/jp/tutorials/fact/1-10-sample-utterances.png)
 
-9.  In the textbox provided, enter the new intent name: **GetNewFactIntent.**, and click the **Create Intent** button.
+11. **Save Model** ボタンをクリックし、その後、 **Build Model** ボタンをクリックします。
+    
+    ![](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/jp/tutorials/fact/1-12-skill-builder-build-save-model.png)
 
-    ![Add Intent](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/1-9-add-custom-intent._TTH_.png)
+12.  対話モデルが問題なくビルドされたら、 **Configuration** ボタンをクリックし、設定の画面に移動してください。このガイドの次のステップでは、AWS 開発者コンソールから Lambda 関数を作成します。このブラウザのタブは開いたままにしておいてください。[3ページ: VUIとコードを繋げる](3-connect-vui-to-code.md)で再びこの画面に戻ってきます。
 
-10. Add 10-15 sample utterances for your intent.  These are the things a user would say to make this intent happen.  Here are a few examples:
 
-    * Give me a fact
-    * Tell me a fact
-    * Tell me something
-    * Tell me a space fact
+     ![](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/jp/tutorials/fact/1-13-skill-builder-configuration.png)
 
-    ![](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/1-10-sample-utterances._TTH_.png)
+     もし、対話モデルでエラーが発生するようであれば、下記を確認してください。
 
-11. Click on the **Save Model** button, and then click on the **Build Model** button.
+     *  **コードを正しく適切なボックスにコピー&ペーストしましたか？**
+     *  **対話モデルもしくはサンプル発話に誤った文字を入力していませんか？**
 
-    ![](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/1-12-skill-builder-build-save-model._TTH_.png)
+13. ここまで終わったら、下のボタンをクリックして Lambda 関数に進んでください。
 
-<!--
-7.  **Fill out the Interaction Model screen.**  Below the screenshot, we have provided links to the content you need to include in each box.
-
-    <img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/1-7-interaction-model._TTH_.png" />
-
-    ### Interaction Model Tips
-    1.  **Intent Schema** An intent schema defines the actions that we want our users to be able to take.  We will dive into modifying this schema later in this guide, so for now, just copy and paste this code into the Intent Schema box. ([Read more about Defining the Voice Interface](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/defining-the-voice-interface))
-
-        ```JAVASCRIPT
-        { "intents": [
-            { "intent": "GetNewFactIntent" },
-            { "intent": "AMAZON.HelpIntent" },
-            { "intent": "AMAZON.StopIntent" },
-            { "intent": "AMAZON.CancelIntent" }
-        ]}
-        ```
-        ([get this code on GitHub](https://github.com/alexa/skill-sample-nodejs-fact/blob/master/speechAssets/intentSchema.json))
-
-        We have four intents in this schema.  The first, "GetNewFactIntent" is what we will use to catch all of our user's requests for a new fact.  The remaining three are built-in intents that are provided by Amazon.  They capture, respectively, user intents for help, stopping, and cancelling what Alexa is currently doing.
-
-    2.  **Sample Utterances** Sample utterances are a guide for Alexa to figure out how to map what a user says to your Intents that we defined earlier.  For now, you just need to copy these sample utterances into the Sample Utterances box in your browser.
-
-        ```javascript
-        GetNewFactIntent a fact
-        GetNewFactIntent a space fact
-        GetNewFactIntent tell me a fact
-        GetNewFactIntent tell me a space fact
-        GetNewFactIntent give me a fact
-        GetNewFactIntent give me a space fact
-        GetNewFactIntent tell me trivia
-        GetNewFactIntent tell me a space trivia
-        GetNewFactIntent give me trivia
-        GetNewFactIntent give me a space trivia
-        GetNewFactIntent give me some information
-        GetNewFactIntent give me some space information
-        GetNewFactIntent tell me something
-        GetNewFactIntent give me something
-        ```
-        ([get this on GitHub](https://github.com/alexa/skill-sample-nodejs-fact/blob/master/speechAssets/sampleUtterances_en_US.json))
-
-        Once you have added these sample utterances to your skill, you can click the "Save" button to verify that your interaction model is built properly without any errors.
--->
-
-12.  If your interaction model builds successfully, click on **Configuration button** to move on to Configuration. In our next step of this guide, we will be creating our Lambda function in the AWS developer console, but keep this browser tab open, because we will be returning here on [Page #3: Connect VUI to Code](https://github.com/alexa/skill-sample-nodejs-fact/blob/master/instructions/3-connect-vui-to-code.md).
-     ![](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/1-13-skill-builder-configuration.png)
-
-     If you get an error from your interaction model, check through this list:
-
-     *  **Did you copy & paste the provided code into the appropriate boxes?**
-     *  **Did you accidentally add any characters to the Interaction Model or Sample Utterances?**
-
-<br/><br/>
-<a href="https://github.com/alexa/skill-sample-nodejs-fact/blob/master/instructions/2-lambda-function.md"><img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/buttons/button_next_lambda_function._TTH_.png" /></a>
-
-<img height="1" width="1" src="https://www.facebook.com/tr?id=1847448698846169&ev=PageView&noscript=1"/>
+[![Lambda関数](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/jp/tutorials/general/buttons/button_next_lambda_function.png)](2-lambda-function.md)

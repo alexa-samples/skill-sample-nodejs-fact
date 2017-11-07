@@ -1,87 +1,68 @@
-/* eslint-disable  func-names */
-/* eslint quote-props: ["error", "consistent"]*/
-/**
- * This sample demonstrates a simple skill built with the Amazon Alexa Skills
- * nodejs skill development kit.
- * This sample supports multiple lauguages. (en-US, en-GB, de-DE).
- * The Intent Schema, Custom Slots and Sample Utterances for this skill, as well
- * as testing instructions are located at https://github.com/alexa/skill-sample-nodejs-fact
- **/
-
 'use strict';
-const Alexa = require('alexa-sdk');
+var Alexa = require('alexa-sdk');
 
 //=========================================================================================================================================
-//TODO: The items below this comment need your attention.
+//TODO: このコメント行より下の項目に注目してください。
 //=========================================================================================================================================
 
-//Replace with your app ID (OPTIONAL).  You can find this value at the top of your skill's page on http://developer.amazon.com.
-//Make sure to enclose your value in quotes, like this: const APP_ID = 'amzn1.ask.skill.bb4045e6-b3e8-4133-b650-72923c5980f1';
-const APP_ID = undefined;
+//Replace with your app ID (OPTIONAL).  You can find this value at the top of your skill's page on http://developer.amazon.com.  
+//Make sure to enclose your value in quotes, like this: var APP_ID = "amzn1.ask.skill.bb4045e6-b3e8-4133-b650-72923c5980f1";
+var APP_ID = undefined;
 
-const SKILL_NAME = 'Space Facts';
-const GET_FACT_MESSAGE = "Here's your fact: ";
-const HELP_MESSAGE = 'You can say tell me a space fact, or, you can say exit... What can I help you with?';
-const HELP_REPROMPT = 'What can I help you with?';
-const STOP_MESSAGE = 'Goodbye!';
+var SKILL_NAME = "豆知識";
+var GET_FACT_MESSAGE = "知ってましたか？";
+var HELP_MESSAGE = "豆知識を聞きたい時は「豆知識」と、終わりたい時は「おしまい」と言ってください。どうしますか？";
+var HELP_REPROMPT = "どうしますか？";
+var STOP_MESSAGE = "さようなら";
 
 //=========================================================================================================================================
-//TODO: Replace this data with your own.  You can find translations of this data at http://github.com/alexa/skill-sample-node-js-fact/lambda/data
+//「TODO: ここから下のデータを自分用にカスタマイズしてください。」
 //=========================================================================================================================================
-const data = [
-    'A year on Mercury is just 88 days long.',
-    'Despite being farther from the Sun, Venus experiences higher temperatures than Mercury.',
-    'Venus rotates counter-clockwise, possibly because of a collision in the past with an asteroid.',
-    'On Mars, the Sun appears about half the size as it does on Earth.',
-    'Earth is the only planet not named after a god.',
-    'Jupiter has the shortest day of all the planets.',
-    'The Milky Way galaxy will collide with the Andromeda Galaxy in about 5 billion years.',
-    'The Sun contains 99.86% of the mass in the Solar System.',
-    'The Sun is an almost perfect sphere.',
-    'A total solar eclipse can happen once every 1 to 2 years. This makes them a rare event.',
-    'Saturn radiates two and a half times more energy into space than it receives from the sun.',
-    'The temperature inside the Sun can reach 15 million degrees Celsius.',
-    'The Moon is moving approximately 3.8 cm away from our planet every year.',
+var data = [
+    "水星の一年はたった88日です。",
+    "金星は水星と比べて太陽より遠くにありますが、気温は水星よりも高いです。",
+    "金星は反時計回りに自転しています。過去に起こった隕石の衝突が原因と言われています。",
+    "火星上から見ると、太陽の大きさは地球から見た場合の約半分に見えます。",
+    "木星の<sub alias='いちにち'>1日</sub>は全惑星の中で一番短いです。",
+    "天の川銀河は約50億年後にアンドロメダ星雲と衝突します。",
+    "太陽の質量は全太陽系の質量の99.86%を占めます。",
+    "太陽はほぼ完璧な円形です。",
+    "皆既日食は一年から二年に一度しか発生しない珍しい出来事です。",
+    "土星は自身が太陽から受けるエネルギーの2.5倍のエネルギーを宇宙に放出しています。",
+    "太陽の内部温度は摂氏1500万度にも達します。",
+    "月は毎年3.8cm地球から離れていっています。"
 ];
 
 //=========================================================================================================================================
-//Editing anything below this line might break your skill.
+//この行から下のコードに変更を加えると、スキルが動作しなくなるかもしれません。わかる人のみ変更を加えてください。  
 //=========================================================================================================================================
-
 exports.handler = function(event, context, callback) {
     var alexa = Alexa.handler(event, context);
-    alexa.appId = APP_ID;
+    alexa.APP_ID = APP_ID;
     alexa.registerHandlers(handlers);
     alexa.execute();
 };
 
-const handlers = {
+var handlers = {
     'LaunchRequest': function () {
         this.emit('GetNewFactIntent');
     },
     'GetNewFactIntent': function () {
-        const factArr = data;
-        const factIndex = Math.floor(Math.random() * factArr.length);
-        const randomFact = factArr[factIndex];
-        const speechOutput = GET_FACT_MESSAGE + randomFact;
-
-        this.response.cardRenderer(SKILL_NAME, randomFact);
-        this.response.speak(speechOutput);
-        this.emit(':responseReady');
+        var factArr = data;
+        var factIndex = Math.floor(Math.random() * factArr.length);
+        var randomFact = factArr[factIndex];
+        var speechOutput = GET_FACT_MESSAGE + randomFact;
+        this.emit(':tellWithCard', speechOutput, SKILL_NAME, randomFact)
     },
     'AMAZON.HelpIntent': function () {
-        const speechOutput = HELP_MESSAGE;
-        const reprompt = HELP_REPROMPT;
-
-        this.response.speak(speechOutput).listen(reprompt);
-        this.emit(':responseReady');
+        var speechOutput = HELP_MESSAGE;
+        var reprompt = HELP_REPROMPT;
+        this.emit(':ask', speechOutput, reprompt);
     },
     'AMAZON.CancelIntent': function () {
-        this.response.speak(STOP_MESSAGE);
-        this.emit(':responseReady');
+        this.emit(':tell', STOP_MESSAGE);
     },
     'AMAZON.StopIntent': function () {
-        this.response.speak(STOP_MESSAGE);
-        this.emit(':responseReady');
-    },
+        this.emit(':tell', STOP_MESSAGE);
+    }
 };
