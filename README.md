@@ -1,4 +1,6 @@
-# Alexa 豆知識スキルの作成
+Regions: [🇺🇸](../../tree/en-US)
+
+# Alexa 豆知識スキルの作成 🇯🇵
 
 <img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/quiz-game/header._TTH_.png" />
 
