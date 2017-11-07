@@ -1,4 +1,4 @@
-Regions: 🇯🇵 
+Regions: [🇯🇵](https://github.com/Alexa/skill-sample-nodejs-fact/tree/ja-JP)
 
 
 #  Build An Alexa Fact Skill 🇺🇸
