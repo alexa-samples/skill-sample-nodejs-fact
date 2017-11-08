@@ -1,39 +1,45 @@
-# Build An Alexa Fact Skill
-<img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/fact/header._TTH_.png" />
+Regions: [🇺🇸](../../tree/en-US)
 
-[![Voice User Interface](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/navigation/1-off._TTH_.png)](https://github.com/alexa/skill-sample-nodejs-fact/blob/master/instructions/1-voice-user-interface.md)[![Lambda Function](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/navigation/2-off._TTH_.png)](https://github.com/alexa/skill-sample-nodejs-fact/blob/master/instructions/2-lambda-function.md)[![Connect VUI to Code](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/navigation/3-off._TTH_.png)](https://github.com/alexa/skill-sample-nodejs-fact/blob/master/instructions/3-connect-vui-to-code.md)[![Testing](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/navigation/4-off._TTH_.png)](https://github.com/alexa/skill-sample-nodejs-fact/blob/master/instructions/4-testing.md)[![Customization](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/navigation/5-off._TTH_.png)](https://github.com/alexa/skill-sample-nodejs-fact/blob/master/instructions/5-customization.md)[![Publication](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/navigation/6-off._TTH_.png)](https://github.com/alexa/skill-sample-nodejs-fact/blob/master/instructions/6-publication.md)
+# Alexa 豆知識スキルの作成 🇯🇵
 
-## What You Will Learn
+<img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/quiz-game/header._TTH_.png" />
+
+[![音声ユーザーインターフェイス](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/jp/tutorials/navigation/1-off.png)](instructions/1-voice-user-interface.md)
+[![Lambda 関数](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/jp/tutorials/navigation/2-off.png)](instructions/2-lambda-function.md)
+[![VUIとコードを接続する](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/jp/tutorials/navigation/3-off.png)](instructions/3-connect-vui-to-code.md)
+[![テスト](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/jp/tutorials/navigation/4-off.png)](instructions/4-testing.md)
+[![カスタマイズ](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/jp/tutorials/navigation/5-off.png)](instructions/5-customization.md)
+[![スキルの公開](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/jp/tutorials/navigation/6-off.png)](instructions/6-publication.md)
+
+## 学習すること
 *  AWS Lambda
 *  Alexa Skills Kit (ASK)
-*  Skill Builder
-*  Voice User Interface (VUI) Design
-*  Skill Certification
+*  スキルビルダー
+*  音声ユーザーインターフェース(VUI)の設計
+*  スキルの申請
 
-## What You Will Need
-*  [Amazon Developer Portal Account](http://developer.amazon.com)
-*  [Amazon Web Services Account](http://aws.amazon.com/)
-*  The sample code on [GitHub](https://github.com/alexa/skill-sample-nodejs-fact).
-*  Simple graphical editing tool
-*  At least 25 facts about your favorite topic.
+## 事前準備
+*  [Amazon開発者ポータル](http://developer.amazon.com)のアカウント
+*  [AWS](http://aws.amazon.com/)のアカウント
+*  サンプルコード: [GitHub](lambda/custom/index.js)
+*  シンプルなグラフィック編集ツール
+*  好きなトピックに関する豆知識(25個以上)
 
-## What Your Skill Will Do
-A fact skill for Alexa is a "Hello, World" example.  You provide a list of interesting facts about a topic, and Alexa will read one of those facts to your user when they start your skill.  The purpose of building this skill is to teach you how the different pieces of the Alexa development process fit together, while still producing an interesting, useful skill that others can enjoy.
+## スキルの概要
+Alexa豆知識スキルは初心者向けの"Hello, World"的なスキルです。あるトピックに関する面白い豆知識のリストを用意してください。エンドユーザがあなたのスキルを起動すると、Alexaはそれらのうちの１つを読み上げます。このスキルを作成した目的は、面白くて役に立つスキルの開発を通して、Alexaスキルの開発プロセスの中で各開発要素がどのように組み合わさるかを理解してもらうことです。
 
-This Alexa skill template helps you create your first fact skill.  Your users will be able to say things like:
+このAlexaスキルテンプレートは、あなたが豆知識スキルを初めて作る時に役に立つでしょう。エンドユーザは次ようにしてあなたが作るスキルを利用できます。
 
-*  "Alexa, ask Superhero Facts for a new fact."
-*  "Alexa, start Baseball Facts."
-*  "Alexa, ask Titanic Facts to give me another fact."
+*  「Alexa、スーパーヒーロー豆知識に豆知識を聞いて」
+*  「Alexa、野球豆知識を開いて」
+*  「Alexa、タイタニック豆知識に他の豆知識を聞いて」
 
-Alexa will respond to all of these requests with responses like these:
+Alexaはこれらの問いかけに対して次のように答えます。
 
-*  "Here's your superhero fact: Iron Man's armor used to include roller skates."
-*  "Here's your baseball fact: Ralph Kiner is the only player ever to lead the league in homers for seven years in a row — his first seven years as a major league player."
-*  "Here's your Titanic fact: The ship burned around 600 tons of coal a day – hand shoveled into its furnaces by a team of 176 men. Almost 100 tons of ash were ejected into the sea each day."
+*  「知ってましたか？アイアンマンのアーマーにはかつてローラースケートがついていました。」
+*  「知ってましたか？ラルフ・カイナーはメジャーリーグデビュー後、七年連続で本塁打王になったただ一人の選手です。」
+*  「知ってましたか？タイタニック号は一日に600トンの石炭を消費しました。176人の乗務員がシャベルでボイラーに石炭を投入し、毎日100トンの灰を海に放出していました。」
 
-If you would like to see an example of this skill in action, you can enable the [Gloucester Facts](https://www.amazon.com/Robert-McCauley-Gloucester-Facts/dp/B01I5MOIA2/) from the [Alexa Skill Store](http://amazon.com/skills).  
+<!--このスキルの動作例を見たい場合は、[Alexaスキルストア](http://amazon.com/skills)から[Gloucester Facts](https://www.amazon.com/Robert-McCauley-Gloucester-Facts/dp/B01I5MOIA2/)を有効化して使ってみてください。-->
 
-<a href="https://github.com/alexa/skill-sample-nodejs-fact/blob/master/instructions/1-voice-user-interface.md"><img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/buttons/button_get_started._TTH_.png" /></a>
-
-<img height="1" width="1" src="https://www.facebook.com/tr?id=1847448698846169&ev=PageView&noscript=1"/>
+[![始めましょう](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/jp/tutorials/general/buttons/button_get_started.png)](instructions/1-voice-user-interface.md)

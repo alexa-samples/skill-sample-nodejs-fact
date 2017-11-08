@@ -1,19 +1,19 @@
-# Setting Up Your First Lambda Role
+# 最初のLambdaロールを設定する
 
-If you're reading this page, you're probably setting up your first role for a Lambda function.  While it's an easy process, we want to make sure you understand all of the "whys" that go into this process.
+このページを読んでいるということは、おそらくあなたはLambda関数の最初のロールを設定しようとしているはずです。手順は簡単ですが、手順のすべてについて「なぜ」おこなうのかを理解しておいてほしいと思います。
 
-1.  **Choose "Create a custom role" from the Role dropdown.**  This will launch a new tab in your browser, so make sure that popups are enabled when you attempt this.
+1.  **Roleドロップダウンから「Create a custom role」を選択します。** ブラウザで新しいタブが開きますので、ポップアップが有効になっていることを確認してください。
 
     ![](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/lambda-role/1-choose-custom-role._TTH_.png)
 
-2.  **You are now creating a new IAM role.**  IAM stands for Identity and Access Management.  ([You can read more about IAM here.](http://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html))  By creating this role, you are enabling your Lambda function to be able to create Amazon CloudWatch logs for your function.  ([You can read more about managing permissions with IAM roles here.](https://docs.aws.amazon.com/lambda/latest/dg/intro-permission-model.html#lambda-intro-execution-role))
+2.  **新しいIAMロールを作成しています。**  IAMとは、Identity and Access Management の略です.  ([IAMについて、ここで詳細を確認できます。](http://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html))  このロールを作成することで、Lambda関数は、関数自身のためにCloudWatch logsを作成できるようになります。 ([IAMロールによる権限管理について、ここで詳細を確認できます。](https://docs.aws.amazon.com/lambda/latest/dg/intro-permission-model.html#lambda-intro-execution-role))
 
-3.  **You don't need to make any changes.  Click the Allow button in the bottom right corner.**
+3.  **何も変更する必要はありません。右下にある Allow ボタンをクリックします。**
 
     ![](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/lambda-role/3-allow-button._TTH_.png)
 
-4.  **This should close the new tab, and populate your Lambda function appropriately.**  If your "Lambda function handler and role" section doesn't look like the screenshot below, try refreshing your page and selecting your new role from the "existing role" dropdown.
+4.  **これによって、新しいタブが閉じ、Lambda関数が適切に設定されるはずです。**  "Lambda function handler and role" セクションが次のスクリーンショットのようになっていない場合は、ページを再読み込みして、"existing role" ドロップダウンから新しいロールを選択してみてください。
 
     ![](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/lambda-role/4-lambda-function-role._TTH_.png)
 
-5.  **You can now return to what you were doing.**
+5.  **これで終わりです。それまでやっていた作業に戻って大丈夫です。**
