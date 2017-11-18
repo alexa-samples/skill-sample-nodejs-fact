@@ -11,7 +11,7 @@
 
 Alexa スキルは２つの部分からできています。１つは[音声ユーザーインターフェース (VUI)](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/defining-the-voice-interface)です。ここで、エンドユーザからの音声入力をどのように処理し、特定の指示が発話された時にどのコードが実行されるか定義します。もう１つはスキルの実際のコードロジックです。これについては、このステップバイステップガイドの[2ページ](2-lambda-function.md)で説明します。
 
-1.  まず [Amazon開発者ポータル](http://developer.amazon.com) を開き、右上にある **サインイン** ボタンをクリックします。もし、まだアカンントを持っていない場合でも、無料で新規アカウントを作成することができます。
+1.  まず [Amazon開発者ポータル](http://developer.amazon.com) を開き、右上にある **サインイン** ボタンをクリックします。もし、まだアカウントを持っていない場合でも、無料で新規アカウントを作成することができます。
 
     ![](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/jp/tutorials/fact/1-1-developer-portal.png)
 
