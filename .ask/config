@@ -2,7 +2,18 @@
   "deploy_settings": {
     "default": {
       "skill_id": "",
-      "was_cloned": false
+      "was_cloned": false,
+      "merge": {
+        "skillManifest": {
+          "apis": {
+            "custom": {
+              "endpoint": {
+                "uri": "what_name_you_want_to_name_the_lambda"
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
