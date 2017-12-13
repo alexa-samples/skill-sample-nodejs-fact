@@ -16,7 +16,7 @@
 
     ![](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/jp/tutorials/fact/4-2-test-tab.png)
 
-3.  **ボイスシミュレーター** 今回のスキルに限らず、どのスキルにおいてもボイスシミュレーターは便利なテストツールです。単語や文章をボックスの中に入力し、**「聴く」**ボタンをクリックすると Alexa がそれをどのように発音するか確認することができます。
+3.  **ボイスシミュレーター** 今回のスキルに限らず、どのスキルにおいてもボイスシミュレーターは便利なテストツールです。単語や文章をボックスの中に入力し、**「聴く」** ボタンをクリックすると Alexa がそれをどのように発音するか確認することができます。
 
 	![](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/jp/tutorials/fact/4-3-voice-simulator.png)
 
@@ -80,7 +80,7 @@
 
        ![](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/jp/tutorials/fact/4-5-4-paste-request.png)
         
-       **「作成」**ボタンをクリックします。
+       **「作成」** ボタンをクリックします。
 
     5.  テストイベントの選択メニューから作成した **FactTest** を選択して **「テスト」** ボタンをクリックします。これにより Lambda 関数に対して設定したテストの内容が実行されます。
     

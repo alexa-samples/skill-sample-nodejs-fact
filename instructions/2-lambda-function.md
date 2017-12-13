@@ -10,7 +10,7 @@
 
 このガイドの[最初のステップ](1-voice-user-interface.md)で、Alexa スキル用の音声ユーザーインターフェース (VUI) を作成しました。このページでは、[Amazon Web Services](http://aws.amazon.com) を使って Lambda 関数を作っていきます。公式ドキュメント [Lambda 関数の詳細について](http://aws.amazon.com/lambda) にも詳しく記載されいますが、今回のスキルを作る上で知っておくべきことは Lambda はコードが実行される環境である、ということだけです。ユーザーが Alexa でスキルを呼び出したとき、適切な応答を返して会話を成立させるのが Lambda 関数です。
 
-1.  **http://aws.amazon.com**にサインインしてコンソールを開きます。まだアカウントを持っていない場合は、アカウントを作成する必要があります。[新規AWSアカウントの作成手順](../set-up-aws.md)を参考にしてください。
+1.  **http://aws.amazon.com** にサインインしてコンソールを開きます。まだアカウントを持っていない場合は、アカウントを作成する必要があります。[新規AWSアカウントの作成手順](../set-up-aws.md)を参考にしてください。
 
 	![](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/jp/tutorials/fact/2-1-sign-in-to-the-console.png)
 
