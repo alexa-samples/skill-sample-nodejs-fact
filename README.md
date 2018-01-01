@@ -73,7 +73,7 @@ Alexa, start Space Facts
 	$ npm install
 	```
 
-If desired, delete the `package-lock.json` file first so as to verify and test with latest npm versions:
+	If desired, delete the `package-lock.json` file first so as to verify and test with latest npm versions:
 
 	```bash
 	$ rm package-lock.json
@@ -114,6 +114,12 @@ ASK CLI will create the skill, model and lambda function for you. The Lambda fun
 
 ## Customization
 
+Once changed, any of the following may be individually deployed:
+
+	$ ask deploy -t skill
+	$ ask deploy -t model
+	$ ask deploy -t lambda
+
 1. ```./skill.json```
 
    Change the skill name, example phrase, icons, testing instructions etc ...
@@ -129,14 +135,6 @@ ASK CLI will create the skill, model and lambda function for you. The Lambda fun
 3. ```./models/*.json```
 
 	Change the interaction model definition to replace the invocation name and the sample phrase for each intent. Repeat the process for each locale you are planning to support.
-
-    Once changed, any of the preceding may be individually deployed:
-
-	```bash
-	$ ask deploy -t skill
-	$ ask deploy -t model
-	$ ask deploy -t lambda
-	```
 
 ## Additional Resources
 
