@@ -73,16 +73,23 @@ Alexa, start Space Facts
 	$ npm install
 	```
 
+If desired, delete the `package-lock.json` file first so as to verify and test with latest npm versions:
+
+	```bash
+	$ rm package-lock.json
+	```
 
 ### Deployment
 
-ASK CLI will create the skill and the lambda function for you. The Lambda function will be created in ```us-east-1 (Northern Virginia)``` by default.
+ASK CLI will create the skill, model and lambda function for you. The Lambda function will be created in ```us-east-1 (Northern Virginia)``` by default.
 
-1. Deploy the skill and the lambda function in one step by running the following command:
+1. Deploy the skill, interaction model and lambda function in one step by running the following command:
 
 	```bash
 	$ ask deploy
 	```
+
+[This may take a few minutes.]
 
 ### Testing
 
@@ -105,15 +112,13 @@ ASK CLI will create the skill and the lambda function for you. The Lambda functi
 	Alexa, start space facts
 	```
 
-
-
 ## Customization
 
 1. ```./skill.json```
 
    Change the skill name, example phrase, icons, testing instructions etc ...
 
-   Remember than many information are locale-specific and must be changed for each locale (en-GB and en-US)
+   Remember that many details are language-specific and must be changed for each locale (en-GB, en-US, de-DE).
 
    See the Skill [Manifest Documentation](https://developer.amazon.com/docs/smapi/skill-manifest.html) for more information.
 
@@ -123,7 +128,15 @@ ASK CLI will create the skill and the lambda function for you. The Lambda functi
 
 3. ```./models/*.json```
 
-	Change the model defintion to replace the invocation name and the sample phrase for each intent.  Repeat the operation for each locale you are planning to support.
+	Change the interaction model definition to replace the invocation name and the sample phrase for each intent. Repeat the process for each locale you are planning to support.
+
+    Once changed, any of the preceding may be individually deployed:
+
+	```bash
+	$ ask deploy -t skill
+	$ ask deploy -t model
+	$ ask deploy -t lambda
+	```
 
 ## Additional Resources
 
