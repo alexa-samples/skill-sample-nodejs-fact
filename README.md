@@ -59,7 +59,7 @@ Alexa, start Space Facts
 	$ git clone https://github.com/alexa/skill-sample-nodejs-fact/
 	```
 
-2. Initiatialize the [ASK CLI](https://developer.amazon.com/docs/smapi/quick-start-alexa-skills-kit-command-line-interface.html) by Navigating into the repository and running npm command: `ask init`. Follow the prompts.
+2. Initialize the [ASK CLI](https://developer.amazon.com/docs/smapi/quick-start-alexa-skills-kit-command-line-interface.html) by Navigating into the repository and running npm command: `ask init`. Follow the prompts.
 
 	```bash
 	$ cd skill-sample-nodejs-fact
@@ -73,16 +73,23 @@ Alexa, start Space Facts
 	$ npm install
 	```
 
+	If desired, delete the `package-lock.json` file first so as to verify and test with latest npm versions:
+
+	```bash
+	$ rm package-lock.json
+	```
 
 ### Deployment
 
-ASK CLI will create the skill and the lambda function for you. The Lambda function will be created in ```us-east-1 (Northern Virginia)``` by default.
+ASK CLI will create the skill, model and lambda function for you. The Lambda function will be created in ```us-east-1 (Northern Virginia)``` by default.
 
-1. Deploy the skill and the lambda function in one step by running the following command:
+1. Deploy the skill, interaction model and lambda function in one step by running the following command:
 
 	```bash
 	$ ask deploy
 	```
+
+[This may take a few minutes.]
 
 ### Testing
 
@@ -105,15 +112,19 @@ ASK CLI will create the skill and the lambda function for you. The Lambda functi
 	Alexa, start space facts
 	```
 
-
-
 ## Customization
+
+Once changed, any of the following may be individually deployed:
+
+	$ ask deploy -t skill
+	$ ask deploy -t model
+	$ ask deploy -t lambda
 
 1. ```./skill.json```
 
    Change the skill name, example phrase, icons, testing instructions etc ...
 
-   Remember than many information are locale-specific and must be changed for each locale (en-GB and en-US)
+   Remember that many details are language-specific and must be changed for each locale (en-GB, en-US, de-DE).
 
    See the Skill [Manifest Documentation](https://developer.amazon.com/docs/smapi/skill-manifest.html) for more information.
 
@@ -123,7 +134,7 @@ ASK CLI will create the skill and the lambda function for you. The Lambda functi
 
 3. ```./models/*.json```
 
-	Change the model defintion to replace the invocation name and the sample phrase for each intent.  Repeat the operation for each locale you are planning to support.
+	Change the interaction model definition to replace the invocation name and the sample phrase for each intent. Repeat the process for each locale you are planning to support.
 
 ## Additional Resources
 
@@ -135,6 +146,6 @@ ASK CLI will create the skill and the lambda function for you. The Lambda functi
 * [Voice Design Guide](https://developer.amazon.com/designing-for-voice/) - A great resource for learning conversational and voice user interface design.
 * [CodeAcademy: Learn Alexa](https://www.codecademy.com/learn/learn-alexa) - Learn how to build an Alexa Skill from within your browser with this beginner friendly tutorial on CodeAcademy!
 
-###Documentation
+### Documentation
 * [Official Alexa Skills Kit Node.js SDK](https://www.npmjs.com/package/alexa-sdk) - The Official Node.js SDK Documentation
 *  [Official Alexa Skills Kit Documentation](https://developer.amazon.com/docs/ask-overviews/build-skills-with-the-alexa-skills-kit.html) - Official Alexa Skills Kit Documentation
