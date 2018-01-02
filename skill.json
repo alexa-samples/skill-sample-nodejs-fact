@@ -45,14 +45,6 @@
         }
       }
     },
-    "manifestVersion": "1.0",
-    "permissions": [],
-    "privacyAndCompliance": {
-      "allowsPurchases": false,
-      "isExportCompliant": true,
-      "containsAds": false,
-      "isChildDirected": false,
-      "usesPersonalInfo": false
-    }
+    "manifestVersion": "1.0"
   }
 }
