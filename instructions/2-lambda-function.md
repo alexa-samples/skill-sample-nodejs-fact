@@ -25,7 +25,7 @@ In the [first step of this guide](./1-voice-user-interface.md), we built the Voi
 
     <!-- <img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/fact/2-5-blueprint._TTH_.png" />  <!--TODO: THIS IMAGE NEEDS TO BE CUSTOMIZED FOR YOUR SKILL TEMPLATE, THIS ONE IS OUT OF DATE. -->
 
-6.  **Configure your function.** This screen is where we will enter the important parts of our Lambda function.  These values will only ever be visible to you, but make sure that you name your function something meaningful.  "SpaceFacts" is sufficient if you don't have another idea for a name.
+6.  **Configure your function.** This screen is where we will enter the important parts of our Lambda function.  These values will only ever be visible to you, but make sure that you name your function something meaningful.
 
   <img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/2-7-configure-your-function._TTH_.png" />
 
@@ -45,12 +45,18 @@ In the [first step of this guide](./1-voice-user-interface.md), we built the Voi
 
     <!-- <img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/2-6-configure-your-trigger._TTH_.png" /> TODO: THIS SCREENSHOT IS OUT OF DATE-->
 
-  Once you have selected Alexa Skills Kit, scroll down and click the **Add** button. Then click the **Save** button in the top right. You should see a green success message at the top of your screen. Now, click the box that has the Lambda icon followed by the name of your function (SpaceFacts if you used our suggestion) and scroll down to the field called "Function code".
+11. Once you have selected Alexa Skills Kit, scroll down. Under Configure triggers, select Enable for Skill ID verification. A skill ID Edit box should appear. We will now retrieve your Skill ID from the developer portal.
 
-7.  **Copy and paste the [provided code](https://github.com/alexa/skill-sample-nodejs-fact/blob/en-US/lambda/custom/index.js) into the Lambda function code box.**  We have provided the code for this skill on [GitHub](https://github.com/alexa/skill-sample-nodejs-fact/blob/en-US/lambda/custom/index.js).  Delete the contents of the code box, and paste the contents of the new code.
+Note: It is highly recommended that you limit invocation permissions to just Alexa and enable skill ID verification to protect your function from malicious callers.
+
+12. Open up the developer portal from the previous step. Click the Skill Information Link. Copy the Application ID provided in the main window. This is also known as a skill ID and is unique to your skill.
+
+13. Return back to the AWS Console. Paste the Skill ID in the Skill ID edit box.
+
+12. Click the **Add** button. Then click the **Save** button in the top right. You should see a green success message at the top of your screen. Now, click the box that has the Lambda icon followed by the name of your function and scroll down to the field called "Function code".
+
+13.  **Copy and paste the [provided code](https://github.com/alexa/skill-sample-nodejs-fact/blob/en-US/lambda/custom/index.js) into the Lambda function code box.**  We have provided the code for this skill on [GitHub](https://github.com/alexa/skill-sample-nodejs-fact/blob/en-US/lambda/custom/index.js).  Delete the contents of the code box, and paste the contents of the new code.
 Click "Save".
 
     <br/><br/>
     <a href="./3-connect-vui-to-code.md"><img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/buttons/button_next_connect_vui_to_code._TTH_.png"/></a>
-
-    <img height="1" width="1" src="https://www.facebook.com/tr?id=1847448698846169&ev=PageView&noscript=1"/>

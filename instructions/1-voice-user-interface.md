@@ -68,7 +68,7 @@ There are two parts to an Alexa skill.  The first part is the [Voice User Interf
 
     ![](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/1-10-sample-utterances._TTH_.png)
 
-11. Click on the **Save Model** button, and then click on the **Build Model** button.
+12. Click on the **Save Model** button, and then click on the **Build Model** button.
 
     ![](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/1-12-skill-builder-build-save-model._TTH_.png)
 
@@ -115,7 +115,7 @@ There are two parts to an Alexa skill.  The first part is the [Voice User Interf
         Once you have added these sample utterances to your skill, you can click the "Save" button to verify that your interaction model is built properly without any errors.
 -->
 
-12.  If your interaction model builds successfully, click on **Configuration button** to move on to Configuration. In our next step of this guide, we will be creating our Lambda function in the AWS developer console, but keep this browser tab open, because we will be returning here on [Page #3: Connect VUI to Code](./3-connect-vui-to-code.md).
+13.  If your interaction model builds successfully, click on **Configuration button** to move on to Configuration. In our next step of this guide, we will be creating our Lambda function in the AWS developer console, but keep this browser tab open, because we will be returning here on [Page #3: Connect VUI to Code](./3-connect-vui-to-code.md).
      ![](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/1-13-skill-builder-configuration.png)
 
      If you get an error from your interaction model, check through this list:
@@ -123,7 +123,6 @@ There are two parts to an Alexa skill.  The first part is the [Voice User Interf
      *  **Did you copy & paste the provided code into the appropriate boxes?**
      *  **Did you accidentally add any characters to the Interaction Model or Sample Utterances?**
 
+
 <br/><br/>
 <a href="./2-lambda-function.md"><img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/buttons/button_next_lambda_function._TTH_.png" /></a>
-
-<img height="1" width="1" src="https://www.facebook.com/tr?id=1847448698846169&ev=PageView&noscript=1"/>
