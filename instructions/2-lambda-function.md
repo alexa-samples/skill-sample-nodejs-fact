@@ -52,7 +52,7 @@ In the [first step of this guide](./1-voice-user-interface.md), we built the Voi
 
 13. Copy the **Application ID** provided in the main window. This is also known as a skill ID, and is unique to your skill.
 
-14. Return back to your lambda function in the. You may already have this browser tab open from **Step 11**. Otherwise, open the lambda console here [AWS Console](https://console.aws.amazon.com/lambda/home?region=us-east-1#/functions) and selecting the appropriate function. Scroll down to **Configure triggers**, paste the Skill ID in the Skill ID edit box.
+14. Return back to your lambda function in the. You may already have this browser tab open from **Step 11**. Otherwise, open the lambda console by clicking here: [AWS Console](https://console.aws.amazon.com/lambda/home?region=us-east-1#/functions) and selecting the appropriate function. Scroll down to **Configure triggers**, paste the Skill ID in the Skill ID edit box.
 
 15. Click the **Add** button. Then click the **Save** button in the top right. You should see a green success message at the top of your screen. Now, click the box that has the Lambda icon followed by the name of your function and scroll down to the field called "Function code".
 
