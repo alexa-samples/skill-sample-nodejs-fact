@@ -41,7 +41,7 @@ const data = [
     'A total solar eclipse can happen once every 1 to 2 years. This makes them a rare event.',
     'Saturn radiates two and a half times more energy into space than it receives from the sun.',
     'The temperature inside the Sun can reach 15 million degrees Celsius.',
-    'The Moon is moving approximately 3.8 cm away from our planet every year.',
+    'The Moon is moving approximately 3.8 cm away from our planet every year.'
 ];
 
 //=========================================================================================================================================
