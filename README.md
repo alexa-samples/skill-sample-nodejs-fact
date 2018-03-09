@@ -8,7 +8,7 @@ Regions: [🇯🇵](../../tree/ja-JP)
 
 This Alexa sample skill is a template for a basic fact skill. Provided a list of interesting facts about a topic, Alexa will select a fact at random and tell it to the user when the skill is invoked.
 
-If you would like to see an example of this skill in action, you can enable the [Gloucester Facts](https://www.amazon.com/Robert-McCauley-Gloucester-Facts/dp/B01I5MOIA2/) from the [Alexa Skill Store](http://amazon.com/skills). 
+If you would like to see an example of this skill in action, you can enable the [Gloucester Facts](https://www.amazon.com/Robert-McCauley-Gloucester-Facts/dp/B01I5MOIA2/) from the [Alexa Skill Store](http://amazon.com/skills).
 
 
 
@@ -26,13 +26,13 @@ Be sure to take a look at the [Additional Resources](#additional-resources) at t
 **Note:** The rest of this readme assumes you have your developer environment ready to go and that you have some familiarity with CLI (Command Line Interface) Tools, [AWS](https://aws.amazon.com/), and the [ASK Developer Portal](https://developer.amazon.com/alexa-skills-kit). If not, [click here](./instructions/0-intro.md) for a more detailed walkthrough.
 
 
- 
+
 ### Usage
 
 ```text
 Alexa, ask Space Facts for a fact
 	>> Here's your fact: A year on Mercury is just 88 days long.
-	
+
 Alexa, start Space Facts
 ```
 
@@ -46,7 +46,7 @@ Alexa, start Space Facts
 ## Setup w/ ASK CLI
 
 ### Pre-requisites
-	
+
 * Node.js (> v4.3)
 * Register for an [AWS Account](https://aws.amazon.com/)
 * Register for an [Amazon Developer Account](https://developer.amazon.com/)
@@ -60,13 +60,13 @@ Alexa, start Space Facts
 	```
 
 2. Initiatialize the [ASK CLI](https://developer.amazon.com/docs/smapi/quick-start-alexa-skills-kit-command-line-interface.html) by Navigating into the repository and running npm command: `ask init`. Follow the prompts.
-	
+
 	```bash
 	$ cd skill-sample-nodejs-fact
 	$ ask init
 	```
 
-3. Install npm dependencies by navigating into the `/lambda` directory and running the npm command: `npm install`
+3. Install npm dependencies by navigating into the `/lambda/custom` directory and running the npm command: `npm install`
 
 	```bash
 	$ cd lambda/custom
@@ -81,7 +81,7 @@ ASK CLI will create the skill and the lambda function for you. The Lambda functi
 1. Deploy the skill and the lambda function in one step by running the following command:
 
 	```bash
-	$ ask deploy 
+	$ ask deploy
 	```
 
 ### Testing
@@ -91,14 +91,14 @@ ASK CLI will create the skill and the lambda function for you. The Lambda functi
 2. Simulate verbal interaction with your skill through the command line using the following example:
 
 	```bash
-	 $ ask simulate -l en-GB -t "alexa, start space facts"
-	 
+	 $ ask simulate -l en-GB -t "start space facts"
+
 	 ✓ Simulation created for simulation id: 4a7a9ed8-94b2-40c0-b3bd-fb63d9887fa7
 	◡ Waiting for simulation response{
 	  "status": "SUCCESSFUL",
 	  ...
 	 ```
-	 
+
 3. Once the "Test" switch is enabled, your skill can be tested on devices associated with the developer account as well. Speak to Alexa from any enabled device, from your browser at [echosim.io](https://echosim.io/welcome), or through your Amazon Mobile App and say :
 
 	```text
@@ -135,7 +135,6 @@ ASK CLI will create the skill and the lambda function for you. The Lambda functi
 * [Voice Design Guide](https://developer.amazon.com/designing-for-voice/) - A great resource for learning conversational and voice user interface design.
 * [CodeAcademy: Learn Alexa](https://www.codecademy.com/learn/learn-alexa) - Learn how to build an Alexa Skill from within your browser with this beginner friendly tutorial on CodeAcademy!
 
-###Documentation
+### Documentation
 * [Official Alexa Skills Kit Node.js SDK](https://www.npmjs.com/package/alexa-sdk) - The Official Node.js SDK Documentation
 *  [Official Alexa Skills Kit Documentation](https://developer.amazon.com/docs/ask-overviews/build-skills-with-the-alexa-skills-kit.html) - Official Alexa Skills Kit Documentation
-
