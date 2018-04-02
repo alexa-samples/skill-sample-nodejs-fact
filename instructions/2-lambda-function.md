@@ -56,7 +56,7 @@
    Alexa Skills Kit を選択したら **送信** ボタンをクリックし、再び設定画面に戻ります。
 
 
-9.  Lambda関数のコード入力ボックスに必要なコードを貼り付けます。このスキル用のコードは [GitHub](../src/index.js)にあります。コード入力ボックス内のコードを削除し、この新しいコードを貼り付けてください。
+9.  Lambda関数のコード入力ボックスに必要なコードを貼り付けます。このスキル用のコードは [GitHub](../lambda/custom/index.js)にあります。コード入力ボックス内のコードを削除し、この新しいコードを貼り付けてください。
 
 	![](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/jp/tutorials/fact/2-9-paste-lambda-code.png)
 
