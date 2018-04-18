@@ -17,4 +17,4 @@ On [page #1](./1-Voice-User-Interface) of this guide, we created a voice user in
 
 6. **Click the "Next" button to continue to page #4 of this guide.**
 
-[![Next](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/buttons/button_next_testing._TTH_.png)](./4-Testing)
+[![Next](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/buttons/button_next_testing._TTH_.png)](./4-testing.md)

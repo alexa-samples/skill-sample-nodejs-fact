@@ -28,4 +28,4 @@
      *  **Did you copy & paste the provided code correctly?**
      *  **Did you accidentally add any characters to the Interaction Model or Sample Utterances?**
 
-[![Next](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/buttons/button_next_lambda_function._TTH_.png)](./2-Lambda-Function)
+[![Next](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/buttons/button_next_lambda_function._TTH_.png)](./2-Lambda-Function.md)

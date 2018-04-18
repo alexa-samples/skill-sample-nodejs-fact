@@ -64,5 +64,5 @@ So far, we have [created a Voice User Interface](./1-Voice-User-Interface), [a L
 
 8.  **If your sample skill is working properly, you can now customize your skill.**
 
-[![Next](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/buttons/button_next_customization._TTH_.png)](./5-Customization)
+[![Next](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/buttons/button_next_customization._TTH_.png)](./5-customization.md)
 n._TTH_.png" /></a>
