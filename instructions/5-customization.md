@@ -13,11 +13,11 @@ At this point, you should have a working copy of our Fact skill.  In order to ma
 
     3.  **When you have replaced the data in index.js, copy the contents of your file to your Lambda function.**  This should be as simple as copying the text, and pasting it into the code box for your Lambda.
 
-        <img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/fact/5-1-5-lambda-code-box._TTH_.png" />
+        ![Lambda Code Box](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/fact/5-1-5-lambda-code-box._TTH_.png)
 
 2.  **New sentences to respond to your users.** There are several sentences and responses that you will want to customize for your skill.
 
-    1.  **Go back to your copy of [index.js]((https://github.com/alexa/skill-sample-nodejs-fact/blob/en-US/lambda/custom/index.js)).**
+    1.  **Go back to your copy of [index.js](https://github.com/alexa/skill-sample-nodejs-fact/blob/en-US/lambda/custom/index.js).**
 
     2.  **Look for the comment "TODO: The items below this comment need your attention."** This is the beginning of the section where you need to customize several text strings for your skill.
 
@@ -29,9 +29,7 @@ At this point, you should have a working copy of our Fact skill.  In order to ma
 
 4.  **Once you have made the updates listed on this page, you can click "Next" to move on to Publishing and Certification of your skill.**
 
-    <a href="./6-publication.md"><img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/3-7-next-button._TTH_.png" /></a>
+    ![Dev Portal Next](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/3-7-next-button._TTH_.png)
 
-<br/><br/>
-<a href="./6-publication.md"><img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/buttons/button_next_publication._TTH_.png" /></a>
 
-<img height="1" width="1" src="https://www.facebook.com/tr?id=1847448698846169&ev=PageView&noscript=1"/>
+[![Next Publication](m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/buttons/button_next_publication._TTH_.png)](6-Publication)
