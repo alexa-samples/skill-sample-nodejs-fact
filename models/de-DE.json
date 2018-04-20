@@ -1,0 +1,41 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "space facts",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "GetNewFactIntent",
+          "samples": [
+            "einen Fact",
+            "einen Space Fact",
+            "erzähl mit einen Space Fact",
+            "erzähl mir einen Fact",
+            "gib mir einen Fact",
+            "gib mir einen Space Fact",
+            "erzähl mir was vom Weltall",
+            "erzähl mir was über das Universum",
+            "erzähl mir Fakten über das Universum",
+            "gib mir Fakten",
+            "gib mir Informationen über das Universum",
+            "erzähl mir etwas über das Universum",
+            "erzähl mir etwas",
+            "gib mir etwas"
+          ],
+          "slots": []
+        }
+      ]
+    }
+  }
+}
