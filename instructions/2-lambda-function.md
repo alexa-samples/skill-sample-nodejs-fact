@@ -40,7 +40,7 @@ In the [first step of this guide](./1-voice-user-interface.md), we built the Voi
 
 12. If you want to **secure this Lambda function** follow the instructions found [here](https://github.com/alexa/alexa-cookbook/blob/master/aws/secure-lambda-function.md)
 
-13. Now, click the box that has the Lambda icon followed by the name of your function. This will be in the center of the main window in the **Designer** panel. Scroll down the page until you see a section called **Function code**.
+13. Scroll down the page until you see a section called **Function code**.
 
 14. Copy the [provided code from here](https://github.com/alexa/skill-sample-nodejs-fact/blob/en-US/lambda/custom/index.js) into the Lambda function code box. Delete the contents of the code box, and paste the contents of the new code. Click "Save".
 
