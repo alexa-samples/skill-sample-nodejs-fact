@@ -37,6 +37,23 @@ const HelpHandler = {
   },
 };
 
+const FallbackHandler = {
+  // 2018-May-01: AMAZON.FallackIntent is only currently available in en-US locale.
+  //              This handler will not be triggered except in that locale, so it can be
+  //              safely deployed for any locale.
+  canHandle(handlerInput) {
+    const request = handlerInput.requestEnvelope.request;
+    return request.type === 'IntentRequest'
+      && request.intent.name === 'AMAZON.FallbackIntent';
+  },
+  handle(handlerInput) {
+    return handlerInput.responseBuilder
+      .speak(FALLBACK_MESSAGE)
+      .reprompt(FALLBACK_REPROMPT)
+      .getResponse();
+  },
+};
+
 const ExitHandler = {
   canHandle(handlerInput) {
     const request = handlerInput.requestEnvelope.request;
@@ -81,6 +98,8 @@ const SKILL_NAME = 'Space Facts';
 const GET_FACT_MESSAGE = 'Here\'s your fact: ';
 const HELP_MESSAGE = 'You can say tell me a space fact, or, you can say exit... What can I help you with?';
 const HELP_REPROMPT = 'What can I help you with?';
+const FALLBACK_MESSAGE = 'I can\'t help you with that.  The Space Facts skill can help you discover facts about space if you say tell me a space fact. What can I help you with?';
+const FALLBACK_REPROMPT = 'What can I help you with?';
 const STOP_MESSAGE = 'Goodbye!';
 
 const data = [
@@ -106,6 +125,7 @@ exports.handler = skillBuilder
     GetNewFactHandler,
     HelpHandler,
     ExitHandler,
+    FallbackHandler,
     SessionEndedRequestHandler
   )
   .addErrorHandlers(ErrorHandler)
