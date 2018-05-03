@@ -23,15 +23,16 @@ At this point, you should have a working copy of our Fact skill.  In order to ma
 
     2.  **Look for the comment "TODO: The items below this comment need your attention."** This is the beginning of the section where you need to customize several text strings for your skill.
 
-    3.  **Continue through index.js until you reach the bottom of the file.**  This will ensure that you cover each of the values that you need to update.
+    3.  **Continue through index.js until you reach the bottom of the section.**  This will ensure that you cover each of the values that you need to update.
 
 3.  **New language.** If you are creating this skill for another language other than English, you will need to make sure Alexa's responses are also in that language.
 
     *  For example, if you are creating your skill in German, every single response that Alexa makes has to be in German.  You can't use English responses or your skill will fail certification.
 
-4.  **Once you have made the updates listed on this page, you can click "Next" to move on to Publishing and Certification of your skill.**
+4.  **Once you have made the updates listed on this page, you can click "Launch" in the top navigation to move on to Publishing and Certification of your skill.**
 
+<!--
     ![Dev Portal Next](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/3-7-next-button._TTH_.png)
-
+-->
 
 [![Next Publication](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/buttons/button_next_publication._TTH_.png)](6-publication.md)

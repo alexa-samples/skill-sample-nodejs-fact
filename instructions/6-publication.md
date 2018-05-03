@@ -29,7 +29,7 @@ We are almost done!  The last step is to add the metadata that your skill will u
 
     *  **Choose three example phrases that are likely to be the most common ways that users will attempt to interact with your skill.**  Make sure that each of them works well, and provides an excellent user experience.
 
-5.  **Create your skill's icons.**  You need two sizes of your icon: 108x108px and 512x512px.
+5.  **Create your skill's icons.**  You need two sizes of your icon: 108x108px and 512x512px.  When you upload an image, it will be automatically fit to the required dimensions.
 
 
     *  **Make sure you have the rights to the icons you create.** Please don't violate any trademarks or copyrights.
@@ -56,18 +56,18 @@ We are almost done!  The last step is to add the metadata that your skill will u
 
 7.  **Provide a comprehensive list of keywords for users that are searching for new skills.**  This is an optional field, and searching the [Alexa app](http://alexa.amazon.com) or the [skill store](http://www.amazon.com/skills) will also find the words in your Skill Name and descriptions, so you don't need to overdo it.  That being said, if there are words that you want users to find your skill with, you should include them here.  Separate the keywords with commas.
 
-8. **Privacy Policy URL.** This is an optional field, and should not be required for this Trivia skill sample.  You can leave it blank.
+8. **Privacy Policy URL.** This is an optional field, and should not be required for this fact skill sample.  You can leave it blank.
 
 9. **Terms of Use URL.** This is also optional, and you can leave it blank.
 
 10. When you're ready, click **Save and Continue** at the bottom of the screen to move onto **Privacy & Compliance**
 
-11. *  **Does this skill allow users to make purchases or spend real money?** For this trivia skill, the answer is no.  For future skills, make sure you answer this appropriately.
+11. *  **Does this skill allow users to make purchases or spend real money?** For this fact skill, the answer is no.  For future skills, make sure you answer this appropriately.
 
-    *  **Does this Alexa skill collect users' personal information?** Again, for this trivia skill, the answer is no.  If you do collect information about a user, such as names, email addresses, phone numbers, and so forth, ensure that you answer Yes to this question.
-        *  Answering "yes" to this question will also require you to provide a link to your Privacy Policy at the bottom of the page.
+    *  **Does this Alexa skill collect users' personal information?** Again, for this fact skill, the answer is no.  If you do collect information about a user, such as names, email addresses, phone numbers, and so forth, ensure that you answer Yes to this question.
+        *  Answering "yes" to this question will also require you to provide a link to your Privacy Policy on the previous page.
 
-    *  **Is your skill directed to children under the age of 13?** Because you customized this skill with data you provided, it is possible that you created a skill that targets children under the age of 13.  For this trivia skill, the answer is **no** because it doesn't target a specific age group.
+    *  **Is your skill directed to children under the age of 13?** Because you customized this skill with data you provided, it is possible that you created a skill that targets children under the age of 13.  For this fact skill, the answer is **no** because it doesn't target a specific age group.
         * Factors to consider in determining if this skill is directed to children under 13 include:
             * Subject matter of the skill
             * Presence of child-oriented activities and incentives
@@ -84,11 +84,11 @@ We are almost done!  The last step is to add the metadata that your skill will u
 
 	* Since you are using our Sample, make sure to add a sentence to your Testing Instructions referencing the Sample you used. For example:
 
-           ```
-           This was built using the Fact Sample.
-           ```
+    ```text
+    This was built using the Fact Sample.
+    ```
 
-           This will let the testing team understand what you're providing them, and should decrease the testing time required.    
+    This will let the testing team understand what you're providing them, and should decrease the testing time required.    
 
 	**Note:** More details on certification are [available here.](https://alexa.design/certification)
 
@@ -99,6 +99,6 @@ We are almost done!  The last step is to add the metadata that your skill will u
 
     *  **Certification can take several days to complete.** Please be patient.  It takes time because we want to get it right.
 
-    *  **Did something go wrong?** Our team of evangelists run [online office hours every Tuesday from 1-2pm Pacific Time](https://register.gotowebinar.com/rt/8924773651242797059).  They can help answer any questions you might have.
+    *  **Did something go wrong?** Our team of evangelists run [online office hours every Tuesday from 1-2pm Pacific Time](https://alexa.design/officehours).  They can help answer any questions you might have.
 
-    *  **Want the coolest t-shirt you've ever seen?** Every month, we create a brand-new Alexa Developer t-shirt or hoodie, and send them out to developers that published a skill that month.  [You can get yours here if you live in the US](https://developer.amazon.com/alexa-skills-kit/alexa-developer-skill-promotion?&sc_category=Owned&sc_channel=RD&sc_campaign=Evangelism2018&sc_publisher=github&sc_content=Survey&sc_detail=fact-nodejs-V2_GUI-6&sc_funnel=Convert&sc_country=WW&sc_medium=Owned_RD_Evangelism2018_github_Survey_fact-nodejs-V2_GUI-6_Convert_WW_beginnersdevs&sc_segment=beginnersdevs), [here for the UK](https://developer.amazon.com/en-gb/alexa-skills-kit/alexa-developer-skill-promotion?&sc_category=Owned&sc_channel=RD&sc_campaign=Evangelism2018&sc_publisher=github&sc_content=Survey&sc_detail=fact-nodejs-V2_GUI-6&sc_funnel=Convert&sc_country=WW&sc_medium=Owned_RD_Evangelism2018_github_Survey_fact-nodejs-V2_GUI-6_Convert_WW_beginnersdevs&sc_segment=beginnersdevs), and [here for Germany](https://developer.amazon.com/de-de/alexa-skills-kit/alexa-developer-skill-promotion?&sc_category=Owned&sc_channel=RD&sc_campaign=Evangelism2018&sc_publisher=github&sc_content=Survey&sc_detail=fact-nodejs-V2_GUI-6&sc_funnel=Convert&sc_country=WW&sc_medium=Owned_RD_Evangelism2018_github_Survey_fact-nodejs-V2_GUI-6_Convert_WW_beginnersdevs&sc_segment=beginnersdevs).
+    *  **Want the coolest t-shirt you've ever seen?** Every month, we create a brand-new Alexa Developer t-shirt or hoodie, and send them out to developers that published a skill that month.  [You can get yours here if you live in the US](https://developer.amazon.com/alexa-skills-kit/alexa-developer-skill-promotion?&sc_category=Owned&sc_channel=RD&sc_campaign=Evangelism2018&sc_publisher=github&sc_content=Survey&sc_detail=fact-nodejs-V2_GUI-6&sc_funnel=Convert&sc_country=WW&sc_medium=Owned_RD_Evangelism2018_github_Survey_fact-nodejs-V2_GUI-6_Convert_WW_beginnersdevs&sc_segment=beginnersdevs), [here for the UK](https://developer.amazon.com/en-gb/alexa-skills-kit/alexa-developer-skill-promotion?&sc_category=Owned&sc_channel=RD&sc_campaign=Evangelism2018&sc_publisher=github&sc_content=Survey&sc_detail=fact-nodejs-V2_GUI-6&sc_funnel=Convert&sc_country=WW&sc_medium=Owned_RD_Evangelism2018_github_Survey_fact-nodejs-V2_GUI-6_Convert_WW_beginnersdevs&sc_segment=beginnersdevs), [here for Germany](https://developer.amazon.com/de-de/alexa-skills-kit/alexa-developer-skill-promotion?&sc_category=Owned&sc_channel=RD&sc_campaign=Evangelism2018&sc_publisher=github&sc_content=Survey&sc_detail=fact-nodejs-V2_GUI-6&sc_funnel=Convert&sc_country=WW&sc_medium=Owned_RD_Evangelism2018_github_Survey_fact-nodejs-V2_GUI-6_Convert_WW_beginnersdevs&sc_segment=beginnersdevs), [here for India](https://developer.amazon.com/alexa-skills-kit/alexa-developer-skill-promotion-india?&sc_category=Owned&sc_channel=RD&sc_campaign=Evangelism2018&sc_publisher=github&sc_content=Survey&sc_detail=fact-nodejs-V2_GUI-6&sc_funnel=Convert&sc_country=WW&sc_medium=Owned_RD_Evangelism2018_github_Survey_fact-nodejs-V2_GUI-6_Convert_WW_beginnersdevs&sc_segment=beginnersdevs), [here for Japan](https://developer.amazon.com/ja/alexa-skills-kit/alexa-developer-skill-promotion?&sc_category=Owned&sc_channel=RD&sc_campaign=Evangelism2018&sc_publisher=github&sc_content=Survey&sc_detail=fact-nodejs-V2_GUI-6&sc_funnel=Convert&sc_country=WW&sc_medium=Owned_RD_Evangelism2018_github_Survey_fact-nodejs-V2_GUI-6_Convert_WW_beginnersdevs&sc_segment=beginnersdevs), [here for France](https://developer.amazon.com/fr/alexa-skills-kit/alexa-developer-skill-promotion?&sc_category=Owned&sc_channel=RD&sc_campaign=Evangelism2018&sc_publisher=github&sc_content=Survey&sc_detail=fact-nodejs-V2_GUI-6&sc_funnel=Convert&sc_country=WW&sc_medium=Owned_RD_Evangelism2018_github_Survey_fact-nodejs-V2_GUI-6_Convert_WW_beginnersdevs&sc_segment=beginnersdevs), and [here for Australia](https://developer.amazon.com/anz/alexa-skills-kit/alexa-developer-skill-promotion?&sc_category=Owned&sc_channel=RD&sc_campaign=Evangelism2018&sc_publisher=github&sc_content=Survey&sc_detail=fact-nodejs-V2_GUI-6&sc_funnel=Convert&sc_country=WW&sc_medium=Owned_RD_Evangelism2018_github_Survey_fact-nodejs-V2_GUI-6_Convert_WW_beginnersdevs&sc_segment=beginnersdevs).

@@ -33,7 +33,7 @@ This readme assumes you have your developer environment ready to go and that you
 	$ ask init
 	```
 
-4. Install npm dependencies by navigating into the `/lambda/custom` directory and running the npm command: `npm install --save`
+4. Install npm dependencies by navigating into the `/lambda/custom` directory and running the npm command: `npm install`
 
 	```bash
 	$ cd lambda/custom
@@ -53,9 +53,13 @@ ASK CLI **will create the skill and the lambda function for you**. The Lambda fu
 
 ### Testing
 
-1. To test, you need to login to Alexa Developer Console, and **enable the "Test" switch on your skill from the "Test" Tab**.
+1. To test, the skill needs to be enabled.  The `ask deploy` commands enables the skill be default, however you can manually enable it using the `ask api enable-skill` command.  [docs](https://developer.amazon.com/docs/smapi/ask-cli-command-reference.html#enable-skill-subcommand).
 
-2. Simulate verbal interaction with your skill through the command line (this might take a few moments) using the following example:
+	```bash
+	$ ask api enable-skill --skill-id amzn1.ask.skill.00000000-0000-0000-0000-000000000000
+	```
+
+2. Simulate verbal interaction with your skill through the command line (this might take a few moments) using the following example, using the locale of your choice (en-US, en-GB, en-IN, en-CA, en-AU):
 
 	```bash
 	 $ ask simulate -l en-GB -t "start space facts"
@@ -77,7 +81,7 @@ ASK CLI **will create the skill and the lambda function for you**. The Lambda fu
 
    Change the skill name, example phrase, icons, testing instructions etc ...
 
-   Remember than many information are locale-specific and must be changed for each locale (en-GB and en-US)
+   Remember than many information are locale-specific and must be changed for each locale (en-GB, en-US, etc.)
 
    See the Skill [Manifest Documentation](https://developer.amazon.com/docs/smapi/skill-manifest.html?&sc_category=Owned&sc_channel=RD&sc_campaign=Evangelism2018&sc_publisher=github&sc_content=Survey&sc_detail=fact-nodejs-V2_CLI-3&sc_funnel=Convert&sc_country=WW&sc_medium=Owned_RD_Evangelism2018_github_Survey_fact-nodejs-V2_CLI-3_Convert_WW_beginnersdevs&sc_segment=beginnersdevs) for more information.
 
