@@ -2,6 +2,7 @@
 /* eslint-disable  no-console */
 
 const Alexa = require('ask-sdk-core');
+const cookbook = require('alexa-cookbook.js');
 
 const GetNewFactHandler = {
   canHandle(handlerInput) {
@@ -11,9 +12,7 @@ const GetNewFactHandler = {
         && request.intent.name === 'GetNewFactIntent');
   },
   handle(handlerInput) {
-    const factArr = data;
-    const factIndex = Math.floor(Math.random() * factArr.length);
-    const randomFact = factArr[factIndex];
+    const randomFact = cookbook.getRandomItem(data);
     const speechOutput = GET_FACT_MESSAGE + randomFact;
 
     return handlerInput.responseBuilder
