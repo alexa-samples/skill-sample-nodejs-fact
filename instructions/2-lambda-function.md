@@ -25,7 +25,7 @@ In the [first step of this guide](./1-voice-user-interface.md), we built the Voi
 
 5.  There are three boxes labeled "Author from scratch", "Blueprints" and "Serverless Application Repository". **Click the radio button in the box titled  "Serverless Application Repository"**  We have created an application in the repository as a shortcut to getting everything set up for your skill.
 
-6. **Enter `fact` to search for the application repository named `alexa-skills-kit-nodejs-factskill`.** Enter the full name into the serach box if you need to narrow the search results.
+6. **Enter `fact` to search for the application repository named `alexa-skills-kit-nodejs-factskill`.** Enter the full name into the search box if you need to narrow the search results.
 
 7. **Click on the application.** This template will create the Lambda function, grant the Alexa Skills Kit permission to invoke it, and set up an IAM role for you. It will also add the code from this GitHub repo and include the required dependencies so that you don't have to upload them yourself.
 
