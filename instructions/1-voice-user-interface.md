@@ -6,7 +6,7 @@
 1.  **Go to the [Amazon Developer Portal](http://developer.amazon.com/alexa?&sc_category=Owned&sc_channel=RD&sc_campaign=Evangelism2018&sc_publisher=github&sc_content=Survey&sc_detail=fact-nodejs-V2_GUI-1&sc_funnel=Convert&sc_country=WW&sc_medium=Owned_RD_Evangelism2018_github_Survey_fact-nodejs-V2_GUI-1_Convert_WW_beginnersdevs&sc_segment=beginnersdevs).  In the top-right corner of the screen, click the "Sign In" button.**
 (If you don't already have an account, you will be able to create a new one for free.)
 
-2.  Once you have signed in, move your mouse over the **Developer Console** text at the top of the screen and Select the **Skills** Link.
+2.  Once you have signed in, move your mouse over the **Your Alexa Consoles** text at the top of the screen and Select the **Skills** Link.
 
 3.  From the **Alexa Skills Console** select the **Create Skill** button near the top-right of the list of your Alexa Skills.
 

@@ -32,19 +32,17 @@ In the [first step of this guide](./1-voice-user-interface.md), we built the Voi
     <!-- <img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/fact/2-5-blueprint._TTH_.png" />  <!--TODO: THIS IMAGE NEEDS TO BE CUSTOMIZED FOR YOUR SKILL TEMPLATE, THIS ONE IS OUT OF DATE. -->
 8. Change the application name if so desired and then **Click the deploy button** at the bottom of the page.
 
-9. Wait for the status of all resources to change to **CREATE_COMPLETE**
+9. Wait for the status of all (three) resources to change to **CREATE_COMPLETE**.  The banner at the top will also change to say **Application successfully deployed**.
 
-10. Click the **Test App** button to go to the Lambda console.
-
-11. **Open** the function that was **just created** by clicking on it.
+11. Open the function that was just created in the Lambda console by clicking on the link in the list of resources.  It is normally the first resource and the only link in the list.
 
 12. (Optional, but recommended) To **secure this Lambda function** follow the instructions found [here](https://github.com/alexa/alexa-cookbook/blob/master/aws/secure-lambda-function.md)
 
 13. Scroll down the page until you see a section called **Function code**.
 
-14. The code pre-loaded into the function comes from [here](/alexa/skill-sample-nodejs-fact/blob/en-US/lambda/custom/index.js). If you modify the code, be sure to click "Save".
+14. You are not required to make any changes, however for your knowledge, the code which was pre-loaded into the function comes from [here](../lambda/custom/index.js). If you modify the code, be sure to click "Save".
 
-15. You should see the Amazon Resource Name (ARN) a unique identifier for this function in the top right corner of the page. **Copy the ARN value for this Lambda function** for use in the next section of the guide.
+15. You should see the Amazon Resource Name (ARN) for this function in the top right corner of the page.  (You may need to scroll back up.) **Copy the ARN value for this Lambda function** for use in the next section of the guide.
 
     ![Copy ARN](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/quiz-game/2-12-copy-ARN._TTH_.png)
 <!--TODO: THIS IMAGE NEEDS TO BE CUSTOMIZED FOR YOUR SKILL TEMPLATE. -->
