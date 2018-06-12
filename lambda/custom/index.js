@@ -73,7 +73,7 @@ const HelpHandler = {
 };
 
 const FallbackHandler = {
-  // 2018-May-01: AMAZON.FallackIntent is only currently available in en-US locale.
+  // 2018-May-01: AMAZON.FallbackIntent is only currently available in en-US locale.
   //              This handler will not be triggered except in that locale, so it can be
   //              safely deployed for any locale.
   canHandle(handlerInput) {
