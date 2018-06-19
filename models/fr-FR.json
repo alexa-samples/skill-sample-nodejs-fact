@@ -1,0 +1,46 @@
+{
+    "interactionModel": {
+      "languageModel": {
+        "invocationName": "faits sur l'espace",
+        "intents": [
+          {
+            "name": "AMAZON.CancelIntent",
+            "samples": []
+          },
+          {
+            "name": "AMAZON.HelpIntent",
+            "samples": []
+          },
+          {
+            "name": "AMAZON.StopIntent",
+            "samples": []
+          },
+          {
+            "name": "AMAZON.FallbackIntent",
+            "samples": []
+          },
+          {
+            "name": "GetNewFactIntent",
+            "samples": [
+              "un fait",
+              "un fait de l'espace",
+              "dis moi un fait",
+              "dis moi un fait de l'espace",
+              "donnes moi un fait",
+              "donnes moi un fait de l'espace",
+              "dis moi un fait trivial",
+              "dis moi un fait de l'espace trivial",
+              "donnes moi un fait trivial",
+              "donnes moi un fait de l'espace trivial",
+              "donnes moi quelques informations",
+              "donnes moi quelques informations de l'espace",
+              "dis moi quelque chose",
+              "donnes moi quelque chose"
+            ],
+            "slots": []
+          }
+        ]
+      }
+    }
+  }
+  
