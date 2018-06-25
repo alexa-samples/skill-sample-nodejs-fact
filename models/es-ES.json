@@ -1,0 +1,43 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "datos espaciales",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "GetNewFactIntent",
+                    "slots": [],
+                    "samples": [
+                        "un hecho",
+                        "un hecho espacial",
+                        "dime un hecho",
+                        "dime un hecho espacial",
+                        "dame un hecho",
+                        "dame un hecho espacial",
+                        "dime curiosidades",
+                        "dime una curiosidade espacial",
+                        "dame curiosidades",
+                        "dame una curiosidade espacial",
+                        "dame algo de información",
+                        "dame algo de información espacial",
+                        "dime algo",
+                        "dame algo"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
+
