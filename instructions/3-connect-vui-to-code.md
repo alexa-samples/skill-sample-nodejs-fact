@@ -22,7 +22,7 @@
 
 4.  前のセクションの最後のステップでコピーした Lambda の **ARN (Amazon リソースネーム)** をデフォルトのテキストボックスに貼り付けます。 上のスクリーンショットのようになります。
 
-5.  **アカウントリンク** は **いいえ** のままにします。 このスキルではアカウントリンクは使用しません。アカウントリンクの詳細については[Alexa ユーザーとシステムユーザーを関連付ける](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/linking-an-alexa-user-with-a-user-in-your-system)を参照してください。
+5.  **アカウントリンク** は **いいえ** のままにします。 このスキルではアカウントリンクは使用しません。アカウントリンクの詳細については[Alexa ユーザーとシステムユーザーを関連付ける](https://developer.amazon.com/ja/docs/custom-skills/link-an-alexa-user-with-a-user-in-your-system.html)を参照してください。
 
 6. 今回のサンプルでは **アクセス権限** の項目はデフォルトのままにし、次のステップに進みましょう。
 
