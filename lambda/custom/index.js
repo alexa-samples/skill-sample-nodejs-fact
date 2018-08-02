@@ -2,7 +2,7 @@
 /* eslint-disable  no-console */
 
 const Alexa = require('ask-sdk-core');
-const cookbook = require('alexa-cookbook.js');
+const cookbook = require('./alexa-cookbook.js');
 
 //=========================================================================================================================================
 //TODO: The items below this comment need your attention.
