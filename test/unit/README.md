@@ -5,10 +5,10 @@ See the Alexa Cookbook [testing guide](https://github.com/alexa/alexa-cookbook/t
 
 For running formal QA tests, developers can leverage third-party tools that run on standard unit test frameworks like [Jest](https://jestjs.io/) or [Mocha](https://mochajs.org/).
 
-Here we will focus on running a test suite against your local code project using the BST command line tool from Bespoken.IO.
+Here we will focus on running a test suite against your local code project using the Bespoken CLI (`bst`) from [Bespoken](https://bespoken.io).
 
-To get started, you need to install Bespoken Tools, please follow the next steps:
-1. Install Bespoken Tools by running `npm install -g bespoken-tools` on your command line.
+To get started, you need to install the Bespoken CLI, please follow the next steps:
+1. Install the Bespoken CLI by running `npm install -g bespoken-tools` on your command line.
 2. Create the main testing folder. We recommend to name it `test`; it should be under the root of your skill's directory.
 3. Create a folder named `unit` under `test\`, this folder will store your unit test script files.
 4. Add the test configuration file `testing.json`. This file should be located under your `test\unit` directory. It might look like this:
@@ -34,12 +34,12 @@ To get started, you need to install Bespoken Tools, please follow the next steps
         locale: en-US
 
     --- # Three dashes start a new YAML document
-    - test: Launch request, no further interaction. # Some metadata about this test sequence
-    - LaunchRequest: # LaunchRequest is not an utterance but a request type and reserved word
+    - test: Launch request, no further interaction. # A description of this test sequence
+    - LaunchRequest: # LaunchRequest is not an utterance but a request type
         - response.outputSpeech.ssml: Here's your fact
         - response.card.type: Simple
         - response.card.title: Space Facts
-        - response.card.content: "*" # Any text will match
+        - response.card.content: "*" # A wildcard means any text will match
     ```
     A typical YAML sentence is composed of 2 parts separated by a colon; in the left part we have the intent name we want to test; in the right part we have the expected result. You can also access any element on the JSON response object like the session attributes.
 6. To execute the scripts go to the root of your project and run `bst test`. That will find and run all the unit test scripts files.
@@ -47,8 +47,7 @@ To get started, you need to install Bespoken Tools, please follow the next steps
 For more information about skill unit testing with Bespoken, please read [here](https://read.bespoken.io/unit-testing/getting-started/).
 
 If you need assistance, reach Bespoken on any of these channels:
-* [Chat with us](https://apps.bespoken.io/dashboard) (lower right-hand corner of the page)
-* [Email](mailto:contact@bespoken.io)
-* [Slack](http://www.alexaslack.com/)
+* [Chat with us](https://bespoken.io/testing) (chat is in lower right-hand corner of the page)
+* [Email](mailto:support@bespoken.io)
 * [Twitter](https://twitter.com/bespokenio)
 * [Gitter](https://gitter.im/bespoken)
