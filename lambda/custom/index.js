@@ -1,24 +1,25 @@
-'use strict';
-var Alexa = require('alexa-sdk');
+/* eslint-disable  func-names */
+/* eslint-disable  no-console */
+
+const Alexa = require('ask-sdk-core');
 
 //=========================================================================================================================================
 //TODO: このコメント行より下の項目に注目してください。
 //=========================================================================================================================================
 
-//Replace with your app ID (OPTIONAL).  You can find this value at the top of your skill's page on http://developer.amazon.com.  
-//Make sure to enclose your value in quotes, like this: var APP_ID = "amzn1.ask.skill.bb4045e6-b3e8-4133-b650-72923c5980f1";
-var APP_ID = undefined;
-
-var SKILL_NAME = "豆知識";
-var GET_FACT_MESSAGE = "知ってましたか？";
-var HELP_MESSAGE = "豆知識を聞きたい時は「豆知識」と、終わりたい時は「おしまい」と言ってください。どうしますか？";
-var HELP_REPROMPT = "どうしますか？";
-var STOP_MESSAGE = "さようなら";
+const SKILL_NAME = "宇宙の豆知識";
+const GET_FACT_MESSAGE = "知ってましたか？";
+const HELP_MESSAGE = "豆知識を聞きたい時は「宇宙の豆知識」と、終わりたい時は「おしまい」と言ってください。どうしますか？";
+const HELP_REPROMPT = "どうしますか？";
+const FALLBACK_MESSAGE = "";
+const FALLBACK_REPROMPT = "";
+const STOP_MESSAGE = "さようなら";
 
 //=========================================================================================================================================
 //「TODO: ここから下のデータを自分用にカスタマイズしてください。」
 //=========================================================================================================================================
-var data = [
+
+const data = [
     "水星の一年はたった88日です。",
     "金星は水星と比べて太陽より遠くにありますが、気温は水星よりも高いです。",
     "金星は反時計回りに自転しています。過去に起こった隕石の衝突が原因と言われています。",
@@ -36,33 +37,105 @@ var data = [
 //=========================================================================================================================================
 //この行から下のコードに変更を加えると、スキルが動作しなくなるかもしれません。わかる人のみ変更を加えてください。  
 //=========================================================================================================================================
-exports.handler = function(event, context, callback) {
-    var alexa = Alexa.handler(event, context);
-    alexa.APP_ID = APP_ID;
-    alexa.registerHandlers(handlers);
-    alexa.execute();
-};
 
-var handlers = {
-    'LaunchRequest': function () {
-        this.emit('GetNewFactIntent');
+const GetNewFactHandler = {
+    canHandle(handlerInput) {
+      const request = handlerInput.requestEnvelope.request;
+      return request.type === 'LaunchRequest'
+        || (request.type === 'IntentRequest'
+          && request.intent.name === 'GetNewFactIntent');
     },
-    'GetNewFactIntent': function () {
-        var factArr = data;
-        var factIndex = Math.floor(Math.random() * factArr.length);
-        var randomFact = factArr[factIndex];
-        var speechOutput = GET_FACT_MESSAGE + randomFact;
-        this.emit(':tellWithCard', speechOutput, SKILL_NAME, randomFact)
+    handle(handlerInput) {
+      const randomFact = data[Math.floor(Math.random() * data.length)];
+      const speechOutput = GET_FACT_MESSAGE + randomFact;
+  
+      return handlerInput.responseBuilder
+        .speak(speechOutput)
+        .withSimpleCard(SKILL_NAME, randomFact)
+        .getResponse();
     },
-    'AMAZON.HelpIntent': function () {
-        var speechOutput = HELP_MESSAGE;
-        var reprompt = HELP_REPROMPT;
-        this.emit(':ask', speechOutput, reprompt);
+  };
+  
+  const HelpHandler = {
+    canHandle(handlerInput) {
+      const request = handlerInput.requestEnvelope.request;
+      return request.type === 'IntentRequest'
+        && request.intent.name === 'AMAZON.HelpIntent';
     },
-    'AMAZON.CancelIntent': function () {
-        this.emit(':tell', STOP_MESSAGE);
+    handle(handlerInput) {
+      return handlerInput.responseBuilder
+        .speak(HELP_MESSAGE)
+        .reprompt(HELP_REPROMPT)
+        .getResponse();
     },
-    'AMAZON.StopIntent': function () {
-        this.emit(':tell', STOP_MESSAGE);
-    }
-};
+  };
+  
+  const FallbackHandler = {
+    // 2018-May-01: AMAZON.FallackIntent は現在 en-US のみ対応しております。
+    //              その他の地域・言語では呼び出されませんが、デプロイには問題
+    //              ありません。    
+    canHandle(handlerInput) {
+      const request = handlerInput.requestEnvelope.request;
+      return request.type === 'IntentRequest'
+        && request.intent.name === 'AMAZON.FallbackIntent';
+    },
+    handle(handlerInput) {
+      return handlerInput.responseBuilder
+        .speak(FALLBACK_MESSAGE)
+        .reprompt(FALLBACK_REPROMPT)
+        .getResponse();
+    },
+  };
+  
+  const ExitHandler = {
+    canHandle(handlerInput) {
+      const request = handlerInput.requestEnvelope.request;
+      return request.type === 'IntentRequest'
+        && (request.intent.name === 'AMAZON.CancelIntent'
+          || request.intent.name === 'AMAZON.StopIntent');
+    },
+    handle(handlerInput) {
+      return handlerInput.responseBuilder
+        .speak(STOP_MESSAGE)
+        .getResponse();
+    },
+  };
+  
+  const SessionEndedRequestHandler = {
+    canHandle(handlerInput) {
+      const request = handlerInput.requestEnvelope.request;
+      return request.type === 'SessionEndedRequest';
+    },
+    handle(handlerInput) {
+      console.log(`Session ended with reason: ${handlerInput.requestEnvelope.request.reason}`);
+  
+      return handlerInput.responseBuilder.getResponse();
+    },
+  };
+  
+  const ErrorHandler = {
+    canHandle() {
+      return true;
+    },
+    handle(handlerInput, error) {
+      console.log(`Error handled: ${error.message}`);
+  
+      return handlerInput.responseBuilder
+        .speak('Sorry, an error occurred.')
+        .reprompt('Sorry, an error occurred.')
+        .getResponse();
+    },
+  };
+  
+  const skillBuilder = Alexa.SkillBuilders.custom();
+  
+  exports.handler = skillBuilder
+    .addRequestHandlers(
+      GetNewFactHandler,
+      HelpHandler,
+      ExitHandler,
+      FallbackHandler,
+      SessionEndedRequestHandler
+    )
+    .addErrorHandlers(ErrorHandler)
+    .lambda();
