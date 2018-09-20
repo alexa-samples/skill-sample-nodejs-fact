@@ -23,7 +23,10 @@
             "dime un dato",
             "dime un dato del espacio",
             "dame un dato",
-            "dame un dato del espacio"
+            "dame un dato del espacio",
+            "dime una",
+            "dime algo",
+            "dime una curiosidad"
           ],
           "slots": []
         }
