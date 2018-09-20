@@ -1,0 +1,44 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "宇宙の豆知識",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "GetNewFactIntent",
+          "samples": [
+            "豆知識",
+            "教えて",
+            "話して",
+            "聞かせて",
+            "宇宙の豆知識",
+            "豆知識を教えて",
+            "宇宙の豆知識を教えて",
+            "豆知識を聞かせて",
+            "宇宙の豆知識を聞かせて",
+            "トリビア",
+            "宇宙のトリビア",
+            "トリビアを教えて",
+            "宇宙のトリビアを教えて",
+            "何か教えて",
+            "宇宙について教えて",
+            "なんか教えて",
+            "なんか言って"
+          ],
+          "slots": []
+        }
+      ]
+    }
+  }
+}

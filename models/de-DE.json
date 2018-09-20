@@ -1,0 +1,41 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "weltraumfakten",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "GetNewFactIntent",
+          "samples": [
+            "ein Faktum",
+            "ein Faktum über den Weltraum",
+            "sage mir ein Faktum",
+            "sage mir ein Faktum über den Weltraum",
+            "gib mir ein Faktum",
+            "gib mir ein Faktum über den Weltraum",
+            "erzähle mir Wissenswertes",
+            "erzähle mir Wissenswertes über den Weltraum",
+            "sage mir etwas Wissenswertes",
+            "sage mir etwas wissenswertes über den Weltraum",
+            "gib mir Informationen",
+            "gib mir Informationen über den Weltraum",
+            "sage mir etwas",
+            "erzähle mir etwas"
+          ],
+          "slots": []
+        }
+      ]
+    }
+  }
+}

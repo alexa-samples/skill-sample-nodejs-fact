@@ -1,0 +1,53 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "aneddoti spaziali",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "GetNewFactIntent",
+          "samples": [
+            "un aneddoto",
+            "un aneddoto dallo spazio",
+            "dirmi un aneddoto spaziale",
+            "dirmi un aneddoto dallo spazio",
+            "darmi un aneddoto",
+            "darmi un aneddoto spaziale",
+            "darmi un aneddoto dallo spazio",
+            "darmi un pezzo di trivia",
+            "dirmi un trivia spaziale",
+            "darmi del trivia",
+            "darmi qualche info",
+            "darmi qualche info sullo spazio",
+            "dirmi qualcosa",
+            "darmi qualcosa",
+            "dimmi un aneddoto spaziale",
+            "dimmi un aneddoto dallo spazio",
+            "dammi un aneddoto",
+            "dammi un aneddoto spaziale",
+            "dammi un aneddoto dallo spazio",
+            "dammi un pezzo di trivia",
+            "dimmi un trivia spaziale",
+            "dammi del trivia",
+            "dammi qualche info",
+            "dammi qualche info sullo spazio",
+            "dimmi qualcosa",
+            "dammi qualcosa"
+          ],
+          "slots": []
+        }
+      ]
+    }
+  }
+}
