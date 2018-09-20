@@ -86,16 +86,16 @@
           "description": "Ask for Space Facts, and learn about what really matters, like dark matter.\n\nSpace Facts provides fun the whole family can enjoy and is guaranteed to make you smarter.\n\nTo start, just say \"Alexa, launch Space Facts\" or \"Alexa, open Space Facts\" to get a fact\".\n\nAt anytime, you can stop by saying \"Alexa, stop\""
         },
         "es-ES": {
-          "summary": "Aprenda hechos divertidos sobre el espacio.",
+          "summary": "Aprenda datos divertidos sobre el espacio.",
           "examplePhrases": [
             "Alexa abre curiosidades del espacio"
           ],
           "keywords": [
             "espacio",
-            "hechos"
+            "datos"
           ],
-          "name": "Datos del espacio abierto",
-          "description": "Pida Hechos Espaciales y aprenda sobre lo que realmente importa, como la materia oscura. Space Facts proporciona diversión que toda la familia puede disfrutar y está garantizado para hacerte más inteligente. Para empezar, simplemente di «Alexa, lanza hechos espaciales» o «Alexa, abrir hechos espaciales» para obtener un hecho». En cualquier momento, puedes parar diciendo «Alexa, detente»"
+          "name": "Curiosidades del espacio",
+          "description": "Pida datos espaciales y aprenda sobre los planetas y el universo. Curiosidades del Espacio proporciona diversión que toda la familia puede disfrutar y está garantizado para hacerte más inteligente. Para empezar, simplemente di «Alexa, abre curiosidades del espacio» o «Alexa, lanza curiosidades del espacio» para obtener un hecho». En cualquier momento, puede parar diciendo «Alexa, detente»"
         },
         "es-MX": {
           "summary": "Aprenda hechos divertidos sobre el espacio.",
@@ -104,10 +104,10 @@
           ],
           "keywords": [
             "espacio",
-            "hechos"
+            "datos"
           ],
-          "name": "Datos del espacio abierto",
-          "description": "Pida Hechos Espaciales y aprenda sobre lo que realmente importa, como la materia oscura. Space Facts proporciona diversión que toda la familia puede disfrutar y está garantizado para hacerte más inteligente. Para empezar, simplemente di «Alexa, lanza hechos espaciales» o «Alexa, abrir hechos espaciales» para obtener un hecho». En cualquier momento, puedes parar diciendo «Alexa, detente»"
+          "name": "curiosidades del espacio",
+          "description": "Pide datos espaciales y aprende sobre los planetas y el universo. Curiosidades del Espacio proporciona diversión que toda la familia puede disfrutar y está garantizado para hacerte más inteligente. Para empezar, simplemente di «Alexa, abre curiosidades del espacio» o «Alexa, lanza curiosidades del espacio» para obtener un hecho». En cualquier momento, puedes parar diciendo «Alexa, detente»"
         },
         "fr-FR": {
           "summary": "Découvrez des anecdotes marrantes sur l'espace.",
