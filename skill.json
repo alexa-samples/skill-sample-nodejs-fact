@@ -131,12 +131,12 @@
             "Alexa apri aneddoti spaziali"
           ],
           "keywords": [
-            "space",
-            "facts",
+            "spazio",
+            "aneddoti",
             "trivia"
           ],
           "name": "aneddoti spaziali",
-          "description": "Chiedi i fatti spaziali e scopri cosa conta davvero, come la materia oscura. Space Facts offre divertimento a tutta la famiglia ed è garantito per renderti più intelligente. Per iniziare, basta dire «Alexa, lanciare aneddoti spaziali» o «Alexa, apri aneddoti spaziali» per ottenere un fatto». In qualsiasi momento, puoi fermarti dicendo «Alexa, fermati»"
+          "description": "Chiedi i fatti spaziali e scopri cosa conta davvero, come la materia oscura. Aneddoti Spaziali offre divertimento a tutta la famiglia ed è garantito per renderti più intelligente. Per iniziare, basta dire «Alexa, lanciare aneddoti spaziali» o «Alexa, apri aneddoti spaziali» per ottenere un fatto». In qualsiasi momento, puoi fermarti dicendo «Alexa, fermati»"
         },
         "ja-JP": {
           "summary": "宇宙の豆知識を楽しみます",
