@@ -1,40 +1,25 @@
 {
-  "skillManifest": {
+  "manifest": {
     "publishingInformation": {
       "locales": {
-        "en-US": {
-          "summary": "Learn fun facts about space.",
+        "ja-JP": {
+          "summary": "宇宙の豆知識を楽しみます",
           "examplePhrases": [
-            "Alexa open space facts",
-            "Alexa ask space facts for a fact",
-            "Alexa tell space facts to tell me trivia"
+            "アレクサ、宇宙の豆知識を開いて",
+            "アレクサ、宇宙の豆知識で何か話して",
+            "アレクサ、宇宙の豆知識"
           ],
           "keywords": [
-            "space",
-            "facts",
-            "trivia"
+            "宇宙",
+            "豆知識",
+            "トリビア"
           ],
-          "name": "Space Facts",
-          "description": "Ask for Space Facts, and learn about what really matters, like dark matter.\n\nSpace Facts provides fun the whole family can enjoy and is guaranteed to make you smarter.\n\nTo start, just say \"Alexa, launch Space Facts\" or \"Alexa, open Space Facts\" to get a fact\".\n\nAt anytime, you can stop by saying \"Alexa, stop\""
-        },
-        "en-GB": {
-          "summary": "Listen to My Radio, less bla bla bla, more la la la.",
-          "examplePhrases": [
-            "Alexa, open My Radio",
-            "Alexa, play My Radio",
-            "Alexa, ask My Radio to play"
-          ],
-          "keywords": [
-            "music",
-            "streaming",
-            "radio"
-          ],
-          "name": "My Radio",
-          "description": "Listen to My Radio, with less bla bla bla, and more la la la.\n\nMy Radio provides a high quality sound 24/7 with the best music.\n\nTo start, just say \"Alexa, launch My Radio\" or \"Alexa, play my radio\" to start the radio\".\n\nAt anytime, you can stop the radio by saying \"Alexa, stop\"",
+          "name": "宇宙の豆知識",
+          "description": "宇宙の豆知識を披露します。\n\n宇宙の豆知識は家族で楽しめる役に立つ内容でいっぱいです。\n\n開始するには \"アレクサ、豆知識を開いて\" や \"アレクサ、豆知識\" と話しかけてみてください\n\n\"アレクサ、ストップ\"というといつでも終了できます"
         }
       },
       "isAvailableWorldwide": true,
-      "testingInstructions": "Sample Testing Instructions.",
+      "testingInstructions": "テスト手順を記載します",
       "category": "EDUCATION_AND_REFERENCE",
       "distributionCountries": []
     },
@@ -45,14 +30,6 @@
         }
       }
     },
-    "manifestVersion": "1.0",
-    "permissions": [],
-    "privacyAndCompliance": {
-      "allowsPurchases": false,
-      "isExportCompliant": true,
-      "containsAds": false,
-      "isChildDirected": false,
-      "usesPersonalInfo": false
-    }
+    "manifestVersion": "1.0"
   }
 }
