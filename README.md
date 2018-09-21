@@ -16,6 +16,7 @@ Alexaはこれらの問いかけに対して次のように答えます。
 *  「知ってましたか？タイタニック号は一日に600トンの石炭を消費しました。176人の乗務員がシャベルでボイラーに石炭を投入し、毎日100トンの灰を海に放出していました。」
 
 **開始** するには次のボタンをクリックしてください。
+
 [![始めましょう](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/jp/tutorials/general/buttons/button_get_started.png)](instructions/1-voice-user-interface.md)
 
 もしくは、コマンドラインを使った ASK CLI (command line interface) を利用するには [こちら](./instructions/7-cli.md) をクリックしてください。
