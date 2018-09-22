@@ -113,7 +113,7 @@ const LocalizationInterceptor = {
     localizationClient.localize = function localize() {
       const args = arguments;
       const values = [];
-      for (let i = 1; i < args.length; i + 1) {
+      for (let i = 1; i < args.length; i += 1) {
         values.push(args[i]);
       }
       const value = i18n.t(args[0], {
