@@ -55,7 +55,7 @@ So far, we have [created a Voice User Interface](./1-voice-user-interface.md), [
 7.  **Other testing methods to consider:**
 
     *  [Echosim.io](https://echosim.io) - a browser-based Alexa skill testing tool that makes it easy to test your skills without carrying a physical device everywhere you go.
-    *  [Unit Testing with Alexa](https://github.com/alexa/alexa-cookbook/tree/master/testing/postman/README.md) - a modern approach to unit testing your Alexa skills with [Postman](http://getpostman.com) and [Amazon API Gateway](http://aws.amazon.com/apigateway).
+    *  [Unit Testing with Alexa](https://github.com/alexa/alexa-cookbook/blob/master/guides/testing/postman.md) - a modern approach to unit testing your Alexa skills with [Postman](http://getpostman.com) and [Amazon API Gateway](http://aws.amazon.com/apigateway).
 
 8.  **If your sample skill is working properly, you can now customize your skill.**
 
