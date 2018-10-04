@@ -3,12 +3,12 @@
     "publishingInformation": {
       "locales": {
         "de-DE": {
-          "summary": "Erfahren Sie lustige Fakten über den Weltraum.",
+          "summary": "Erfahre lustige und interessante Fakten über den Weltraum.",
           "examplePhrases": [
             "Alexa öffne weltraumfakten"
           ],
           "name": "Weltraumfakten",
-          "description": "Fragen Sie nach Weltraumfakten und lernen Sie, was wirklich wichtig ist bei dieser Materie, wie zum Beispiel, dunkle Materie. Weltraumfakten bietet Spaß für die ganze Familie. Um zu beginnen, sagen Sie einfach „Alexa, starte Weltraumfakten“ oder „Alexa, öffne Weltraumfakten“, um ein Faktum zu erhalten. Sie können jederzeit unterbrechen, indem Sie „Alexa, stop“ sagen."
+          "description": "Frage nach Weltraumfakten und lerne, was wirklich wichtig ist bei dieser Materie, wie zum Beispiel, dunkle Materie. Weltraumfakten bietet Spaß für die ganze Familie. Um zu beginnen, sage einfach „Alexa, starte Weltraumfakten“ oder „Alexa, öffne Weltraumfakten“, um ein Faktum zu erhalten. Du kannst sie jederzeit unterbrechen, indem du „Alexa, stop“ sagst."
         },
         "en-AU": {
           "summary": "Learn fun facts about space.",
