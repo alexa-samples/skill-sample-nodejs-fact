@@ -10,7 +10,7 @@
 
 3.  From the **Alexa Skills Console** select the **Create Skill** button near the top-right of the list of your Alexa Skills.
 
-4. Give your new skill a **Name**. This is the name that will be shown in the Alexa Skills Store, and the name your users will refer to. Also change the locale if so desired. Push Next.
+4. Give your new skill a **Name**. This is the name that will be shown in the Alexa Skills Store, and the name your users will refer to. Also change the locale if so desired.
 
 5. Select the **Custom** model button to add it to your skill, and select the **Create Skill** button at the top right.
 
