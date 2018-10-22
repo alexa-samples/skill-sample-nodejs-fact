@@ -36,7 +36,7 @@ In the [first step of this guide](./1-voice-user-interface.md), we built the Voi
 
 11. Open the function that was just created in the Lambda console by clicking on the link in the list of resources.  It is normally the first resource and the only link in the list.
 
-12. (Optional, but recommended) To **secure this Lambda function** follow the instructions found [here](https://github.com/alexa/alexa-cookbook/blob/master/aws/secure-lambda-function.md)
+12. (Optional, but recommended) To **secure this Lambda function** follow the instructions found [here](https://github.com/alexa/alexa-cookbook/blob/master/guides/aws-security-and-setup/secure-lambda-function.md)
 
 13. Scroll down the page until you see a section called **Function code**.
 

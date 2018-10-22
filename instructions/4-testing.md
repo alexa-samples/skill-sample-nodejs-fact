@@ -31,9 +31,7 @@ So far, we have [created a Voice User Interface](./1-voice-user-interface.md), [
 ![Alexa Start Session](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/4-5-3-alexa-start-session._TTH_.png)
 
     4.  Type in an Event Name into the **Event Name** field.  Delete the contents of the code editor, and paste the Lambda request you copied above into the code editor. The Event Name is only visible to you. Name your test event something descriptive and memorable. For our example, we entered an event name as "startSession". Additionally, by copying and pasting your Lambda Request from the service simulator, you can test different utterances and skill events beyond the pre-populated templates in Lambda.
-<!-- out of date
-![Copy request](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/fact/4-5-4-paste-request._TTH_.png)
--->
+
     5.  **Click the "Create" button.** This will save your test event and bring you back to the main configuration for your lambda function.
 
     6.  **Click the "Test" button to execute the "startSession" test event.**
