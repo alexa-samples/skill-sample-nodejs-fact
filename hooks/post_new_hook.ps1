@@ -21,7 +21,8 @@ if ($DO_DEBUG) {
 }
 
 function install_dependencies ($CWD, $SOURCE_DIR) {
-    Set-Location $SOURCE_DIR
+    $INSTALL_PATH = $SKILL_NAME + "\" +$SOURCE_DIR
+    Set-Location $INSTALL_PATH
     Invoke-Expression "npm install" 2>&1 | Out-Null
     $EXEC_RESULT = $?
     Set-Location $CWD
