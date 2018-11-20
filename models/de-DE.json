@@ -16,6 +16,10 @@
           "samples": []
         },
         {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
           "name": "GetNewFactIntent",
           "samples": [
             "ein Faktum",
