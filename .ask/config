@@ -2,17 +2,7 @@
   "deploy_settings": {
     "default": {
       "skill_id": "",
-      "merge": {
-        "manifest": {
-          "apis": {
-            "custom": {
-              "endpoint": {
-                "uri": "ask-custom-fact-default"
-              }
-            }
-          }
-        }
-      }
+      "merge": {}
     }
   }
-}
+ }
