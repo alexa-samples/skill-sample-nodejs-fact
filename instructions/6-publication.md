@@ -7,7 +7,7 @@
 
 We are almost done!  The last step is to add the metadata that your skill will use in the [Skill Store](http://amazon.com/skills).  This page will walk you through the remaining steps to launch your skill!
 
-1. Select the **Launch** link  from the top navigation menu.
+1. Select the **Distribution** link  from the top navigation menu.
 
 2. Fill out the form fields per the guidance on the screen. Hover over the question mark icons for details regarding each respective field. **Fields marked with an Asterisk, are required!**
 	* Take the time to get these right so that your skill will pass certification!
@@ -35,6 +35,7 @@ We are almost done!  The last step is to add the metadata that your skill will u
     *  **Make sure you have the rights to the icons you create.** Please don't violate any trademarks or copyrights.
     *  **If you don't have software to make icons, try one of these free options:**
 
+       *  [Alexa Skill Icon Builder](https://developer.amazon.com/docs/tools/icon-builder.html) (Web)
        *  [GIMP](https://www.gimp.org/) (Windows/Mac/Linux)
        *  [Canva](https://www.canva.com/) (Web)
        *  [Paint.NET](http://www.getpaint.net/index.html) (Windows)
@@ -92,8 +93,18 @@ We are almost done!  The last step is to add the metadata that your skill will u
 
 	**Note:** More details on certification are [available here.](https://alexa.design/certification)
 
-14. If you feel that your skill is ready for certification, click the **Save and Continue** button at the bottom of the page.
+1. Click the **Save and Continue** button at the bottom of the page to move on to **Availability**.
+    * You'll want to allow the Public to access the skill unless you are using [Alexa for Business](https://aws.amazon.com/a4b).
+    * Beta testing is a good idea for every skill, however since this is from a template and is very basic, we'll skip that for now.  When you make your next skill, don't skip this step.  Seriously.  You won't regret it.
+    * It is recommended to allow your skill to be available in all countries and regions where Amazon distributes skills, unless you are using facts which aren't applicable to a given area.  Reasons to restrict distribution include not having intellectual property rights to distribute to that area and the content being illegal, offensive or otherwise prohibited in that area. 
 
+1. If you feel that your skill is ready for certification, click the **Save and Continue** button at the bottom of the page and you'll be taken to the certification tab.
+
+1. The **Validation** page will tell you if you have missed any steps along the way which will prevent your skill from being submitted.  You shouldn't see anything on this page, but if you do, go back and fix the issues.
+
+1. Click on the **Functional test** section and click the **Run** button to run functional tests against your skill.  You shouldn't see any errors on this page, but if you do, go back and fix the issues.
+
+1. Click on **Submission**, and the click **Submit for Review**.
 
 15. **You're done with your submission!**  Here are a few things you might need to know:
 
