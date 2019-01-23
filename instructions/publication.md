@@ -1,8 +1,6 @@
 # Build An Alexa Fact Skill
 <img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/quiz-game/header._TTH_.png" />
 
-[![Voice User Interface](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/navigation/1-locked._TTH_.png)](./1-voice-user-interface.md)[![Lambda Function](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/navigation/2-locked._TTH_.png)](./2-lambda-function.md)[![Connect VUI to Code](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/navigation/3-locked._TTH_.png)](./3-connect-vui-to-code.md)[![Testing](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/navigation/4-locked._TTH_.png)](./4-testing.md)[![Customization](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/navigation/5-locked._TTH_.png)](./5-customization.md)[![Publication](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/navigation/6-on._TTH_.png)](./6-publication.md)
-
 ## Get Your Skill Certified and Published
 
 We are almost done!  The last step is to add the metadata that your skill will use in the [Skill Store](http://amazon.com/skills).  This page will walk you through the remaining steps to launch your skill!
@@ -31,11 +29,11 @@ We are almost done!  The last step is to add the metadata that your skill will u
 
 5.  **Create your skill's icons.**  You need two sizes of your icon: 108x108px and 512x512px.  When you upload an image, it will be automatically fit to the required dimensions.
 
-
     *  **Make sure you have the rights to the icons you create.** Please don't violate any trademarks or copyrights.
     *  **If you don't have software to make icons, try one of these free options:**
 
-       *  [Alexa Skill Icon Builder](https://developer.amazon.com/docs/tools/icon-builder.html) (Web)
+       *  [Alexa Skill Icon Builder](https://developer.amazon.com/docs/tools/icon-builder.html) (a link to this is included in the console)
+
        *  [GIMP](https://www.gimp.org/) (Windows/Mac/Linux)
        *  [Canva](https://www.canva.com/) (Web)
        *  [Paint.NET](http://www.getpaint.net/index.html) (Windows)
