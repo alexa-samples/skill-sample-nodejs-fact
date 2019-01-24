@@ -1,6 +1,7 @@
 # Build An Alexa Fact Skill
 <img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/quiz-game/header._TTH_.png" />
 
+
 ## Get Your Skill Certified and Published
 
 We are almost done!  The last step is to add the metadata that your skill will use in the [Skill Store](http://amazon.com/skills).  This page will walk you through the remaining steps to launch your skill!
@@ -77,7 +78,7 @@ We are almost done!  The last step is to add the metadata that your skill will u
 
             If you're not sure, please see the [FTC's COPPA Guidance and FAQ](https://www.ftc.gov/tips-advice/business-center/guidance/complying-coppa-frequently-asked-questions) for more information.
 
-12.  **Export Compliance.** Be certain that you agree with all of the conditions.  If you do, make sure to check this box, as Amazon requires this permission to distribute your skill around the globe.  
+12.  **Export Compliance.** Be certain that you agree with all of the conditions.  If you do, make sure to check this box, as Amazon requires this permission to distribute your skill around the globe.
 
 13. **Provide testing instructions.** Testing instructions give you an opportunity to explain your skill, and any special or possibly confusing features, to the certification team.  A value is required in this box.
 
@@ -87,14 +88,14 @@ We are almost done!  The last step is to add the metadata that your skill will u
     This was built using the Fact Sample.
     ```
 
-    This will let the testing team understand what you're providing them, and should decrease the testing time required.    
+    This will let the testing team understand what you're providing them, and should decrease the testing time required.
 
 	**Note:** More details on certification are [available here.](https://alexa.design/certification)
 
 1. Click the **Save and Continue** button at the bottom of the page to move on to **Availability**.
     * You'll want to allow the Public to access the skill unless you are using [Alexa for Business](https://aws.amazon.com/a4b).
     * Beta testing is a good idea for every skill, however since this is from a template and is very basic, we'll skip that for now.  When you make your next skill, don't skip this step.  Seriously.  You won't regret it.
-    * It is recommended to allow your skill to be available in all countries and regions where Amazon distributes skills, unless you are using facts which aren't applicable to a given area.  Reasons to restrict distribution include not having intellectual property rights to distribute to that area and the content being illegal, offensive or otherwise prohibited in that area. 
+    * It is recommended to allow your skill to be available in all countries and regions where Amazon distributes skills, unless you are using facts which aren't applicable to a given area.  Reasons to restrict distribution include not having intellectual property rights to distribute to that area and the content being illegal, offensive or otherwise prohibited in that area.
 
 1. If you feel that your skill is ready for certification, click the **Save and Continue** button at the bottom of the page and you'll be taken to the certification tab.
 

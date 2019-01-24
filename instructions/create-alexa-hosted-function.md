@@ -2,6 +2,7 @@
 <img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/quiz-game/header._TTH_.png" />
 
 
+
 ### Deploying Skill Code
 
 In the [first step of this guide](./vui-alexa-hosted.md), we built the Voice User Interface (VUI) for our Alexa skill.
@@ -27,4 +28,4 @@ There is also a file called **package.json**.  We will be updating both these fi
 7. At the bottom left corner of the page, notice the link to **Logs: Amazon CloudWatch**.  CloudWatch is the logging service that will record any
 
 
-[![Next](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/buttons/button_next_testing._TTH_.png)](./testing.md)
+[![Next](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/buttons/button_next_testing._TTH_.png)](./test-using-simulator.md)

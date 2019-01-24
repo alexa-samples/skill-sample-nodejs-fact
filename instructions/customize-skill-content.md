@@ -31,5 +31,5 @@ At this point, you should have a working copy of our Fact skill.  In order to ma
 5.  **Click on "Distribution" in the top navigation to move on to the publishing and certification of your skill.**
 
 
-[![Next](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/buttons/button_next_publication._TTH_.png)](./publication.md)
+[![Next](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/buttons/button_next_publication._TTH_.png)](./submit-for-certification.md)
 
