@@ -38,6 +38,10 @@
             "give me something"
           ],
           "slots": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
         }
       ]
     }

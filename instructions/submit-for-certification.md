@@ -1,7 +1,6 @@
 # Build An Alexa Fact Skill
 <img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/quiz-game/header._TTH_.png" />
 
-[![Voice User Interface](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/navigation/1-locked._TTH_.png)](./1-voice-user-interface.md)[![Lambda Function](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/navigation/2-locked._TTH_.png)](./2-lambda-function.md)[![Connect VUI to Code](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/navigation/3-locked._TTH_.png)](./3-connect-vui-to-code.md)[![Testing](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/navigation/4-locked._TTH_.png)](./4-testing.md)[![Customization](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/navigation/5-locked._TTH_.png)](./5-customization.md)[![Publication](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/navigation/6-on._TTH_.png)](./6-publication.md)
 
 ## Get Your Skill Certified and Published
 
@@ -31,11 +30,11 @@ We are almost done!  The last step is to add the metadata that your skill will u
 
 5.  **Create your skill's icons.**  You need two sizes of your icon: 108x108px and 512x512px.  When you upload an image, it will be automatically fit to the required dimensions.
 
-
     *  **Make sure you have the rights to the icons you create.** Please don't violate any trademarks or copyrights.
     *  **If you don't have software to make icons, try one of these free options:**
 
-       *  [Alexa Skill Icon Builder](https://developer.amazon.com/docs/tools/icon-builder.html) (Web)
+       *  [Alexa Skill Icon Builder](https://developer.amazon.com/docs/tools/icon-builder.html) (a link to this is included in the console)
+
        *  [GIMP](https://www.gimp.org/) (Windows/Mac/Linux)
        *  [Canva](https://www.canva.com/) (Web)
        *  [Paint.NET](http://www.getpaint.net/index.html) (Windows)
@@ -79,7 +78,7 @@ We are almost done!  The last step is to add the metadata that your skill will u
 
             If you're not sure, please see the [FTC's COPPA Guidance and FAQ](https://www.ftc.gov/tips-advice/business-center/guidance/complying-coppa-frequently-asked-questions) for more information.
 
-12.  **Export Compliance.** Be certain that you agree with all of the conditions.  If you do, make sure to check this box, as Amazon requires this permission to distribute your skill around the globe.  
+12.  **Export Compliance.** Be certain that you agree with all of the conditions.  If you do, make sure to check this box, as Amazon requires this permission to distribute your skill around the globe.
 
 13. **Provide testing instructions.** Testing instructions give you an opportunity to explain your skill, and any special or possibly confusing features, to the certification team.  A value is required in this box.
 
@@ -89,14 +88,14 @@ We are almost done!  The last step is to add the metadata that your skill will u
     This was built using the Fact Sample.
     ```
 
-    This will let the testing team understand what you're providing them, and should decrease the testing time required.    
+    This will let the testing team understand what you're providing them, and should decrease the testing time required.
 
 	**Note:** More details on certification are [available here.](https://alexa.design/certification)
 
 1. Click the **Save and Continue** button at the bottom of the page to move on to **Availability**.
     * You'll want to allow the Public to access the skill unless you are using [Alexa for Business](https://aws.amazon.com/a4b).
     * Beta testing is a good idea for every skill, however since this is from a template and is very basic, we'll skip that for now.  When you make your next skill, don't skip this step.  Seriously.  You won't regret it.
-    * It is recommended to allow your skill to be available in all countries and regions where Amazon distributes skills, unless you are using facts which aren't applicable to a given area.  Reasons to restrict distribution include not having intellectual property rights to distribute to that area and the content being illegal, offensive or otherwise prohibited in that area. 
+    * It is recommended to allow your skill to be available in all countries and regions where Amazon distributes skills, unless you are using facts which aren't applicable to a given area.  Reasons to restrict distribution include not having intellectual property rights to distribute to that area and the content being illegal, offensive or otherwise prohibited in that area.
 
 1. If you feel that your skill is ready for certification, click the **Save and Continue** button at the bottom of the page and you'll be taken to the certification tab.
 
