@@ -15,7 +15,7 @@ So far, we have created a Voice User Interface, and deployed code to a backend s
 Toggle the dropdown from **Off** to **Development**.
 
 4. To validate that your skill is working as expected, invoke your skill from the **Alexa Simulator** just below. You can either type or click and hold the mic from the input box to use your voice.
-	1. **Type** "Open" followed by the invocation name you gave your skill in step 1. For example, "Open space facts".
+	1. **Type** "Open" followed by the invocation name you gave your skill previously. For example, "Open space facts".
 	2. **Use your voice** by clicking and holding the mic on the side panel and saying "Open" followed by the invocation name you gave your skill.
 	3. **If you've forgotten the invocation name** for your skill, revisit the **Build** panel on the top navigation menu and select **Invocation** from the sidebar to review it.
 
@@ -73,3 +73,4 @@ If you are not using Alexa-Hosted, but are hosting the code in your AWS account,
 
 8.  **If your sample skill is working properly, you can now customize your skill.**
 
+[![Next](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/buttons/button_next_customization._TTH_.png)](./customize-skill-content.md)

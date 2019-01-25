@@ -5,7 +5,7 @@
 
 ## Setting Up A Lambda Function Using Amazon Web Services
 
-In the [first step of this guide](./vui-aws-hosted.md), we built the Voice User Interface (VUI) for our Alexa skill.  On this page, we will be creating an AWS Lambda function using [Amazon Web Services](http://aws.amazon.com).  You can [read more about what a Lambda function is](http://aws.amazon.com/lambda), but for the purposes of this guide, what you need to know is that AWS Lambda is where our code lives.  When a user asks Alexa to use our skill, it is our AWS Lambda function that interprets the appropriate interaction, and provides the conversation back to the user.
+In the [first step of this guide](./setup-vui-aws-hosted.md), we built the Voice User Interface (VUI) for our Alexa skill.  On this page, we will be creating an AWS Lambda function using [Amazon Web Services](http://aws.amazon.com).  You can [read more about what a Lambda function is](http://aws.amazon.com/lambda), but for the purposes of this guide, what you need to know is that AWS Lambda is where our code lives.  When a user asks Alexa to use our skill, it is our AWS Lambda function that interprets the appropriate interaction, and provides the conversation back to the user.
 
 1.  **Go to http://aws.amazon.com and sign in to the console.** If you don't already have an account, you will need to create one.  [If you don't have an AWS account, check out this quick walkthrough for setting it up](https://github.com/alexa/alexa-cookbook/blob/master/guides/aws-security-and-setup/set-up-aws.md).
 
@@ -36,19 +36,18 @@ In the [first step of this guide](./vui-aws-hosted.md), we built the Voice User 
 
 11. Open the function that was just created in the Lambda console by clicking on the link in the list of resources.  It is normally the first resource and the only link in the list.
 
-12. (Optional, but recommended) To **secure this Lambda function** follow the instructions found [here](https://github.com/alexa/alexa-cookbook/blob/master/guides/aws-security-and-setup/secure-lambda-function.md)
+12. (Optional, but recommended) To **secure this Lambda function** follow the instructions found here: [alexa.design/secure-lambda-function](https://alexa.design/secure-lambda-function)
 
 13. Scroll down the page until you see a section called **Function code**.
 
 14. You are not required to make any changes, however for your knowledge, the code which was pre-loaded into the function comes from [here](../lambda/custom/index.js). If you modify the code, be sure to click "Save".
 
-15. You should see the Amazon Resource Name (ARN) for this function in the top right corner of the page.  (You may need to scroll back up.) **Copy the ARN value for this Lambda function** for use in the next section of the guide.
+15. You should see the Amazon Resource Name (ARN) for this function in the top right corner of the page.  (You may need to scroll back up.) **Copy the ARN value for this Lambda function** by clicking the small copy button; we will use this ARN in the next section of the guide.
 
-    ![Copy ARN](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/quiz-game/2-12-copy-ARN._TTH_.png)
 
 ## Connecting Your Voice User Interface To Your Lambda Function
 
-On [page #1](./1-voice-user-interface.md) of this guide, we created a voice user interface for the intents and utterances we expect from our users.  On [page #2](./2-lambda-function.md), we created a Lambda function that contains all of our logic for the skill.  On this page, we need to connect those two pieces together.
+On [the first page](./setup-vui-aws-hosted.md) of this guide, we created a voice user interface for the intents and utterances we expect from our users.  On [the second page](./create-aws-hosted-function.md), we created a Lambda function that contains all of our logic for the skill.  On this page, we need to connect those two pieces together.
 
 1.  **Go back to the [Amazon Developer Portal](https://developer.amazon.com/alexa/console/ask?&sc_category=Owned&sc_channel=RD&sc_campaign=Evangelism2018&sc_publisher=github&sc_content=Survey&sc_detail=fact-nodejs-V2_GUI-3&sc_funnel=Convert&sc_country=WW&sc_medium=Owned_RD_Evangelism2018_github_Survey_fact-nodejs-V2_GUI-3_Convert_WW_beginnersdevs&sc_segment=beginnersdevs) and select your skill from the list.** You may still have a browser tab open if you started at the beginning of this tutorial.
 
@@ -60,7 +59,7 @@ On [page #1](./1-voice-user-interface.md) of this guide, we created a voice user
 
 5. Click the **Save Endpoints** button at the top of the main panel.
 
-6. **Click the "Next" button to continue to page #4 of this guide.**
+6. **Click the "Next" button to continue.**
 
 [![Next](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/buttons/button_next_testing._TTH_.png)](./test-using-simulator.md)
 
