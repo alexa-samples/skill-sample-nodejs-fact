@@ -2,8 +2,6 @@
 <img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/quiz-game/header._TTH_.png" />
 
 
-
-
 With an Alexa-hosted skill, you can build, edit, and publish a skill without leaving the developer console.
 The skill includes a code editor for managing and deploying the backend code for your skill.
 For details on what the Alexa-Hosted skills service provides, open [this page](https://developer.amazon.com/docs/hosted-skills/build-a-skill-end-to-end-using-an-alexa-hosted-skill.html) in a new tab.
@@ -33,7 +31,8 @@ It will take a minute to create your Alexa hosted skill, then you will be taken 
 
 8. **Optional:** Select an intent by expanding the **Intents** from the left side navigation panel. Add some more sample utterances for your newly generated intents. Think of all the different ways that a user could request to make a specific intent happen. A few examples are provided. Be sure to click **Save Model** and **Build Model** after you're done making changes here.
 
-9. If your interaction model builds successfully, proceed to the next step. If not, you should see an error. Try to resolve the errors. In our next step of this guide, we will be creating our code.
+9. If your interaction model builds successfully, proceed to the next step. If not, you should see an error.
+Try to resolve the errors. In our next step of this guide, we will be creating our code.
 
 
      If you get an error from your interaction model, check through this list:

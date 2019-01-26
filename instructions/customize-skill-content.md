@@ -8,7 +8,7 @@ At this point, you should have a working copy of our Fact skill.  In order to ma
 
 1.  **New data.** You will need to provide a set of facts for your topic.  We recommend a minimum of 25, but a total closer to 100 offers a better experience.
 
-    1.  Open your code file **index.js.**
+    1.  Open your code file in the online editor: **index.js.**
 
     2.  Search for the comment **"TODO: Replace this data with your own."**  This is the data for our skill.  You can see that it is a simple list of facts.
 
@@ -16,7 +16,7 @@ At this point, you should have a working copy of our Fact skill.  In order to ma
 
 2.  **New sentences to respond to your users.** There are several sentences and responses that you will want to customize for your skill.
 
-    1.  Go back to **[index.js](https://github.com/alexa/skill-sample-nodejs-fact/blob/en-US/lambda/custom/index.js).**
+    1.  Go back to **[index.js](../lambda/custom/index.js).**
 
     2.  **Look for the comment "TODO: The items below this comment need your attention."** This is the beginning of the section where you need to customize several text strings for your skill.
 

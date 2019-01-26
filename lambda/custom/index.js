@@ -147,6 +147,7 @@ exports.handler = skillBuilder
   .addErrorHandlers(ErrorHandler)
   .lambda();
 
+
 // translations
 const deData = {
   translation: {
@@ -174,6 +175,10 @@ const dedeData = {
     SKILL_NAME: 'Weltraumwissen auf Deutsch',
   },
 };
+
+// TODO: Replace this data with your own."**  This is the data for our skill.  You can see that it is a simple list of facts.
+
+// TODO: The items below this comment need your attention."** This is the beginning of the section where you need to customize several text strings for your skill.
 
 const enData = {
   translation: {
