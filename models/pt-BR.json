@@ -1,0 +1,45 @@
+{
+    "interactionModel": {
+      "languageModel": {
+        "invocationName": "fatos espaciais",
+        "intents": [
+          {
+            "name": "AMAZON.CancelIntent",
+            "samples": []
+          },
+          {
+            "name": "AMAZON.HelpIntent",
+            "samples": []
+          },
+          {
+            "name": "AMAZON.StopIntent",
+            "samples": []
+          },
+          {
+            "name": "GetNewFactIntent",
+            "samples": [
+              "um fato",
+              "um fato espacial",
+              "me conta um fato sobre o espaço",
+              "fale um fato espacial",
+              "me dê um fato sobre o espaço",
+              "me da um fato espacial",
+              "me conta um fato",
+              "me conta um fato sobre o espaço",
+              "me conta um fato espacial",
+              "me conta um fato interessante",
+              "me dê informações sobre o espaço",
+              "me fale coisas interessantes sobre o espaço",
+              "me conta algo interessante",
+              "mais um",
+              "mais uma",
+              "me da mais um fato",
+              "quero ouvir um fato sobre o espaço"
+            ],
+            "slots": []
+          }
+        ]
+      }
+    }
+  }
+  
