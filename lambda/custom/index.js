@@ -106,11 +106,17 @@ const ErrorHandler = {
 
 const LocalizationInterceptor = {
   process(handlerInput) {
+    // Gets the locale from the request and initializes 
+    // i18next.
     const localizationClient = i18n.use(sprintf).init({
       lng: handlerInput.requestEnvelope.request.locale,
       resources: languageStrings,
     });
+    // Creates a localize function to support arguments.
     localizationClient.localize = function localize() {
+      // gets arguments through and passes them to
+      // i18next using sprintf to replace string placeholders
+      // with arguments.
       const args = arguments;
       const values = [];
       for (let i = 1; i < args.length; i += 1) {
@@ -121,11 +127,15 @@ const LocalizationInterceptor = {
         postProcess: 'sprintf',
         sprintf: values,
       });
+
+      // If an array is used then a random value is selected 
       if (Array.isArray(value)) {
         return value[Math.floor(Math.random() * value.length)];
       }
       return value;
     };
+    // this gets the request attributes and save the localize function inside 
+    // it to be used in a handler by calling requestAttributes.t(STRING_ID, [args...])
     const attributes = handlerInput.attributesManager.getRequestAttributes();
     attributes.t = function translate(...args) {
       return localizationClient.localize(...args);
@@ -344,6 +354,27 @@ const jpjpData = {
   },
 };
 
+const ptData = {
+  translation: {
+    SKILL_NAME: 'Fatos Espaciais',
+    GET_FACT_MESSAGE: 'Aqui vai: ',
+    HELP_MESSAGE: 'Você pode me perguntar por um fato interessante sobre o espaço, ou, fexar a skill. Como posso ajudar?',
+    HELP_REPROMPT: 'O que vai ser?',
+    FALLBACK_MESSAGE: 'A skill fatos espaciais não tem uma resposta para isso. Ela pode contar informações interessantes sobre o espaço, é só perguntar. Como posso ajudar?',
+    FALLBACK_REPROMPT: 'Eu posso contar fatos sobre o espaço. Como posso ajudar?',
+    ERROR_MESSAGE: 'Desculpa, algo deu errado.',
+    STOP_MESSAGE: 'Tchau!',
+    FACTS:
+      [
+        'Um ano em Mercúrio só dura 88 dias.',
+        'Apesar de ser mais distante do sol, Venus é mais quente que Mercúrio.',
+        'Visto de marte, o sol parece ser metade to tamanho que nós vemos da terra.',
+        'Júpiter tem os dias mais curtos entre os planetas no nosso sistema solar.',
+        'O sol é quase uma esfera perfeita.',
+      ],
+  },
+};
+
 // constructs i18n and l10n data structure
 // translations for this sample can be found at the end of this file
 const languageStrings = {
@@ -364,4 +395,6 @@ const languageStrings = {
   'it-IT': ititData,
   'ja': jpData,
   'ja-JP': jpjpData,
+  'pt': ptData,
+  'pt-BR': ptData
 };
