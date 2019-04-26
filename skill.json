@@ -152,6 +152,21 @@
           ],
           "name": "宇宙の豆知識",
           "description": "宇宙の豆知識を披露します。\n\n宇宙の豆知識は家族で楽しめる役に立つ内容でいっぱいです。\n\n開始するには \"アレクサ、豆知識を開いて\" や \"アレクサ、豆知識\" と話しかけてみてください\n\n\"アレクサ、ストップ\"というといつでも終了できます"
+        },
+        "pt-BR": {
+          "summary": "Aprenda fatos divertidos sobre o espaço.",
+          "examplePhrases": [
+            "Alexa abrir fatos espaciais",
+            "Alexa me conta um fato",
+            "Alexa me conta um fato sobre o espaço"
+          ],
+          "keywords": [
+            "espaço",
+            "fatos",
+            "trivia"
+          ],
+          "name": "Fatos Espaciais",
+          "description": "Pergunte por Fatos Espaciais e aprenda sobre o que interessa, como matéria escura.\n\nFatos Espaciais proporciona divertimento para toda família e é garantido que te fará mais inteligente. \n\nPara iniciar, apenas fale \"Alexa, iniciar Fatos Espaciais\" ou \"Alexa, abrir Fatos Espaciais\" pra receber um fato\".\n\nA qualquer momento, você pode dizer \"Alexa, pare\""
         }
       },
       "category": "KNOWLEDGE_AND_TRIVIA"
