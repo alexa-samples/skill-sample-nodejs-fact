@@ -166,7 +166,7 @@
             "trivia"
           ],
           "name": "Fatos Espaciais",
-          "description": "Pergunte por Fatos Espaciais e aprenda sobre o que interessa, como matéria escura.\n\nFatos Espaciais proporciona divertimento para toda família e é garantido que te fará mais inteligente. \n\nPara iniciar, apenas fale \"Alexa, iniciar Fatos Espaciais\" ou \"Alexa, abrir Fatos Espaciais\" pra receber um fato\".\n\nA qualquer momento, você pode dizer \"Alexa, pare\""
+          "description": "Pergunte por Fatos Espaciais e aprenda sobre o que interessa, como matéria escura.\n\nA skill Fatos Espaciais proporciona divertimento para toda família e certamente fará você mais inteligente. \n\nPara iniciar, apenas fale \"Alexa, iniciar Fatos Espaciais\" ou \"Alexa, abrir Fatos Espaciais\" para receber um fato\".\n\nA qualquer momento, você pode dizer \"Alexa, pare\""
         }
       },
       "category": "KNOWLEDGE_AND_TRIVIA"
