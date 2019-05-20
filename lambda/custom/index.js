@@ -1,5 +1,20 @@
+/*
+ * Copyright 2018-2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Licensed under the Apache License, Version 2.0 (the "License").
+ * You may not use this file except in compliance with the License.
+ * A copy of the License is located at
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * or in the "license" file accompanying this file. This file is distributed
+ * on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either
+ * express or implied. See the License for the specific language governing
+ * permissions and limitations under the License.
+ */
+
+//
 // Alexa Fact Skill - Sample for Beginners
-/* eslint no-use-before-define: 0 */
+//
+
 // sets up dependencies
 const Alexa = require('ask-sdk-core');
 const i18n = require('i18next');
@@ -25,6 +40,9 @@ const GetNewFactHandler = {
 
     return handlerInput.responseBuilder
       .speak(speakOutput)
+      // Uncomment the next line if you want to keep the session open so you can
+      // ask for another fact without first re-opening the skill
+      // .reprompt(requestAttributes.t('HELP_REPROMPT'))
       .withSimpleCard(requestAttributes.t('SKILL_NAME'), randomFact)
       .getResponse();
   },
@@ -46,9 +64,8 @@ const HelpHandler = {
 };
 
 const FallbackHandler = {
-  // 2018-Aug-01: AMAZON.FallbackIntent is only currently available in en-* locales.
-  //              This handler will not be triggered except in those locales, so it can be
-  //              safely deployed for any locale.
+  // The FallbackIntent can only be sent in those locales which support it,
+  // so this handler will always be skipped in locales where it is not supported.
   canHandle(handlerInput) {
     const request = handlerInput.requestEnvelope.request;
     return request.type === 'IntentRequest'
@@ -106,8 +123,7 @@ const ErrorHandler = {
 
 const LocalizationInterceptor = {
   process(handlerInput) {
-    // Gets the locale from the request and initializes 
-    // i18next.
+    // Gets the locale from the request and initializes i18next.
     const localizationClient = i18n.use(sprintf).init({
       lng: handlerInput.requestEnvelope.request.locale,
       resources: languageStrings,
@@ -128,13 +144,13 @@ const LocalizationInterceptor = {
         sprintf: values,
       });
 
-      // If an array is used then a random value is selected 
+      // If an array is used then a random value is selected
       if (Array.isArray(value)) {
         return value[Math.floor(Math.random() * value.length)];
       }
       return value;
     };
-    // this gets the request attributes and save the localize function inside 
+    // this gets the request attributes and save the localize function inside
     // it to be used in a handler by calling requestAttributes.t(STRING_ID, [args...])
     const attributes = handlerInput.attributesManager.getRequestAttributes();
     attributes.t = function translate(...args) {
@@ -155,10 +171,13 @@ exports.handler = skillBuilder
   )
   .addRequestInterceptors(LocalizationInterceptor)
   .addErrorHandlers(ErrorHandler)
+  .withCustomUserAgent('sample/basic-fact/v1')
   .lambda();
 
+// TODO: Replace this data with your own.
+// It is organized by language/locale.  You can safely ignore the locales you aren't using.
+// Update the name and messages to align with the theme of your skill
 
-// translations
 const deData = {
   translation: {
     SKILL_NAME: 'Weltraumwissen',
@@ -186,10 +205,6 @@ const dedeData = {
   },
 };
 
-// TODO: Replace this data with your own."**  This is the data for our skill.  You can see that it is a simple list of facts.
-
-// TODO: The items below this comment need your attention."** This is the beginning of the section where you need to customize several text strings for your skill.
-
 const enData = {
   translation: {
     SKILL_NAME: 'Space Facts',
@@ -213,7 +228,7 @@ const enData = {
 
 const enauData = {
   translation: {
-    SKILL_NAME: 'Austrailian Space Facts',
+    SKILL_NAME: 'Australian Space Facts',
   },
 };
 
@@ -354,6 +369,12 @@ const jpjpData = {
   },
 };
 
+const ptbrData = {
+  translation: {
+    SKILL_NAME: 'Fatos Espaciais',
+  },
+};
+
 const ptData = {
   translation: {
     SKILL_NAME: 'Fatos Espaciais',
@@ -376,7 +397,6 @@ const ptData = {
 };
 
 // constructs i18n and l10n data structure
-// translations for this sample can be found at the end of this file
 const languageStrings = {
   'de': deData,
   'de-DE': dedeData,
@@ -396,5 +416,5 @@ const languageStrings = {
   'ja': jpData,
   'ja-JP': jpjpData,
   'pt': ptData,
-  'pt-BR': ptData
+  'pt-BR': ptbrData,
 };
