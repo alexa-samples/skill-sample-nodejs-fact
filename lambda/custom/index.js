@@ -18,7 +18,6 @@
 // sets up dependencies
 const Alexa = require('ask-sdk-core');
 const i18n = require('i18next');
-const sprintf = require('i18next-sprintf-postprocessor');
 
 // core functionality for fact skill
 const GetNewFactHandler = {
@@ -124,9 +123,10 @@ const ErrorHandler = {
 const LocalizationInterceptor = {
   process(handlerInput) {
     // Gets the locale from the request and initializes i18next.
-    const localizationClient = i18n.use(sprintf).init({
+    const localizationClient = i18n.init({
       lng: handlerInput.requestEnvelope.request.locale,
       resources: languageStrings,
+      returnObjects: true
     });
     // Creates a localize function to support arguments.
     localizationClient.localize = function localize() {
@@ -134,16 +134,7 @@ const LocalizationInterceptor = {
       // i18next using sprintf to replace string placeholders
       // with arguments.
       const args = arguments;
-      const values = [];
-      for (let i = 1; i < args.length; i += 1) {
-        values.push(args[i]);
-      }
-      const value = i18n.t(args[0], {
-        returnObjects: true,
-        postProcess: 'sprintf',
-        sprintf: values,
-      });
-
+      const value = i18n.t(...args);
       // If an array is used then a random value is selected
       if (Array.isArray(value)) {
         return value[Math.floor(Math.random() * value.length)];
@@ -155,8 +146,8 @@ const LocalizationInterceptor = {
     const attributes = handlerInput.attributesManager.getRequestAttributes();
     attributes.t = function translate(...args) {
       return localizationClient.localize(...args);
-    };
-  },
+    }
+  }
 };
 
 const skillBuilder = Alexa.SkillBuilders.custom();
@@ -171,7 +162,7 @@ exports.handler = skillBuilder
   )
   .addRequestInterceptors(LocalizationInterceptor)
   .addErrorHandlers(ErrorHandler)
-  .withCustomUserAgent('sample/basic-fact/v1')
+  .withCustomUserAgent('sample/basic-fact/v2')
   .lambda();
 
 // TODO: Replace this data with your own.
@@ -289,6 +280,12 @@ const esmxData = {
   },
 };
 
+const esusData = {
+  translation: {
+    SKILL_NAME: 'Curiosidades del Espacio para Estados Unidos',
+  },
+};
+
 const frData = {
   translation: {
     SKILL_NAME: 'Anecdotes de l\'Espace',
@@ -313,6 +310,12 @@ const frData = {
 const frfrData = {
   translation: {
     SKILL_NAME: 'Anecdotes françaises de l\'espace',
+  },
+};
+
+const frcaData = {
+  translation: {
+    SKILL_NAME: 'Anecdotes canadiennes de l\'espace',
   },
 };
 
@@ -409,8 +412,10 @@ const languageStrings = {
   'es': esData,
   'es-ES': esesData,
   'es-MX': esmxData,
+  'es-US': esusData,
   'fr': frData,
   'fr-FR': frfrData,
+  'fr-CA': frcaData,
   'it': itData,
   'it-IT': ititData,
   'ja': jpData,
