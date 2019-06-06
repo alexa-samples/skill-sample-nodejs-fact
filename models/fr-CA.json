@@ -1,0 +1,83 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "anecdotes de l'espace",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "GetNewFactIntent",
+          "samples": [
+            "une anecdote",
+            "une anecdote de l'espace",
+            "dis-moi une anecdote",
+            "dis-moi une anecdote de l'espace",
+            "donne-moi une anecdote",
+            "donne-moi une anecdote de l'espace",
+            "trouve-moi une anecdote",
+            "trouve-moi une anecdote de l'espace",
+            "dire une anecdote",
+            "dire une anecdote de l'espace",
+            "donner une anecdote",
+            "donner une anecdote de l'espace",
+            "trouver une anecdote",
+            "trouver une anecdote de l'espace",
+            "me dire une anecdote",
+            "me dire une anecdote de l'espace",
+            "me donner une anecdote",
+            "me donner une anecdote de l'espace",
+            "me trouver une anecdote",
+            "me trouver une anecdote de l'espace",
+            "dis-moi une info",
+            "dis-moi une info sur l'espace",
+            "donne-moi une info",
+            "donne-moi une info sur l'espace",
+            "trouve-moi une info",
+            "trouve-moi une info sur l'espace",
+            "dire une info",
+            "dire une info sur l'espace",
+            "donner une info",
+            "donner une info sur l'espace",
+            "trouver une info",
+            "trouver une info sur l'espace",
+            "me dire une info",
+            "me dire une info sur l'espace",
+            "me donner une info",
+            "me donner une info sur l'espace",
+            "me trouver une info",
+            "me trouver une info sur l'espace",
+            "dire une info",
+            "dire une info sur l'espace",
+            "donner une info",
+            "donner une info sur l'espace",
+            "trouver une info",
+            "trouver une info sur l'espace",
+            "me dire une info",
+            "me dire une info sur l'espace",
+            "me donner une info",
+            "me donner une info sur l'espace",
+            "me trouver une info",
+            "me trouver une info sur l'espace",
+            "dis-moi quelque chose",
+            "trouve-moi quelque chose",
+            "dire quelque chose",
+            "trouver quelque chose",
+            "me dire quelque chose",
+            "me trouver quelquechose"
+          ],
+          "slots": []
+        }
+      ]
+    }
+  }
+}
