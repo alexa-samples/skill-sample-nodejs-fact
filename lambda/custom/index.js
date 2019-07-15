@@ -319,6 +319,33 @@ const frcaData = {
   },
 };
 
+const hiData = {
+  translation: {
+    SKILL_NAME: 'अंतरिक्ष facts',
+    GET_FACT_MESSAGE: 'ये लीजिए आपका fact: ',
+    HELP_MESSAGE: 'आप मुझे नया fact सुनाओ बोल सकते हैं या फिर exit भी बोल सकते हैं... आप क्या करना चाहेंगे?',
+    HELP_REPROMPT: 'मैं आपकी किस प्रकार से सहायता कर सकती हूँ?',
+    FALLBACK_MESSAGE: 'माफ़ कीजिए, अंतरिक्ष facts skill वो नहीं कर सकता. आपके मुझे नया fact सुनाओ बोलने पर, ये skill आपको अंतरिक्ष के बारे मैं कुछ नया बता सकता हैं. आप क्या करना चाहेंगे?',
+    FALLBACK_REPROMPT: 'मैं आपकी किस प्रकार से सहायता कर सकती हूँ?',
+    ERROR_MESSAGE: 'सॉरी, मैं वो समज नहीं पायी. क्या आप repeat कर सकते हैं?',
+    STOP_MESSAGE: 'अच्छा bye, फिर मिलते हैं',
+    FACTS:
+      [
+        'बुध गृह में एक साल में केवल अठासी दिन होते हैं',
+        'सूरज से दूर होने के बावजूद, Venus का तापमान Mercury से ज़्यादा होता हैं',
+        'Earth के तुलना से Mars में सूरज का size तक़रीबन आधा हैं',
+        'सारे ग्रहों में Jupiter का दिन सबसे कम हैं',
+        'सूरज का shape एकदम गेंद आकार में हैं'
+      ],
+  },
+};
+
+const hiinData = {
+  translation: {
+    SKILL_NAME: 'अंतरिक्ष फ़ाक्ट्स',
+  },
+}
+
 const itData = {
   translation: {
     SKILL_NAME: 'Aneddoti dallo spazio',
@@ -416,6 +443,8 @@ const languageStrings = {
   'fr': frData,
   'fr-FR': frfrData,
   'fr-CA': frcaData,
+  'hi': hiData,
+  'hi-IN': hiinData,
   'it': itData,
   'it-IT': ititData,
   'ja': jpData,
