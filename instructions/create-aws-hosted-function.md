@@ -7,7 +7,7 @@
 
 In the [first step of this guide](./setup-vui-aws-hosted.md), we built the Voice User Interface (VUI) for our Alexa skill.  On this page, we will be creating an AWS Lambda function using [Amazon Web Services](http://aws.amazon.com).  You can [read more about what a Lambda function is](http://aws.amazon.com/lambda), but for the purposes of this guide, what you need to know is that AWS Lambda is where our code lives.  When a user asks Alexa to use our skill, it is our AWS Lambda function that interprets the appropriate interaction, and provides the conversation back to the user.
 
-1.  **Go to http://aws.amazon.com and sign in to the console.** If you don't already have an account, you will need to create one.  [If you don't have an AWS account, check out this quick walkthrough for setting it up](https://github.com/alexa/alexa-cookbook/blob/master/guides/aws-security-and-setup/set-up-aws.md).
+1.  **Go to http://aws.amazon.com and sign in to the console.** If you don't already have an account, you will need to create one.  [If you don't have an AWS account, check out this quick walkthrough for setting it up](https://alexa.design/create-aws-account).
 
     [![Developer Console](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/2-1-sign-in-to-the-console._TTH_.png)](https://console.aws.amazon.com/console/home)
 
@@ -29,7 +29,6 @@ In the [first step of this guide](./setup-vui-aws-hosted.md), we built the Voice
 
 7. **Click on the application.** This template will create the Lambda function, grant the Alexa Skills Kit permission to invoke it, and set up an IAM role for you. It will also add the code from this GitHub repo and include the required dependencies so that you don't have to upload them yourself.
 
-    <!-- <img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/fact/2-5-blueprint._TTH_.png" />  <!--TODO: THIS IMAGE NEEDS TO BE CUSTOMIZED FOR YOUR SKILL TEMPLATE, THIS ONE IS OUT OF DATE. -->
 8. Change the application name if so desired and then **Click the deploy button** at the bottom of the page.
 
 9. Wait for the status of all (three) resources to change to **CREATE_COMPLETE**.  The banner at the top will also change to say **Application successfully deployed**.
