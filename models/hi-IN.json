@@ -1,0 +1,39 @@
+{
+    "interactionModel": {
+      "languageModel": {
+        "invocationName": "अंतरिक्ष facts",
+        "intents": [
+          {
+            "name": "AMAZON.CancelIntent",
+            "samples": []
+          },
+          {
+            "name": "AMAZON.HelpIntent",
+            "samples": []
+          },
+          {
+            "name": "AMAZON.StopIntent",
+            "samples": []
+          },
+          {
+            "name": "GetNewFactIntent",
+            "samples": [
+              "मुझे एक fact बताओ",
+              "मुझे अंतरिक्ष के बारे में एक fact बताओ",
+              "मुझे space के बारे में एक fact बताओ",
+              "मुझे अंतरिक्ष के बारे में ज्ञान बताओ",
+              "मुझे एक fact दो",
+              "मुझे एक space fact दो",
+              "मुझे एक अंतरिक्ष ज्ञान बताओ"
+            ],
+            "slots": []
+          },
+          {
+            "name": "AMAZON.NavigateHomeIntent",
+            "samples": []
+          }
+        ]
+      }
+    }
+  }
+  
