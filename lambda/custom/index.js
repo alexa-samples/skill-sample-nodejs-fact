@@ -342,7 +342,7 @@ const hiData = {
 
 const hiinData = {
   translation: {
-    SKILL_NAME: 'अंतरिक्ष फ़ाक्ट्स',
+    SKILL_NAME: 'अंतरिक्ष फ़ैक्ट्स',
   },
 }
 
