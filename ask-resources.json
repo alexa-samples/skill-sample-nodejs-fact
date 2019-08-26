@@ -1,0 +1,33 @@
+{
+    "askcliResourcesVersion": "2019-08-23",
+    "profiles": {
+      "default": {
+        "skillId": "",
+        "skillMetadata": {
+          "src": "./skill-package",
+          "lastDeployHash": ""
+        },
+        "code": {
+          "default": {
+            "src": "./code",
+            "lastDeployHash": ""
+          },
+          "EU": {
+            "src": "./code",
+            "lastDeployHash": ""
+          },
+          "FE": {
+            "src": "./code",
+            "lastDeployHash": ""
+          }
+        },
+        "skillInfrastructure": {
+          "userConfig": {
+            "runtime": "nodejs8.10",
+            "handler": "index.handler"
+          }
+        }
+      }
+    }
+  }
+  
