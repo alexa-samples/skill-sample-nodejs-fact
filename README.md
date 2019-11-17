@@ -3,9 +3,6 @@
 
 This Alexa sample skill is a template for a basic fact skill.
 
-Build an engaging facts skill about any topic. Alexa will select a fact at random and share it with the user when the skill is invoked.
-
-
 ## Skill Architecture
 Each skill consists of two basic parts, a front end and a back end.
 The front end is the voice interface, or VUI.
@@ -17,7 +14,7 @@ There are a number of different ways for you to setup your skill, depending on y
 
  * If this is your first skill, choose the [Alexa-Hosted backend instructions](./instructions/setup-vui-alexa-hosted.md) to get started quickly.
  * If you want to manage the backend resources in your own AWS account, you can follow the [AWS-Hosted instructions](./instructions/setup-vui-aws-hosted.md).
- * Developers with the ASK Command Line Interface configured may follow the [ASK CLI instructions](./instructions/cli.md).
+ * Developers with the ASK Command Line Interface configured may follow the [ASK CLI instructions](./instructions/cli.ms).
 
 ---
 

@@ -3,7 +3,6 @@
 
 Build an engaging facts skill about any topic. Alexa will select a fact at random and share it with the user when the skill is invoked.
 
-
 ## Deploying Skill Code
 
 In the [first step of this guide](./setup-vui-alexa-hosted.md), we built the Voice User Interface (VUI) for our Alexa skill.
