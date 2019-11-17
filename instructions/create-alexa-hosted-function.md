@@ -1,8 +1,10 @@
 # Build An Alexa Fact Skill
 <img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/quiz-game/header._TTH_.png" />
 
+Build an engaging facts skill about any topic. Alexa will select a fact at random and share it with the user when the skill is invoked.
 
-### Deploying Skill Code
+
+## Deploying Skill Code
 
 In the [first step of this guide](./setup-vui-alexa-hosted.md), we built the Voice User Interface (VUI) for our Alexa skill.
 On this page, we will be exploring the Alexa-Hosted code editor, and deploying our code to enable testing.
