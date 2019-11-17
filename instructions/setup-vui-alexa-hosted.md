@@ -1,4 +1,4 @@
-# Build An Alexa-Hosted Fact Skill
+# Build An Alexa Fact Skill
 <img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/quiz-game/header._TTH_.png" />
 
 Build an engaging facts skill about any topic. Alexa will select a fact at random and share it with the user when the skill is invoked.
