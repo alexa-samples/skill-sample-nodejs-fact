@@ -9,9 +9,9 @@ At this point, you should have a working copy of our Fact skill.  In order to ma
 
 1.  **New data.** You will need to provide a set of facts for your topic.  We recommend a minimum of 25, but a total closer to 100 offers a better experience.
 
-    1.  Open your code file in the online editor: **index.js.**
+    1.  Open your code file in the online editor: `index.js`
 
-    2.  Search for the comment **"TODO: Replace this data with your own."**  This is the data for our skill.  You can see that it is a simple list of facts.
+    2.  Search for the comment **`TODO: Replace this data with your own.`**  This is the data for our skill.  You can see that it is a simple list of facts.
 
     3.  Update the facts with new facts, or quotes, jokes, etc.
 
