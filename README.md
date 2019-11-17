@@ -2,7 +2,8 @@
 <img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/quiz-game/header._TTH_.png" />
 
 This Alexa sample skill is a template for a basic fact skill.
-Provided a list of interesting facts about a topic, Alexa will select a fact at random and tell it to the user when the skill is invoked.
+
+Build an engaging facts skill about any topic. Alexa will select a fact at random and share it with the user when the skill is invoked.
 
 
 ## Skill Architecture
