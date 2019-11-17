@@ -3,7 +3,7 @@
 
 Build an engaging facts skill about any topic. Alexa will select a fact at random and share it with the user when the skill is invoked.
 
-## Setting up Voice User Interface with Alexa Hosted
+## Setting up Your Alexa Skill in the Developer Console (Alexa Hosted)
 
 With an Alexa-hosted skill, you can build, edit, and publish a skill without leaving the developer console.
 The skill includes a code editor for managing and deploying the backend code for your skill.
