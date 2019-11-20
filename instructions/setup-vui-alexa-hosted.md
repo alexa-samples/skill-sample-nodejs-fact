@@ -15,7 +15,9 @@ Now that you've chosen Alexa-Hosted for the method to host your skill's backend 
 
  #### Build the Interaction Model for your skill
 
-- If you want to change the skill invocation name, select the **Invocation** tab. Enter a **Skill Invocation Name**. This is the name that your users will need to say to start your skill.
+The Interaction Model for any skill lays the general guidelines of speech Alexa will listen for, including any additional information it may need to gather (ex: Slot Values). If you want to learn more about the Interaction Model and how it works, make sure to check out [the ASK Documentation on Creating an Interaction Model](https://developer.amazon.com/docs/custom-skills/create-the-interaction-model-for-your-skill.html).
+
+- If you want to change the skill invocation name, select the **Build** tab, then **Invocation** under **Interaction Model**. Enter a **Skill Invocation Name**. This is the name that your users will need to say to start your skill.
 - Click "Build Model".
 
 
