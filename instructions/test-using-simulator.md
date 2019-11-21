@@ -24,6 +24,7 @@ Toggle the dropdown from **Off** to **Development**.
 
 5. Ensure your skill works the way that you designed it to.
 	* After you interact with the Alexa Simulator, you should see the Skill I/O **JSON Input** and **JSON Output** boxes get populated with JSON data. You can also view the **Device Log** to trace your steps.
+		- You can view the Device Log in the **Test** tab by toggling the check box in the upper right hand corner.
 	* If it's not working as expected, you can dig into the JSON to see exactly what Alexa is sending and receiving from the endpoint. If something is broken, you can find the error in AWS Cloudwatch.
 
 
