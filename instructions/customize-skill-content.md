@@ -11,9 +11,9 @@ At this point, you should have a working copy of our Fact skill.  In order to ma
 
     1. Navigate to the **Code** tab again, and expand the project folder on the left to `Skill Code/lambda`.
 
-    2. Open **[index.js](../lambda/custom/index.js)**
+    2. Open **[languageStrings.js](../lambda/custom/languageStrings.js)**
 
-    3. In this example, we are going to be adding an additional fact for the `en` locale. To do this, let's focus on lines `199-218` in the file, most importantly the `FACTS` array property. This is the entire set of facts our skill pulls from at random when a user asks for a fact (for `en` locales). Here is the default Facts for the `en` locale:
+    3. In this example, we are going to be adding an additional fact for the `en` locale. To do this, let's focus on lines `9-28` in the file, most importantly the `FACTS` array property. This is the entire set of facts our skill pulls from at random when a user asks for a fact (for `en` locales). Here is the default Facts for the `en` locale:
     ```js
     const enData = {
         translation: {
@@ -59,9 +59,9 @@ At this point, you should have a working copy of our Fact skill.  In order to ma
 
     1. Navigate to the **Code** tab again, and expand the project folder on the left to `Skill Code/lambda`.
 
-    2. Open **[index.js](../lambda/custom/index.js)**
+    2. Open **[languageStrings.js](../lambda/custom/languageStrings.js)**
 
-    3. Just as before, we are going to be editing a response message for the `en` locale. This means we will be focusing on lines `199-218` in the file. For example, I am going to be replacing the response message when a user asks for a fact from "Here's your fact" to "Your fact is: ". To do this, let's focus on `GET_FACT_MESSAGE`, and replace the contents with any "Your fact is: " instead.
+    3. Just as before, we are going to be editing a response message for the `en` locale. This means we will be focusing on lines `9-28` in the file. For example, I am going to be replacing the response message when a user asks for a fact from "Here's your fact" to "Your fact is: ". To do this, let's focus on `GET_FACT_MESSAGE`, and replace the contents with any "Your fact is: " instead.
 
     Before:
     ```js

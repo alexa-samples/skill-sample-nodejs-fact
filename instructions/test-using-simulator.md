@@ -11,8 +11,7 @@ So far, we have created a Voice User Interface, and deployed code to a backend s
 
 2. Access the **Alexa Simulator**, by selecting the **Test** tab from the top navigation menu.  Your browser may request permission to access your microphone.  While it is recommended to do so, it is not required.  Do note that if you don't allow access to the microphone, you must type your utterances to Alexa in the simulator.
 
-3. Notice the dropdown labeled "Skill testing is enabled in:", found just underneath the top navigation menu.
-Toggle the dropdown from **Off** to **Development**.
+3. Notice the dropdown next to "Test is disabled for this skill.", found just underneath the top navigation menu. To enable testing mode, toggle the dropdown from Off to Development.
 
 4. To validate that your skill is working as expected, invoke your skill from the **Alexa Simulator** just below. You can either type or click and hold the mic from the input box to use your voice.
 	1. **Type** "Open" followed by the invocation name you gave your skill previously. For example, "Open space facts".
