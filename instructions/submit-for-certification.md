@@ -1,6 +1,7 @@
 # Build An Alexa Fact Skill
 <img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/quiz-game/header._TTH_.png" />
 
+Build an engaging facts skill about any topic. Alexa will select a fact at random and share it with the user when the skill is invoked.
 
 ## Get Your Skill Certified and Published
 
@@ -92,23 +93,21 @@ We are almost done!  The last step is to add the metadata that your skill will u
 
 	**Note:** More details on certification are [available here.](https://alexa.design/certification)
 
-1. Click the **Save and Continue** button at the bottom of the page to move on to **Availability**.
+14. Click the **Save and Continue** button at the bottom of the page to move on to **Availability**.
     * You'll want to allow the Public to access the skill unless you are using [Alexa for Business](https://aws.amazon.com/a4b).
     * Beta testing is a good idea for every skill, however since this is from a template and is very basic, we'll skip that for now.  When you make your next skill, don't skip this step.  Seriously.  You won't regret it.
     * It is recommended to allow your skill to be available in all countries and regions where Amazon distributes skills, unless you are using facts which aren't applicable to a given area.  Reasons to restrict distribution include not having intellectual property rights to distribute to that area and the content being illegal, offensive or otherwise prohibited in that area.
 
-1. If you feel that your skill is ready for certification, click the **Save and Continue** button at the bottom of the page and you'll be taken to the certification tab.
+15. If you feel that your skill is ready for certification, click the **Save and Continue** button at the bottom of the page and you'll be taken to the certification tab.
 
-1. The **Validation** page will tell you if you have missed any steps along the way which will prevent your skill from being submitted.  You shouldn't see anything on this page, but if you do, go back and fix the issues.
+16. The **Validation** page will tell you if you have missed any steps along the way which will prevent your skill from being submitted.  You shouldn't see anything on this page, but if you do, go back and fix the issues.
 
-1. Click on the **Functional test** section and click the **Run** button to run functional tests against your skill.  You shouldn't see any errors on this page, but if you do, go back and fix the issues.
+17. Click on the **Functional test** section and click the **Run** button to run functional tests against your skill.  You shouldn't see any errors on this page, but if you do, go back and fix the issues.
 
-1. Click on **Submission**, and the click **Submit for Review**.
+18. Click on **Submission**, and the click **Submit for Review**.
 
-15. **You're done with your submission!**  Here are a few things you might need to know:
+19. **You're done with your submission!**  Here are a few things you might need to know:
 
     *  **Certification can take several days to complete.** Please be patient.  It takes time because we want to get it right.
 
     *  **Did something go wrong?** Our team of evangelists run [online office hours every Tuesday from 1-2pm Pacific Time](https://alexa.design/officehours).  They can help answer any questions you might have.
-
-    *  **Want the coolest t-shirt you've ever seen?** Every month, we create a brand-new Alexa Developer t-shirt or hoodie, and send them out to developers that published a skill that month.  [You can get yours here if you live in the US](https://developer.amazon.com/alexa-skills-kit/alexa-developer-skill-promotion?&sc_category=Owned&sc_channel=RD&sc_campaign=Evangelism2018&sc_publisher=github&sc_content=Survey&sc_detail=fact-nodejs-V2_GUI-6&sc_funnel=Convert&sc_country=WW&sc_medium=Owned_RD_Evangelism2018_github_Survey_fact-nodejs-V2_GUI-6_Convert_WW_beginnersdevs&sc_segment=beginnersdevs), [here for the UK](https://developer.amazon.com/en-gb/alexa-skills-kit/alexa-developer-skill-promotion?&sc_category=Owned&sc_channel=RD&sc_campaign=Evangelism2018&sc_publisher=github&sc_content=Survey&sc_detail=fact-nodejs-V2_GUI-6&sc_funnel=Convert&sc_country=WW&sc_medium=Owned_RD_Evangelism2018_github_Survey_fact-nodejs-V2_GUI-6_Convert_WW_beginnersdevs&sc_segment=beginnersdevs), [here for Germany](https://developer.amazon.com/de-de/alexa-skills-kit/alexa-developer-skill-promotion?&sc_category=Owned&sc_channel=RD&sc_campaign=Evangelism2018&sc_publisher=github&sc_content=Survey&sc_detail=fact-nodejs-V2_GUI-6&sc_funnel=Convert&sc_country=WW&sc_medium=Owned_RD_Evangelism2018_github_Survey_fact-nodejs-V2_GUI-6_Convert_WW_beginnersdevs&sc_segment=beginnersdevs), [here for India](https://developer.amazon.com/alexa-skills-kit/alexa-developer-skill-promotion-india?&sc_category=Owned&sc_channel=RD&sc_campaign=Evangelism2018&sc_publisher=github&sc_content=Survey&sc_detail=fact-nodejs-V2_GUI-6&sc_funnel=Convert&sc_country=WW&sc_medium=Owned_RD_Evangelism2018_github_Survey_fact-nodejs-V2_GUI-6_Convert_WW_beginnersdevs&sc_segment=beginnersdevs), [here for Japan](https://developer.amazon.com/ja/alexa-skills-kit/alexa-developer-skill-promotion?&sc_category=Owned&sc_channel=RD&sc_campaign=Evangelism2018&sc_publisher=github&sc_content=Survey&sc_detail=fact-nodejs-V2_GUI-6&sc_funnel=Convert&sc_country=WW&sc_medium=Owned_RD_Evangelism2018_github_Survey_fact-nodejs-V2_GUI-6_Convert_WW_beginnersdevs&sc_segment=beginnersdevs), [here for France](https://developer.amazon.com/fr/alexa-skills-kit/alexa-developer-skill-promotion?&sc_category=Owned&sc_channel=RD&sc_campaign=Evangelism2018&sc_publisher=github&sc_content=Survey&sc_detail=fact-nodejs-V2_GUI-6&sc_funnel=Convert&sc_country=WW&sc_medium=Owned_RD_Evangelism2018_github_Survey_fact-nodejs-V2_GUI-6_Convert_WW_beginnersdevs&sc_segment=beginnersdevs), and [here for Australia](https://developer.amazon.com/alexa-skills-kit/anz/alexa-developer-skill-promotion).

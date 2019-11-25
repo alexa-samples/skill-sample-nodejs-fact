@@ -2,8 +2,6 @@
 <img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/quiz-game/header._TTH_.png" />
 
 This Alexa sample skill is a template for a basic fact skill.
-Provided a list of interesting facts about a topic, Alexa will select a fact at random and tell it to the user when the skill is invoked.
-
 
 ## Skill Architecture
 Each skill consists of two basic parts, a front end and a back end.
@@ -16,7 +14,7 @@ There are a number of different ways for you to setup your skill, depending on y
 
  * If this is your first skill, choose the [Alexa-Hosted backend instructions](./instructions/setup-vui-alexa-hosted.md) to get started quickly.
  * If you want to manage the backend resources in your own AWS account, you can follow the [AWS-Hosted instructions](./instructions/setup-vui-aws-hosted.md).
- * Developers with the ASK Command Line Interface configured may follow the [ASK CLI instructions](./instructions/cli.md).
+ * Developers with the ASK Command Line Interface configured may follow the [ASK CLI instructions](./instructions/cli.ms).
 
 ---
 
