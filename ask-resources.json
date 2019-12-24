@@ -23,7 +23,7 @@
         },
         "skillInfrastructure": {
           "userConfig": {
-            "runtime": "nodejs8.10",
+            "runtime": "nodejs10.x",
             "handler": "index.handler"
           }
         }
