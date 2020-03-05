@@ -399,7 +399,7 @@ const jpjpData = {
 
 const ptbrData = {
   translation: {
-    SKILL_NAME: 'Fatos Espaciais',
+  SKILL_NAME: 'Fatos Espaciais Brasileiros',
   },
 };
 
