@@ -216,7 +216,12 @@
       "category": "KNOWLEDGE_AND_TRIVIA"
     },
     "apis": {
-      "custom": {}
+      "custom": {
+        "endpoint": {
+          "sourceDir": "lambda/custom",
+          "uri": "ask-custom-fact-default"
+        }
+      }
     },
     "manifestVersion": "1.0"
   }
