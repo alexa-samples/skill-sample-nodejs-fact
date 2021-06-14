@@ -424,6 +424,33 @@ const ptData = {
   },
 };
 
+const arsaData = {
+  translation: {
+   SKILL_NAME: 'حقائق عن الفضاء',
+  },
+};
+
+const arData = {
+  translation: {
+    SKILL_NAME: 'حقائق عن الفضاء',
+    GET_FACT_MESSAGE: 'المعلومة اليوم هي: ',
+    HELP_MESSAGE: 'تقدر تقول أحكي لي معلومة عن الفضاء أو تقدر تقول خلاص للخروج من اللعبة. كيف ممكن أساعدك؟',
+    HELP_REPROMPT: 'كيف أقدر أساعدك؟',
+    FALLBACK_MESSAGE: 'لا يمكن لهذه المهارة المساعدة الآن. سوف تعطيك حقائق عن الفضاء معلومات مذهلة عن الفضاء إذا قلت أعطيني معلومة عن الفضاء. كيف أقدر أساعدك؟',
+		FALLBACK_REPROMPT: 'كيف أقدر أساعدك؟',
+    ERROR_MESSAGE: 'أعتذر، حدث خطأ.',
+    STOP_MESSAGE: 'مع السلامة',
+    FACTS:
+      [
+        'عدد أيام السنة على عطارد هو 88 يوم فقط.',
+        'على الرغم من كون كوكب الزهرة بعيد عن الشمس، إلا أنه يعاني من درجات حرارة أعلى من تلك على عطارد.',
+        'على سطح المريخ، تظهر الشمس حوالي نصف الحجم الذي نراه من سطح الأرض.',
+        'كوكب المشتري لديه أقصر يوم بين جميع الكواكب.',
+        'يكاد يكون شكل الشمس كرة مثالية.',
+      ],
+  },
+};
+
 // constructs i18n and l10n data structure
 const languageStrings = {
   'de': deData,
@@ -449,4 +476,6 @@ const languageStrings = {
   'ja-JP': jpjpData,
   'pt': ptData,
   'pt-BR': ptbrData,
+  'ar': arData,
+  'ar-SA': arsaData,
 };
