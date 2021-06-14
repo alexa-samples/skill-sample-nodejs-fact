@@ -1,0 +1,51 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "حقائق عن الفضاء",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "GetNewFactIntent",
+          "slots": [],
+          "samples": [
+            "حقيقة",
+            "معلومة",
+            "حقيقة عن الفضاء",
+            "أحكي لي حقيقة",
+            "أحكي لي حقيقة عن الفضاء",
+            "أعطيني معلومة عن الفضاء",
+            "أحكي لي معلومات عامة",
+            "أحكي لي معلومات عامة عن الفضاء",
+            "أعطيني معلومات عامة",
+            "أعطيني معلومات عامة عن الفضاء",
+            "أعطيني معلومات",
+            "أعطيني معلومات عن الفضاء",
+            "أحكي لي شيء",
+            "أعطيني شيء"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        }
+      ],
+      "types": []
+    }
+  },
+  "version": "3"
+}
