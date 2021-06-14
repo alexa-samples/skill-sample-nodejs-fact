@@ -211,7 +211,22 @@
           ],
           "name": "Fatos Espaciais",
           "description": "Pergunte por Fatos Espaciais e aprenda sobre o que interessa, como matéria escura.\n\nA skill Fatos Espaciais proporciona divertimento para toda família e certamente fará você mais inteligente. \n\nPara iniciar, apenas fale \"Alexa, iniciar Fatos Espaciais\" ou \"Alexa, abrir Fatos Espaciais\" para receber um fato\".\n\nA qualquer momento, você pode dizer \"Alexa, pare\""
-        }
+        },
+         "ar-SA": {
+          "summary": "معلومات عامة ممتعة عن الفضاء"
+          "examplePhrases": [
+            "أليكسا افتحي حقائق عن الفضاء",
+            "أليكسا اطلبي من حقائق عن الفضاء معلومة",
+            "أليكسا اسألي حقائق عن الفضاء عن معلومة جديدة"
+          ],
+          "keywords": [
+            "حقائق",
+            "فضاء",
+            "معلومات"
+          ],
+          "name": "حقائق عن الفضاء",
+          "description": "اطلب حقائق ومعلومات عامة عن الفضاء وكل ما هو مهم مثل المادة المظلمة. حقائق عن الفضاء ممتعة لكل أفراد الأسرة ومن الأكيد أنها سترفع رصيد معلوماتك. لكي تبدأ، قول \"أليكسا، افتحي حقائق عن الفضاء\" أو \"أليكسا، ابدئي حقائق عن الفضاء\" لكي تحصل على معلومة جديدة. يمكنك أن تقول \"خلاص\" عند الانتهاء من اللعبة.",
+        },
       },
       "category": "KNOWLEDGE_AND_TRIVIA"
     },
