@@ -19,6 +19,29 @@
 const Alexa = require('ask-sdk-core');
 const i18n = require('i18next');
 
+// declaring picture URLs for each planet
+const planetURLs= 
+[
+    'https://public-eu-west-1.s3.eu-west-1.amazonaws.com/pictures/planets/mercury.jpg',
+    'https://public-eu-west-1.s3.eu-west-1.amazonaws.com/pictures/planets/venus.jpg',
+    'https://public-eu-west-1.s3.eu-west-1.amazonaws.com/pictures/planets/mars.jpg',
+    'https://public-eu-west-1.s3.eu-west-1.amazonaws.com/pictures/planets/jupiter.jpg',
+    'https://public-eu-west-1.s3.eu-west-1.amazonaws.com/pictures/planets/sun.jpg',
+]
+
+// helper functions for supported interfaces
+function supportsInterface(handlerInput, interfaceName){
+  const interfaces = ((((
+      handlerInput.requestEnvelope.context || {})
+      .System || {})
+      .device || {})
+      .supportedInterfaces || {});
+  return interfaces[interfaceName] !== null && interfaces[interfaceName] !== undefined;
+}
+function supportsAPL(handlerInput) {
+  return supportsInterface(handlerInput, 'Alexa.Presentation.APL')
+}
+
 // core functionality for fact skill
 const GetNewFactHandler = {
   canHandle(handlerInput) {
@@ -33,9 +56,33 @@ const GetNewFactHandler = {
     // gets a random fact by assigning an array to the variable
     // the random item from the array will be selected by the i18next library
     // the i18next library is set up in the Request Interceptor
-    const randomFact = requestAttributes.t('FACTS');
+    const randomObj = requestAttributes.t('FACTS')
+    const randomFact = randomObj.fact;
+    const factImage = randomObj.url;
     // concatenates a standard message with the random fact
     const speakOutput = requestAttributes.t('GET_FACT_MESSAGE') + randomFact;
+
+    if (supportsAPL(handlerInput))
+    {
+      return handlerInput.responseBuilder
+      .speak(speakOutput)
+      .addDirective({
+        "type": "Alexa.Presentation.APL.RenderDocument",
+        "token": "documentToken",
+        "document": require('./aplDocument.json'),
+        "datasources": {
+          "data": {
+              "properties": {
+                  "factImage": factImage,
+                  "factString": randomFact
+              }
+          }
+      },
+        "sources":{}
+      })
+      .withSimpleCard(requestAttributes.t('SKILL_NAME'), randomFact)
+      .getResponse();
+    }
 
     return handlerInput.responseBuilder
       .speak(speakOutput)
@@ -137,7 +184,12 @@ const LocalizationInterceptor = {
       const value = i18n.t(...args);
       // If an array is used then a random value is selected
       if (Array.isArray(value)) {
-        return value[Math.floor(Math.random() * value.length)];
+        let randomValue = Math.floor(Math.random() * value.length)
+        return {
+          "fact": value[randomValue],
+          "url" : planetURLs[randomValue]
+        }
+        
       }
       return value;
     };

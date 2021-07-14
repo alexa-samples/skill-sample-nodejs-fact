@@ -1,0 +1,46 @@
+{
+    "type": "APL",
+    "version": "1.6",
+    "settings": {},
+    "import": [
+        {
+            "name": "alexa-layouts",
+            "version": "1.3.0"
+        }
+    ],
+    "resources": [],
+    "styles": {},
+    "onMount": [],
+    "graphics": {},
+    "commands": {},
+    "layouts": {},
+    "mainTemplate": {
+        "parameters": [
+            "payload"
+        ],
+        "item": [
+            {
+                "type": "Container",
+                "width": "100vw",
+                "height": "100vh",
+                "items": [
+                    {
+                        "type": "Image",
+                        "width": "100vw",
+                        "height": "100vh",
+                        "source": "${payload.data.properties.factImage}"
+                    },
+                    {
+                        "text": "${payload.data.properties.factString}",
+                        "textAlign": "center",
+                        "textAlignVertical": "bottom",
+                        "type": "Text",
+                        "width": "100vw",
+                        "height": "100vh",
+                        "position": "absolute"
+                    }
+                ]
+            }
+        ]
+    }
+}
