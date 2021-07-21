@@ -1,7 +1,7 @@
 {
     "interactionModel": {
       "languageModel": {
-        "invocationName": "अंतरिक्ष facts",
+        "invocationName": "अंतरिक्ष तथ्य",
         "intents": [
           {
             "name": "AMAZON.CancelIntent",
@@ -19,11 +19,16 @@
             "name": "GetNewFactIntent",
             "samples": [
               "मुझे एक fact बताओ",
+              "मुझे एक तथ्य बताओ",
               "मुझे अंतरिक्ष के बारे में एक fact बताओ",
+              "मुझे अंतरिक्ष के बारे में एक तथ्य बताओ",
               "मुझे space के बारे में एक fact बताओ",
+              "मुझे space के बारे में एक तथ्य बताओ",
               "मुझे अंतरिक्ष के बारे में ज्ञान बताओ",
               "मुझे एक fact दो",
+              "मुझे एक तथ्य दो",
               "मुझे एक space fact दो",
+              "मुझे एक अंतरिक्ष तथ्य दो",
               "मुझे एक अंतरिक्ष ज्ञान बताओ"
             ],
             "slots": []
