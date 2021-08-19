@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "حقائق عن الفضاء",
+      "invocationName": "change me",
       "intents": [
         {
           "name": "AMAZON.CancelIntent",
@@ -21,31 +21,72 @@
         },
         {
           "name": "GetNewFactIntent",
-          "slots": [],
+          "slots": [
+            {
+              "name": "factType",
+              "type": "FactType"
+            }
+          ],
           "samples": [
             "حقيقة",
-            "معلومة",
-            "حقيقة عن الفضاء",
-            "أحكي لي حقيقة",
-            "أحكي لي حقيقة عن الفضاء",
-            "أعطيني معلومة عن الفضاء",
-            "أحكي لي معلومات عامة",
-            "أحكي لي معلومات عامة عن الفضاء",
-            "أعطيني معلومات عامة",
-            "أعطيني معلومات عامة عن الفضاء",
-            "أعطيني معلومات",
-            "أعطيني معلومات عن الفضاء",
-            "أحكي لي شيء",
-            "أعطيني شيء"
+            "حقيقة {factType}",
+            "قل لي حقيقة",
+            "قل لي حقيقة {factType}",
+            "أعطني حقيقة",
+            "قل لي التوافه",
+            "أخبرني عن معلومات عامة عن {factType}",
+            "أعطني التوافه",
+            "أعطني معلومات عن {factType}",
+            "أعطني بعض المعلومات",
+            "أعطني بعض معلومات {factType}",
+            "قل لي شيئا",
+            "أعطني شيئا"
           ]
         },
         {
           "name": "AMAZON.NavigateHomeIntent",
           "samples": []
+        },
+        {
+          "name": "AddNewFact",
+          "slots": [
+            {
+              "name": "factType",
+              "type": "FactType"
+            }
+          ],
+          "samples": [
+            "أضف {factType} كموضوع جديد",
+            "احفظ {factType} كموضوع جديد",
+            "أضف {factType} كموضوع مفضل",
+            "احفظ {factType} كموضوع مفضل",
+            "أضف {factType} كموضوع حقائق مفضل",
+            "احفظ {factType} كموضوع حقائق مفضل"
+          ]
         }
       ],
-      "types": []
+      "types": [
+        {
+          "name": "FactType",
+          "values": [
+            {
+              "name": {
+                "value": "فضاء"
+              }
+            },
+            {
+              "name": {
+                "value": "كرة القدم"
+              }
+            },
+            {
+              "name": {
+                "value": "كرة القدم"
+              }
+            }
+          ]
+        }
+      ]
     }
-  },
-  "version": "3"
+  }
 }

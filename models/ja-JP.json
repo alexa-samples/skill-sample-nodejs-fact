@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "宇宙の豆知識",
+      "invocationName": "change me",
       "intents": [
         {
           "name": "AMAZON.CancelIntent",
@@ -16,27 +16,75 @@
           "samples": []
         },
         {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
           "name": "GetNewFactIntent",
-          "samples": [
-            "豆知識",
-            "教えて",
-            "話して",
-            "聞かせて",
-            "宇宙の豆知識",
-            "豆知識を教えて",
-            "宇宙の豆知識を教えて",
-            "豆知識を聞かせて",
-            "宇宙の豆知識を聞かせて",
-            "トリビア",
-            "宇宙のトリビア",
-            "トリビアを教えて",
-            "宇宙のトリビアを教えて",
-            "何か教えて",
-            "宇宙について教えて",
-            "なんか教えて",
-            "なんか言って"
+          "slots": [
+            {
+              "name": "factType",
+              "type": "FactType"
+            }
           ],
-          "slots": []
+          "samples": [
+            "事実",
+            "{factType}ファクト",
+            "事実を教えてください",
+            "{factType} の事実を教えてください",
+            "私に事実を教えてください",
+            "雑学クイズを教えて",
+            "{factType} の雑学クイズを教えてください",
+            "雑学クイズをください",
+            "{factType} の雑学クイズをください",
+            "情報を教えてください",
+            "{factType} 情報を教えてください",
+            "何か教えて",
+            "何か私にください"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AddNewFact",
+          "slots": [
+            {
+              "name": "factType",
+              "type": "FactType"
+            }
+          ],
+          "samples": [
+            "新しいトピックとして {factType} を追加します",
+            "{factType} を新しいトピックとして保存します",
+            "{factType} をお気に入りのトピックとして追加",
+            "{factType} をお気に入りのトピックとして保存する",
+            "{factType} をお気に入りのファクトトピックとして追加します",
+            "{factType} をお気に入りのファクトトピックとして保存する"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "name": "FactType",
+          "values": [
+            {
+              "name": {
+                "value": "スペース"
+              }
+            },
+            {
+              "name": {
+                "value": "フットボール"
+              }
+            },
+            {
+              "name": {
+                "value": "フットボール"
+              }
+            }
+          ]
         }
       ]
     }

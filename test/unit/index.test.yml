@@ -38,7 +38,7 @@ configuration:
 - test: AMAZON.HelpIntent. Ask for help and exit.
 - LaunchRequest # Empty expected part means we are not testing the response
 - AMAZON.HelpIntent:
-  - response.outputSpeech.ssml: You can say tell me a space fact, or, you can say exit... What can I help you with?
+  - response.outputSpeech.ssml: You can say tell me a fact, or, you can say exit... What can I help you with?
   - response.card: undefined
   - response.reprompt.outputSpeech.ssml: What can I help you with?
 - SessionEndedRequest: # This is equivalent to say 'exit'
@@ -70,6 +70,6 @@ configuration:
 - test: AMAZON.FallbackIntent
 - LaunchRequest
 - AMAZON.FallbackIntent:
-  - prompt: The Space Facts skill can't help you with that # prompt is equivalent to response.outputSpeech.ssml
+  - prompt: The Facts skill can't help you with that # prompt is equivalent to response.outputSpeech.ssml
   - reprompt: What can I help you with? # reprompt is equivalent to response.reprompt.outputSpeech.ssml
   - response.shouldEndSession: false

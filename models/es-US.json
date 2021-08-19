@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "curiosidades del espacio",
+      "invocationName": "change me",
       "intents": [
         {
           "name": "AMAZON.CancelIntent",
@@ -16,19 +16,75 @@
           "samples": []
         },
         {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
           "name": "GetNewFactIntent",
-          "samples": [
-            "un dato",
-            "un dato del espacio",
-            "dime un dato",
-            "dime un dato del espacio",
-            "dame un dato",
-            "dame un dato del espacio",
-            "dime una",
-            "dime algo",
-            "dime una curiosidad"
+          "slots": [
+            {
+              "name": "factType",
+              "type": "FactType"
+            }
           ],
-          "slots": []
+          "samples": [
+            "un hecho",
+            "una {factType} hecho",
+            "Dime una hecho",
+            "Dime una {factType} hecho",
+            "dame un hecho",
+            "dime trivia",
+            "Dime una {factType} trivia",
+            "dame trivia",
+            "dame una {factType} trivia",
+            "dame algo de información",
+            "dame algo de {factType} información",
+            "Dime algo",
+            "Dame algo"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AddNewFact",
+          "slots": [
+            {
+              "name": "factType",
+              "type": "FactType"
+            }
+          ],
+          "samples": [
+            "agregue {factType} como un tema nuevo",
+            "guardar {factType} como un tema nuevo",
+            "agrega {factType} como tema favorito",
+            "guardar {factType} como tema favorito",
+            "agregue {factType} como un tema de hechos favorito",
+            "guardar {factType} como un tema de hechos favorito"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "name": "FactType",
+          "values": [
+            {
+              "name": {
+                "value": "Espacio"
+              }
+            },
+            {
+              "name": {
+                "value": "Fútbol"
+              }
+            },
+            {
+              "name": {
+                "value": "Fútbol"
+              }
+            }
+          ]
         }
       ]
     }
