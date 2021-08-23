@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "weltraumfakten",
+      "invocationName": "change me",
       "intents": [
         {
           "name": "AMAZON.CancelIntent",
@@ -21,23 +21,70 @@
         },
         {
           "name": "GetNewFactIntent",
-          "samples": [
-            "ein Faktum",
-            "ein Faktum über den Weltraum",
-            "sage mir ein Faktum",
-            "sage mir ein Faktum über den Weltraum",
-            "gib mir ein Faktum",
-            "gib mir ein Faktum über den Weltraum",
-            "erzähle mir Wissenswertes",
-            "erzähle mir Wissenswertes über den Weltraum",
-            "sage mir etwas Wissenswertes",
-            "sage mir etwas wissenswertes über den Weltraum",
-            "gib mir Informationen",
-            "gib mir Informationen über den Weltraum",
-            "sage mir etwas",
-            "erzähle mir etwas"
+          "slots": [
+            {
+              "name": "factType",
+              "type": "FactType"
+            }
           ],
-          "slots": []
+          "samples": [
+            "et faktum",
+            "en {factType} kendsgerning",
+            "fortæl mig en kendsgerning",
+            "fortæl mig en {factType} kendsgerning",
+            "giv mig et faktum",
+            "fortæl mig trivia",
+            "fortæl mig en {factType} trivia",
+            "giv mig trivia",
+            "giv mig en {factType} trivia",
+            "giv mig nogle oplysninger",
+            "giv mig nogle {factType} oplysninger",
+            "Fortæl mig noget",
+            "giv mig noget"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AddNewFact",
+          "slots": [
+            {
+              "name": "factType",
+              "type": "FactType"
+            }
+          ],
+          "samples": [
+            "tilføj {factType} som et nyt emne",
+            "gem {factType} som et nyt emne",
+            "tilføj {factType} som yndlingsemne",
+            "gem {factType} som yndlingsemne",
+            "tilføj {factType} som et yndlingsfakta -emne",
+            "gem {factType} som et yndlingsfakta -emne"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "name": "FactType",
+          "values": [
+            {
+              "name": {
+                "value": "Plads"
+              }
+            },
+            {
+              "name": {
+                "value": "Fodbold"
+              }
+            },
+            {
+              "name": {
+                "value": "Fodbold"
+              }
+            }
+          ]
         }
       ]
     }

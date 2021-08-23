@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "aneddoti spaziali",
+      "invocationName": "change me",
       "intents": [
         {
           "name": "AMAZON.CancelIntent",
@@ -16,36 +16,74 @@
           "samples": []
         },
         {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
           "name": "GetNewFactIntent",
-          "samples": [
-            "un aneddoto",
-            "un aneddoto dallo spazio",
-            "dirmi un aneddoto spaziale",
-            "dirmi un aneddoto dallo spazio",
-            "darmi un aneddoto",
-            "darmi un aneddoto spaziale",
-            "darmi un aneddoto dallo spazio",
-            "darmi un pezzo di trivia",
-            "dirmi un trivia spaziale",
-            "darmi del trivia",
-            "darmi qualche info",
-            "darmi qualche info sullo spazio",
-            "dirmi qualcosa",
-            "darmi qualcosa",
-            "dimmi un aneddoto spaziale",
-            "dimmi un aneddoto dallo spazio",
-            "dammi un aneddoto",
-            "dammi un aneddoto spaziale",
-            "dammi un aneddoto dallo spazio",
-            "dammi un pezzo di trivia",
-            "dimmi un trivia spaziale",
-            "dammi del trivia",
-            "dammi qualche info",
-            "dammi qualche info sullo spazio",
-            "dimmi qualcosa",
-            "dammi qualcosa"
+          "slots": [
+            {
+              "name": "factType",
+              "type": "FactType"
+            }
           ],
-          "slots": []
+          "samples": [
+            "un fatto",
+            "un fatto {factType}",
+            "dimmi un fatto",
+            "dimmi un fatto {factType}",
+            "dammi un dato di fatto",
+            "dimmi curiosità",
+            "dimmi una curiosità {factType}",
+            "dammi curiosità",
+            "dammi una curiosità {factType}",
+            "give me some information",
+            "dammi alcune informazioni {factType}",
+            "Dimmi qualcosa"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AddNewFact",
+          "slots": [
+            {
+              "name": "factType",
+              "type": "FactType"
+            }
+          ],
+          "samples": [
+            "aggiungi {factType} come nuovo argomento",
+            "salva {factType} come nuovo argomento",
+            "aggiungi {factType} come argomento preferito",
+            "salva {factType} come argomento preferito",
+            "aggiungi {factType} come argomento preferito sui fatti",
+            "salva {factType} come argomento preferito sui fatti"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "name": "FactType",
+          "values": [
+            {
+              "name": {
+                "value": "Spazio"
+              }
+            },
+            {
+              "name": {
+                "value": "Calcio"
+              }
+            },
+            {
+              "name": {
+                "value": "Calcio"
+              }
+            }
+          ]
         }
       ]
     }

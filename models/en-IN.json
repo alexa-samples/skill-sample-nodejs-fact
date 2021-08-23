@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "space facts",
+      "invocationName": "change me",
       "intents": [
         {
           "name": "AMAZON.CancelIntent",
@@ -21,23 +21,70 @@
         },
         {
           "name": "GetNewFactIntent",
+          "slots": [
+            {
+              "name": "factType",
+              "type": "FactType"
+            }
+          ],
           "samples": [
             "a fact",
-            "a space fact",
+            "a {factType} fact",
             "tell me a fact",
-            "tell me a space fact",
+            "tell me a {factType} fact",
             "give me a fact",
-            "give me a space fact",
             "tell me trivia",
-            "tell me a space trivia",
+            "tell me a {factType} trivia",
             "give me trivia",
-            "give me a space trivia",
+            "give me a {factType} trivia",
             "give me some information",
-            "give me some space information",
+            "give me some {factType} information",
             "tell me something",
             "give me something"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AddNewFact",
+          "slots": [
+            {
+              "name": "factType",
+              "type": "FactType"
+            }
           ],
-          "slots": []
+          "samples": [
+            "add {factType} as a new topic",
+            "save {factType} as a new topic",
+            "add {factType} as favorite topic",
+            "save {factType} as favorite topic",
+            "add {factType} as a favorite fact topic",
+            "save {factType} as a favorite fact topic"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "name": "FactType",
+          "values": [
+            {
+              "name": {
+                "value": "Space"
+              }
+            },
+            {
+              "name": {
+                "value": "Soccer"
+              }
+            },
+            {
+              "name": {
+                "value": "Football"
+              }
+            }
+          ]
         }
       ]
     }

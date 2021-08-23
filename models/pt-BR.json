@@ -1,45 +1,92 @@
 {
-    "interactionModel": {
-      "languageModel": {
-        "invocationName": "fatos espaciais",
-        "intents": [
-          {
-            "name": "AMAZON.CancelIntent",
-            "samples": []
-          },
-          {
-            "name": "AMAZON.HelpIntent",
-            "samples": []
-          },
-          {
-            "name": "AMAZON.StopIntent",
-            "samples": []
-          },
-          {
-            "name": "GetNewFactIntent",
-            "samples": [
-              "um fato",
-              "um fato espacial",
-              "me conta um fato sobre o espaço",
-              "fale um fato espacial",
-              "me dê um fato sobre o espaço",
-              "me da um fato espacial",
-              "me conta um fato",
-              "me conta um fato sobre o espaço",
-              "me conta um fato espacial",
-              "me conta um fato interessante",
-              "me dê informações sobre o espaço",
-              "me fale coisas interessantes sobre o espaço",
-              "me conta algo interessante",
-              "mais um",
-              "mais uma",
-              "me da mais um fato",
-              "quero ouvir um fato sobre o espaço"
-            ],
-            "slots": []
-          }
-        ]
-      }
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "change me",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "GetNewFactIntent",
+          "slots": [
+            {
+              "name": "factType",
+              "type": "FactType"
+            }
+          ],
+          "samples": [
+            "um fato",
+            "um fato {factType}",
+            "tme diga um fato",
+            "diga-me um fato de {factType}",
+            "me dê um fato",
+            "me diga curiosidades",
+            "conte-me uma curiosidade de {factType}",
+            "me dê curiosidades",
+            "dê-me uma curiosidade de {factType}",
+            "me dê alguma informação",
+            "dê-me algumas informações de {factType}",
+            "Me conte algo",
+            "me dê algo"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AddNewFact",
+          "slots": [
+            {
+              "name": "factType",
+              "type": "FactType"
+            }
+          ],
+          "samples": [
+            "adicione {factType} como um novo tópico",
+            "salve {factType} como um novo tópico",
+            "adicione {factType} como tópico favorito",
+            "salve {factType} como tópico favorito",
+            "adicione {factType} como um tópico de fato favorito",
+            "salve {factType} como um tópico de fatos favorito"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "name": "FactType",
+          "values": [
+            {
+              "name": {
+                "value": "Space"
+              }
+            },
+            {
+              "name": {
+                "value": "Soccer"
+              }
+            },
+            {
+              "name": {
+                "value": "Football"
+              }
+            }
+          ]
+        }
+      ]
     }
   }
-  
+}

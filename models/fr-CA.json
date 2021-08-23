@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "anecdotes de l'espace",
+      "invocationName": "change me",
       "intents": [
         {
           "name": "AMAZON.CancelIntent",
@@ -16,66 +16,75 @@
           "samples": []
         },
         {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
           "name": "GetNewFactIntent",
-          "samples": [
-            "une anecdote",
-            "une anecdote de l'espace",
-            "dis-moi une anecdote",
-            "dis-moi une anecdote de l'espace",
-            "donne-moi une anecdote",
-            "donne-moi une anecdote de l'espace",
-            "trouve-moi une anecdote",
-            "trouve-moi une anecdote de l'espace",
-            "dire une anecdote",
-            "dire une anecdote de l'espace",
-            "donner une anecdote",
-            "donner une anecdote de l'espace",
-            "trouver une anecdote",
-            "trouver une anecdote de l'espace",
-            "me dire une anecdote",
-            "me dire une anecdote de l'espace",
-            "me donner une anecdote",
-            "me donner une anecdote de l'espace",
-            "me trouver une anecdote",
-            "me trouver une anecdote de l'espace",
-            "dis-moi une info",
-            "dis-moi une info sur l'espace",
-            "donne-moi une info",
-            "donne-moi une info sur l'espace",
-            "trouve-moi une info",
-            "trouve-moi une info sur l'espace",
-            "dire une info",
-            "dire une info sur l'espace",
-            "donner une info",
-            "donner une info sur l'espace",
-            "trouver une info",
-            "trouver une info sur l'espace",
-            "me dire une info",
-            "me dire une info sur l'espace",
-            "me donner une info",
-            "me donner une info sur l'espace",
-            "me trouver une info",
-            "me trouver une info sur l'espace",
-            "dire une info",
-            "dire une info sur l'espace",
-            "donner une info",
-            "donner une info sur l'espace",
-            "trouver une info",
-            "trouver une info sur l'espace",
-            "me dire une info",
-            "me dire une info sur l'espace",
-            "me donner une info",
-            "me donner une info sur l'espace",
-            "me trouver une info",
-            "me trouver une info sur l'espace",
-            "dis-moi quelque chose",
-            "trouve-moi quelque chose",
-            "dire quelque chose",
-            "trouver quelque chose",
-            "me dire quelque chose",
-            "me trouver quelquechose"
+          "slots": [
+            {
+              "name": "factType",
+              "type": "FactType"
+            }
           ],
-          "slots": []
+          "samples": [
+            "un fait",
+            "un fait {factType}",
+            "dis moi un fait",
+            "dites-moi un fait {factType}",
+            "donne moi un fait",
+            "dis-moi des anecdotes",
+            "dites-moi une anecdote {factType}",
+            "donne moi des anecdotes",
+            "donnez-moi une anecdote {factType}",
+            "donne moi des infos",
+            "donnez-moi des informations {factType}",
+            "dis moi quelque chose",
+            "donne moi quelque chose"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AddNewFact",
+          "slots": [
+            {
+              "name": "factType",
+              "type": "FactType"
+            }
+          ],
+          "samples": [
+            "ajouter {factType} comme nouveau sujet",
+            "enregistrer {factType} en tant que nouveau sujet",
+            "ajouter {factType} comme sujet favori",
+            "enregistrer {factType} comme sujet favori",
+            "ajouter {factType} comme sujet de fait favori",
+            "enregistrer {factType} en tant que sujet de fait préféré"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "name": "FactType",
+          "values": [
+            {
+              "name": {
+                "value": "Espace"
+              }
+            },
+            {
+              "name": {
+                "value": "Football"
+              }
+            },
+            {
+              "name": {
+                "value": "Football"
+              }
+            }
+          ]
         }
       ]
     }
