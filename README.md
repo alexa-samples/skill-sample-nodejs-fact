@@ -13,7 +13,7 @@ The back end is where the logic of your skill resides.
 There are a number of different ways for you to setup your skill, depending on your experience and what tools you have available.
 
  * If this is your first skill, choose the [Alexa-Hosted backend instructions](./instructions/setup-vui-alexa-hosted.md) to get started quickly.
- * If you want to manage the backend resources in your own AWS account, you can follow the [AWS-Hosted instructions](./instructions/setup-vui-aws-hosted.md).
+ * If you want to manage the backend resources in your own AWS account, you can follow the [AWS-Hosted instructions](https://developer.amazon.com/en-US/docs/alexa/custom-skills/host-a-custom-skill-as-an-aws-lambda-function.html).
  * Developers with the ASK Command Line Interface configured may follow the [ASK CLI instructions](./instructions/cli.md).
 
 ---
