@@ -29,11 +29,11 @@ const FACT_TYPE = "factType"
 // declaring picture URLs for each planet
 const planetURLs =
   [
-    'https://public-eu-west-1.s3.eu-west-1.amazonaws.com/pictures/planets/mercury.jpg',
-    'https://public-eu-west-1.s3.eu-west-1.amazonaws.com/pictures/planets/venus.jpg',
-    'https://public-eu-west-1.s3.eu-west-1.amazonaws.com/pictures/planets/mars.jpg',
-    'https://public-eu-west-1.s3.eu-west-1.amazonaws.com/pictures/planets/jupiter.jpg',
-    'https://public-eu-west-1.s3.eu-west-1.amazonaws.com/pictures/planets/sun.jpg',
+    'https://d9l8bxuzh137s.cloudfront.net/pictures/planets/mercury.jpg',
+    'https://d9l8bxuzh137s.cloudfront.net/pictures/planets/venus.jpg',
+    'https://d9l8bxuzh137s.cloudfront.net/pictures/planets/mars.jpg',
+    'https://d9l8bxuzh137s.cloudfront.net/pictures/planets/jupiter.jpg',
+    'https://d9l8bxuzh137s.cloudfront.net/pictures/planets/sun.jpg',
   ]
 
 // helper functions for supported interfaces
